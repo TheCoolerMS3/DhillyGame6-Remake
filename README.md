@@ -11,13 +11,13 @@ Dhilly Game 6 is a homebrew Game Boy Color game made with GB Studio 3.1. The sou
 
 Please edit the .gbsproj file with GB Studio 3.2. Yes, Stanley this means you need to update your GB Studio version. I intend on switching to GB Studio 4.0 when it is in stable release.
 
-Running on Game Boy
+**Running on Game Boy**
 
 ![Dhilly Game 6 Remake on the Game Boy](screenshots/gb.png)
 
-Running on Game Boy Color
+**Running on Game Boy Color**
 
 ![Dhilly Game 6 Remake on the Game Boy Color](screenshots/gbc.png)
 
-Running on Super Game Boy
+**Running on Super Game Boy**
 ![Dhilly Game 6 Remake on the Super Game Boy (SNES)](screenshots/sgb.png)
