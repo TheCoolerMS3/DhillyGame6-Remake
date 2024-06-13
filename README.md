@@ -20,4 +20,5 @@ Please edit the .gbsproj file with GB Studio 3.2. Yes, Stanley this means you ne
 ![Dhilly Game 6 Remake on the Game Boy Color](screenshots/gbc.png)
 
 **Running on Super Game Boy**
+
 ![Dhilly Game 6 Remake on the Super Game Boy (SNES)](screenshots/sgb.png)
