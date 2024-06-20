@@ -22,3 +22,5 @@ Please edit the .gbsproj file with GB Studio 3.2. Yes, Stanley this means you ne
 **Running on Super Game Boy** (A cartridge for the SNES that plays Game Boy games)
 
 ![Dhilly Game 6 Remake on the Super Game Boy (SNES)](screenshots/sgb.png)
+
+![Gif of Square next to an animated sea](screenshots/gif.gif)
