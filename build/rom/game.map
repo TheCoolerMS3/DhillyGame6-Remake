@@ -67,11 +67,19 @@ Area                                    Addr        Size        Decimal Bytes (A
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      00000000  s__HRAM12                       
-     00000001  ___bank_SGB_border_chr             border
-     00000001  ___bank_SGB_border_map             border
-     00000001  ___bank_SGB_border_pal             border
-     00000001  ___bank_VM_ACTOR                   vm_actor
      00000001  ___bank_VM_SGB                     vm_sgb
+     00000001  ___bank_bg_lencityopen_tilemap_a   bg_lencityopen_tilemap_attr
+     00000001  ___bank_scene_15_triggers          scene_15_triggers
+     00000001  b_do_load_palette                  data_manager
+     00000001  b_load_background                  data_manager
+     00000001  b_load_bkg_tileset                 data_manager
+     00000001  b_load_bounds                      data_manager
+     00000001  b_load_emote                       data_manager
+     00000001  b_load_init                        data_manager
+     00000001  b_load_player                      data_manager
+     00000001  b_load_scene                       data_manager
+     00000001  b_load_sprite                      data_manager
+     00000001  b_set_sgb_border                   sgb_border
      00000001  b_ui_draw_frame                    ui
      00000001  b_ui_draw_text_buffer_char         ui
      00000001  b_ui_init                          ui
@@ -79,29 +87,6 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000001  b_ui_run_menu                      ui
      00000001  b_ui_run_modal                     ui
      00000001  b_ui_set_start_tile                ui
-     00000001  b_vm_actor_activate                vm_actor
-     00000001  b_vm_actor_begin_update            vm_actor
-     00000001  b_vm_actor_deactivate              vm_actor
-     00000001  b_vm_actor_emote                   vm_actor
-     00000001  b_vm_actor_get_angle               vm_actor
-     00000001  b_vm_actor_get_anim_frame          vm_actor
-     00000001  b_vm_actor_get_dir                 vm_actor
-     00000001  b_vm_actor_get_pos                 vm_actor
-     00000001  b_vm_actor_move_cancel             vm_actor
-     00000001  b_vm_actor_move_to                 vm_actor
-     00000001  b_vm_actor_replace_tile            vm_actor
-     00000001  b_vm_actor_set_anim                vm_actor
-     00000001  b_vm_actor_set_anim_frame          vm_actor
-     00000001  b_vm_actor_set_anim_set            vm_actor
-     00000001  b_vm_actor_set_anim_tick           vm_actor
-     00000001  b_vm_actor_set_bounds              vm_actor
-     00000001  b_vm_actor_set_dir                 vm_actor
-     00000001  b_vm_actor_set_flags               vm_actor
-     00000001  b_vm_actor_set_move_speed          vm_actor
-     00000001  b_vm_actor_set_pos                 vm_actor
-     00000001  b_vm_actor_set_spritesheet         vm_actor
-     00000001  b_vm_actor_set_spritesheet_by_re   vm_actor
-     00000001  b_vm_actor_terminate_update        vm_actor
      00000001  l__GSFINAL                      
      00000001  l__HEADER0                      
      00000001  l__HEADER5                      
@@ -110,13 +95,28 @@ Area                                    Addr        Size        Decimal Bytes (A
      00000001  l__HEADERc                      
      00000001  l__HEADERe                      
      00000001  l__HEADERf                      
-     00000002  ___bank_VM_MAIN                    vm
      00000002  ___bank_VM_PALETTE                 vm_palette
      00000002  ___bank_bg_controls_gb_copy__til   bg_controls_gb_copy__tileset
-     00000002  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilese
-     00000002  ___bank_scene_2_sprites            scene_2_sprites
-     00000002  ___bank_scene_3_sprites            scene_3_sprites
-     00000002  ___bank_script_input_4             script_input_4
+     00000002  ___bank_bg_lencityopen_tilemap     bg_lencityopen_tilemap
+     00000002  ___bank_scene_17_sprites           scene_17_sprites
+     00000002  ___bank_scene_18_sprites           scene_18_sprites
+     00000002  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect
+     00000002  b_vm_load_palette                  vm_palette
+     00000002  l__HEADER10                     
+     00000002  l__HEADER6                      
+     00000002  l__HEADERd                      
+     00000003  ___bank_bg_controls_gb_copy__til   bg_controls_gb_copy__tilemap
+     00000003  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilese
+     00000003  ___bank_scene_18_collisions        scene_18_collisions
+     00000003  b_erase_flash                      
+     00000003  b_save_sram_banks                  
+     00000003  l__HEADER9                      
+     00000003  l__HEADER_LCD0                  
+     00000003  l__HRAM12                       
+     00000004  ___bank_SGB_border_chr             border
+     00000004  ___bank_SGB_border_map             border
+     00000004  ___bank_SGB_border_pal             border
+     00000004  ___bank_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tiles
 ASxxxx Linker V03.00/V05.40 + sdld,  page 3.
 Hexadecimal  [32-Bits]
 
@@ -126,57 +126,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000002  b_script_detach_hthread            vm
-     00000002  b_script_execute                   vm
-     00000002  b_script_runner_init               vm
-     00000002  b_script_terminate                 vm
-     00000002  b_vm_call                          vm
-     00000002  b_vm_call_far                      vm
-     00000002  b_vm_get_indirect                  vm
-     00000002  b_vm_get_int16                     vm
-     00000002  b_vm_get_int8                      vm
-     00000002  b_vm_get_tlocal                    vm
-     00000002  b_vm_get_uint8                     vm
-     00000002  b_vm_idle                          vm
-     00000002  b_vm_if                            vm
-     00000002  b_vm_if_const                      vm
-     00000002  b_vm_init_rng                      vm
-     00000002  b_vm_invoke                        vm
-     00000002  b_vm_join                          vm
-     00000002  b_vm_jump                          vm
-     00000002  b_vm_load_palette                  vm_palette
-     00000002  b_vm_lock                          vm
-     00000002  b_vm_loop                          vm
-     00000002  b_vm_memcpy                        vm
-     00000002  b_vm_memset                        vm
-     00000002  b_vm_poll_loaded                   vm
-     00000002  b_vm_pop                           vm
-     00000002  b_vm_push                          vm
-     00000002  b_vm_push_reference                vm
-     00000002  b_vm_push_value                    vm
-     00000002  b_vm_push_value_ind                vm
-     00000002  b_vm_raise                         vm
-     00000002  b_vm_rand                          vm
-     00000002  b_vm_reserve                       vm
-     00000002  b_vm_ret                           vm
-     00000002  b_vm_ret_far                       vm
-     00000002  b_vm_set                           vm
-     00000002  b_vm_set_const                     vm
-     00000002  b_vm_set_const_int16               vm
-     00000002  b_vm_set_const_int8                vm
-     00000002  b_vm_set_indirect                  vm
-     00000002  b_vm_set_int16                     vm
-     00000002  b_vm_set_int8                      vm
-     00000002  b_vm_set_uint8                     vm
-     00000002  b_vm_terminate                     vm
-     00000002  b_vm_test_terminate                vm
-     00000002  b_vm_unlock                        vm
-     00000002  b_wait_frames                      vm
-     00000002  l__HEADER10                     
-     00000002  l__HEADER6                      
-     00000002  l__HEADERd                      
-     00000003  ___bank_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tiles
-     00000003  ___bank_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilese
+     00000004  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
+     00000004  ___bank_scene_18_triggers          scene_18_triggers
+     00000004  b_CGBZeroPalette                   palette
+     00000004  b_SGBTransferPalettes              palette
+     00000004  b_palette_init                     palette
+     00000004  b_shmup_init                       shmup
+     00000004  b_shmup_update                     shmup
+     00000004  l__CRASH_HEADER1                
+     00000004  l__HEADER_SIO0                  
+     00000004  l__HEADER_TIMER0                
+     00000005  ___bank_VM_MAIN                    vm
+     00000005  ___bank_VM_RTC                     vm_rtc
+     00000005  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
+     00000005  ___bank_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilese
+     00000005  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
+     00000005  b_script_detach_hthread            vm
+     00000005  b_script_execute                   vm
+     00000005  b_script_runner_init               vm
+     00000005  b_script_terminate                 vm
+     00000005  b_vm_call                          vm
+     00000005  b_vm_call_far                      vm
+     00000005  b_vm_get_indirect                  vm
+     00000005  b_vm_get_int16                     vm
+     00000005  b_vm_get_int8                      vm
+     00000005  b_vm_get_tlocal                    vm
+     00000005  b_vm_get_uint8                     vm
+     00000005  b_vm_idle                          vm
+     00000005  b_vm_if                            vm
+     00000005  b_vm_if_const                      vm
+     00000005  b_vm_init_rng                      vm
+     00000005  b_vm_invoke                        vm
+     00000005  b_vm_join                          vm
+     00000005  b_vm_jump                          vm
+     00000005  b_vm_lock                          vm
+     00000005  b_vm_loop                          vm
+     00000005  b_vm_memcpy                        vm
+     00000005  b_vm_memset                        vm
+     00000005  b_vm_poll_loaded                   vm
+     00000005  b_vm_pop                           vm
+     00000005  b_vm_push                          vm
+     00000005  b_vm_push_reference                vm
+     00000005  b_vm_push_value                    vm
+     00000005  b_vm_push_value_ind                vm
+     00000005  b_vm_raise                         vm
+     00000005  b_vm_rand                          vm
+     00000005  b_vm_reserve                       vm
+     00000005  b_vm_ret                           vm
+     00000005  b_vm_ret_far                       vm
+     00000005  b_vm_rtc_get                       vm_rtc
+     00000005  b_vm_rtc_latch                     vm_rtc
+     00000005  b_vm_rtc_set                       vm_rtc
 ASxxxx Linker V03.00/V05.40 + sdld,  page 4.
 Hexadecimal  [32-Bits]
 
@@ -186,57 +186,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000003  ___bank_font_gbs_variable_width    font_gbs_variable_width
-     00000003  ___bank_sprite_static_copy         sprite_static_copy
-     00000003  b_projectile_launch                projectiles
-     00000003  b_projectiles_init                 projectiles
-     00000003  l__HEADER9                      
-     00000003  l__HEADER_LCD0                  
-     00000003  l__HRAM12                       
-     00000004  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
-     00000004  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
-     00000004  ___bank_cursor_image               cursor_image
-     00000004  b_do_load_palette                  data_manager
-     00000004  b_erase_flash                      
-     00000004  b_load_background                  data_manager
-     00000004  b_load_bkg_tileset                 data_manager
-     00000004  b_load_bounds                      data_manager
-     00000004  b_load_emote                       data_manager
-     00000004  b_load_init                        data_manager
-     00000004  b_load_player                      data_manager
-     00000004  b_load_scene                       data_manager
-     00000004  b_load_sprite                      data_manager
-     00000004  b_save_sram_banks                  
-     00000004  b_shmup_init                       shmup
-     00000004  b_shmup_update                     shmup
-     00000004  l__CRASH_HEADER1                
-     00000004  l__HEADER_SIO0                  
-     00000004  l__HEADER_TIMER0                
-     00000005  ___bank_VM_UI                      vm_ui
-     00000005  ___bank_bg_options_copy__tileset   bg_options_copy__tileset
-     00000005  ___bank_bg_title_copy_1_tileset    bg_title_copy_1_tileset
-     00000005  b_core_reset                       core
-     00000005  b_core_run                         core
-     00000005  b_restore_sram                     flasher
-     00000005  b_restore_sram_bank                flasher
-     00000005  b_save_sram                        flasher
-     00000005  b_scroll_init                      scroll
-     00000005  b_scroll_repaint                   scroll
-     00000005  b_scroll_reset                     scroll
-     00000005  b_scroll_update                    scroll
-     00000005  b_vm_choice                        vm_ui
-     00000005  b_vm_display_text                  vm_ui
-     00000005  b_vm_overlay_clear                 vm_ui
-     00000005  b_vm_overlay_move_to               vm_ui
-     00000005  b_vm_overlay_scroll                vm_ui
-     00000005  b_vm_overlay_set_map               vm_ui
-     00000005  b_vm_overlay_set_scroll            vm_ui
-     00000005  b_vm_overlay_set_submap            vm_ui
-     00000005  b_vm_overlay_set_submap_ex         vm_ui
-     00000005  b_vm_overlay_setpos                vm_ui
-     00000005  b_vm_overlay_show                  vm_ui
-     00000005  b_vm_overlay_wait                  vm_ui
-     00000005  b_vm_set_font                      vm_ui
+     00000005  b_vm_rtc_start                     vm_rtc
+     00000005  b_vm_set                           vm
+     00000005  b_vm_set_const                     vm
+     00000005  b_vm_set_const_int16               vm
+     00000005  b_vm_set_const_int8                vm
+     00000005  b_vm_set_indirect                  vm
+     00000005  b_vm_set_int16                     vm
+     00000005  b_vm_set_int8                      vm
+     00000005  b_vm_set_uint8                     vm
+     00000005  b_vm_terminate                     vm
+     00000005  b_vm_test_terminate                vm
+     00000005  b_vm_unlock                        vm
+     00000005  b_wait_frames                      vm
+     00000005  l__CRASH_HEADER0                
+     00000005  l__HEADER1                      
+     00000006  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
+     00000006  ___bank_bg_options_copy__tileset   bg_options_copy__tileset
+     00000006  ___bank_font_gbs_variable_width    font_gbs_variable_width
+     00000006  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co_
+     00000006  b_projectile_launch                projectiles
+     00000006  b_projectiles_init                 projectiles
+     00000006  l__HEADER8                      
+     00000007  ___bank_VM_UI                      vm_ui
+     00000007  ___bank_bg_title_copy_1_tileset    bg_title_copy_1_tileset
+     00000007  ___bank_bg_title_tileset           bg_title_tileset
+     00000007  ___bank_scene_3_sprites            scene_3_sprites
+     00000007  b_core_reset                       core
+     00000007  b_core_run                         core
+     00000007  b_restore_sram                     flasher
+     00000007  b_restore_sram_bank                flasher
+     00000007  b_save_sram                        flasher
+     00000007  b_scroll_init                      scroll
+     00000007  b_scroll_repaint                   scroll
+     00000007  b_scroll_reset                     scroll
+     00000007  b_scroll_update                    scroll
+     00000007  b_vm_choice                        vm_ui
+     00000007  b_vm_display_text                  vm_ui
+     00000007  b_vm_overlay_clear                 vm_ui
+     00000007  b_vm_overlay_move_to               vm_ui
+     00000007  b_vm_overlay_scroll                vm_ui
+     00000007  b_vm_overlay_set_map               vm_ui
+     00000007  b_vm_overlay_set_scroll            vm_ui
+     00000007  b_vm_overlay_set_submap            vm_ui
+     00000007  b_vm_overlay_set_submap_ex         vm_ui
+     00000007  b_vm_overlay_setpos                vm_ui
+     00000007  b_vm_overlay_show                  vm_ui
+     00000007  b_vm_overlay_wait                  vm_ui
+     00000007  b_vm_set_font                      vm_ui
+     00000007  b_vm_set_text_sound                vm_ui
+     00000007  b_vm_switch_text_layer             vm_ui
+     00000007  l__HEADER2                      
 ASxxxx Linker V03.00/V05.40 + sdld,  page 5.
 Hexadecimal  [32-Bits]
 
@@ -246,57 +246,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000005  b_vm_set_text_sound                vm_ui
-     00000005  b_vm_switch_text_layer             vm_ui
-     00000005  l__CRASH_HEADER0                
-     00000005  l__HEADER1                      
-     00000006  ___bank_bg_controls_gb_copy__til   bg_controls_gb_copy__tilemap
-     00000006  ___bank_bg_title_tileset           bg_title_tileset
-     00000006  ___bank_script_engine_init         
-     00000006  b_adventure_init                   adventure
-     00000006  b_adventure_update                 adventure
-     00000006  b_data_clear                       load_save
-     00000006  b_data_init                        load_save
-     00000006  b_data_load                        load_save
-     00000006  b_data_peek                        load_save
-     00000006  b_data_save                        load_save
-     00000006  b_platform_init                    platform
-     00000006  b_platform_update                  platform
-     00000006  b_topdown_init                     topdown
-     00000006  b_topdown_update                   topdown
-     00000006  l__HEADER8                      
-     00000007  ___bank_ACTOR                      actor
-     00000007  ___bank_VM_CAMERA                  vm_camera
-     00000007  ___bank_VM_GAMEBOY                 vm_gameboy
-     00000007  ___bank_VM_SIO                     vm_sio
-     00000007  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
-     00000007  ___bank_bg_title_copy_0_tileset    bg_title_copy_0_tileset
-     00000007  ___bank_bg_title_copy__tileset     bg_title_copy__tileset
-     00000007  ___bank_script_input_6             script_input_6
-     00000007  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect
-     00000007  b___HandleCrash_banked             
-     00000007  b_activate_actor                   actor
-     00000007  b_activate_actors_in_col           actor
-     00000007  b_activate_actors_in_row           actor
-     00000007  b_actor_at_tile                    actor
-     00000007  b_actor_get_frame_offset           actor
-     00000007  b_actor_in_front_of_player         actor
-     00000007  b_actor_overlapping_bb             actor
-     00000007  b_actor_overlapping_player         actor
-     00000007  b_actor_set_anim_idle              actor
-     00000007  b_actor_set_anim_moving            actor
-     00000007  b_actor_set_dir                    actor
-     00000007  b_actor_set_frame_offset           actor
-     00000007  b_actor_set_frames                 actor
-     00000007  b_actors_handle_player_collision   actor
-     00000007  b_actors_init                      actor
-     00000007  b_atan2                            math_atan2
-     00000007  b_camera_shake_frames              vm_camera
-     00000007  b_check_collision_in_direction     actor
-     00000007  b_deactivate_actor                 actor
-     00000007  b_fade_applypalettechange          fade_manager
-     00000007  b_fade_in                          fade_manager
-     00000007  b_fade_in_modal                    fade_manager
+     00000008  ___bank_ACTOR                      actor
+     00000008  ___bank_VM_ACTOR                   vm_actor
+     00000008  ___bank_script_engine_init         
+     00000008  b_activate_actor                   actor
+     00000008  b_activate_actors_in_col           actor
+     00000008  b_activate_actors_in_row           actor
+     00000008  b_actor_at_tile                    actor
+     00000008  b_actor_get_frame_offset           actor
+     00000008  b_actor_in_front_of_player         actor
+     00000008  b_actor_overlapping_bb             actor
+     00000008  b_actor_overlapping_player         actor
+     00000008  b_actor_set_anim_idle              actor
+     00000008  b_actor_set_anim_moving            actor
+     00000008  b_actor_set_dir                    actor
+     00000008  b_actor_set_frame_offset           actor
+     00000008  b_actor_set_frames                 actor
+     00000008  b_actors_handle_player_collision   actor
+     00000008  b_actors_init                      actor
+     00000008  b_check_collision_in_direction     actor
+     00000008  b_deactivate_actor                 actor
+     00000008  b_platform_init                    platform
+     00000008  b_platform_update                  platform
+     00000008  b_player_init                      actor
+     00000008  b_vm_actor_activate                vm_actor
+     00000008  b_vm_actor_begin_update            vm_actor
+     00000008  b_vm_actor_deactivate              vm_actor
+     00000008  b_vm_actor_emote                   vm_actor
+     00000008  b_vm_actor_get_angle               vm_actor
+     00000008  b_vm_actor_get_anim_frame          vm_actor
+     00000008  b_vm_actor_get_dir                 vm_actor
+     00000008  b_vm_actor_get_pos                 vm_actor
+     00000008  b_vm_actor_move_cancel             vm_actor
+     00000008  b_vm_actor_move_to                 vm_actor
+     00000008  b_vm_actor_replace_tile            vm_actor
+     00000008  b_vm_actor_set_anim                vm_actor
+     00000008  b_vm_actor_set_anim_frame          vm_actor
+     00000008  b_vm_actor_set_anim_set            vm_actor
+     00000008  b_vm_actor_set_anim_tick           vm_actor
+     00000008  b_vm_actor_set_bounds              vm_actor
+     00000008  b_vm_actor_set_dir                 vm_actor
+     00000008  b_vm_actor_set_flags               vm_actor
+     00000008  b_vm_actor_set_move_speed          vm_actor
+     00000008  b_vm_actor_set_pos                 vm_actor
+     00000008  b_vm_actor_set_spritesheet         vm_actor
+     00000008  b_vm_actor_set_spritesheet_by_re   vm_actor
+     00000008  b_vm_actor_terminate_update        vm_actor
+     00000008  l__HEADER3                      
+     00000009  ___bank_VM_GAMEBOY                 vm_gameboy
+     00000009  ___bank_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilema
+     00000009  ___bank_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilema
+     00000009  ___bank_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tilem
 ASxxxx Linker V03.00/V05.40 + sdld,  page 6.
 Hexadecimal  [32-Bits]
 
@@ -306,57 +306,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000007  b_fade_init                        fade_manager
-     00000007  b_fade_out                         fade_manager
-     00000007  b_fade_out_modal                   fade_manager
-     00000007  b_fade_setspeed                    fade_manager
-     00000007  b_fade_update                      fade_manager
-     00000007  b_gbprinter_detect                 gbprinter
-     00000007  b_gbprinter_print_overlay          gbprinter
-     00000007  b_player_init                      actor
-     00000007  b_pointnclick_init                 pointnclick
-     00000007  b_pointnclick_update               pointnclick
-     00000007  b_trigger_activate_at              trigger
-     00000007  b_trigger_activate_at_intersecti   trigger
-     00000007  b_trigger_at_intersection          trigger
-     00000007  b_trigger_at_tile                  trigger
-     00000007  b_trigger_interact                 trigger
-     00000007  b_trigger_reset                    trigger
-     00000007  b_vm_camera_move_to                vm_camera
-     00000007  b_vm_camera_set_pos                vm_camera
-     00000007  b_vm_context_prepare               vm_gameboy
-     00000007  b_vm_fade                          vm_gameboy
-     00000007  b_vm_get_tile_xy                   vm_gameboy
-     00000007  b_vm_input_attach                  vm_gameboy
-     00000007  b_vm_input_detach                  vm_gameboy
-     00000007  b_vm_input_get                     vm_gameboy
-     00000007  b_vm_input_wait                    vm_gameboy
-     00000007  b_vm_load_tiles                    vm_gameboy
-     00000007  b_vm_load_tileset                  vm_gameboy
-     00000007  b_vm_poll                          vm_gameboy
-     00000007  b_vm_replace_tile                  vm_gameboy
-     00000007  b_vm_replace_tile_xy               vm_gameboy
-     00000007  b_vm_rumble                        vm_gameboy
-     00000007  b_vm_set_sprite_mode               vm_gameboy
-     00000007  b_vm_set_sprites_visible           vm_gameboy
-     00000007  b_vm_sio_exchange                  vm_sio
-     00000007  b_vm_sio_set_mode                  vm_sio
-     00000007  b_vm_timer_prepare                 vm_gameboy
-     00000007  b_vm_timer_reset                   vm_gameboy
-     00000007  b_vm_timer_set                     vm_gameboy
-     00000007  b_vm_timer_stop                    vm_gameboy
-     00000007  l__HEADER2                      
-     00000008  ___bank_VM_GBPRINTER               vm_gbprinter
-     00000008  ___bank_VM_LOAD_SAVE               vm_load_save
-     00000008  ___bank_VM_MATH                    vm_math
-     00000008  ___bank_VM_MUSIC                   vm_music
-     00000008  ___bank_VM_PROJECTILE              vm_projectiles
-     00000008  ___bank_VM_RTC                     vm_rtc
-     00000008  ___bank_VM_SCENE                   vm_scene
-     00000008  ___bank_bg_controls_gb_copy_       bg_controls_gb_copy_
-     00000008  ___bank_bg_controls_gba_copy_      bg_controls_gba_copy_
-     00000008  ___bank_bg_controls_gba_copy_0     bg_controls_gba_copy_0
-     00000008  ___bank_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tilem
+     00000009  ___bank_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tilem
+     00000009  ___bank_bg_title_copy__tileset     bg_title_copy__tileset
+     00000009  ___bank_scene_15_collisions        scene_15_collisions
+     00000009  ___bank_scene_17_collisions        scene_17_collisions
+     00000009  ___bank_scene_7_init               scene_7_init
+     00000009  ___bank_trigger_1_interact         trigger_1_interact
+     00000009  b_adventure_init                   adventure
+     00000009  b_adventure_update                 adventure
+     00000009  b_data_clear                       load_save
+     00000009  b_data_init                        load_save
+     00000009  b_data_load                        load_save
+     00000009  b_data_peek                        load_save
+     00000009  b_data_save                        load_save
+     00000009  b_parallax_init                    parallax
+     00000009  b_topdown_init                     topdown
+     00000009  b_topdown_update                   topdown
+     00000009  b_vm_context_prepare               vm_gameboy
+     00000009  b_vm_fade                          vm_gameboy
+     00000009  b_vm_get_tile_xy                   vm_gameboy
+     00000009  b_vm_input_attach                  vm_gameboy
+     00000009  b_vm_input_detach                  vm_gameboy
+     00000009  b_vm_input_get                     vm_gameboy
+     00000009  b_vm_input_wait                    vm_gameboy
+     00000009  b_vm_load_tiles                    vm_gameboy
+     00000009  b_vm_load_tileset                  vm_gameboy
+     00000009  b_vm_poll                          vm_gameboy
+     00000009  b_vm_replace_tile                  vm_gameboy
+     00000009  b_vm_replace_tile_xy               vm_gameboy
+     00000009  b_vm_rumble                        vm_gameboy
+     00000009  b_vm_set_sprite_mode               vm_gameboy
+     00000009  b_vm_set_sprites_visible           vm_gameboy
+     00000009  b_vm_timer_prepare                 vm_gameboy
+     00000009  b_vm_timer_reset                   vm_gameboy
+     00000009  b_vm_timer_set                     vm_gameboy
+     00000009  b_vm_timer_stop                    vm_gameboy
+     0000000A  ___bank_VM_CAMERA                  vm_camera
+     0000000A  ___bank_VM_SIO                     vm_sio
+     0000000A  ___bank_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilese
+     0000000A  ___bank_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tilem
+     0000000A  ___bank_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilema
+     0000000A  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
+     0000000A  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
+     0000000A  ___bank_bg_intro_weather_copy__t   bg_intro_weather_copy__tilem
+     0000000A  ___bank_bg_intro_weather_copy__t   bg_intro_weather_copy__tilem
+     0000000A  ___bank_bg_lencityopen_tileset     bg_lencityopen_tileset
+     0000000A  ___bank_bg_options_copy__tilemap   bg_options_copy__tilemap_att
+     0000000A  ___bank_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     0000000A  ___bank_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     0000000A  ___bank_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     0000000A  ___bank_bg_title_copy_0_tilemap    bg_title_copy_0_tilemap
+     0000000A  ___bank_bg_title_copy_0_tileset    bg_title_copy_0_tileset
 ASxxxx Linker V03.00/V05.40 + sdld,  page 7.
 Hexadecimal  [32-Bits]
 
@@ -366,57 +366,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000008  ___bank_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
-     00000008  ___bank_bg_controls_gbc_copy_      bg_controls_gbc_copy_
-     00000008  ___bank_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilema
-     00000008  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_
-     00000008  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0
-     00000008  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
-     00000008  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
-     00000008  ___bank_bg_options_copy_           bg_options_copy_
-     00000008  ___bank_bg_options_copy__tilemap   bg_options_copy__tilemap_att
-     00000008  ___bank_bg_title                   bg_title
-     00000008  ___bank_bg_title_copy_             bg_title_copy_
-     00000008  ___bank_bg_title_copy_0            bg_title_copy_0
-     00000008  ___bank_bg_title_copy_0_tilemap    bg_title_copy_0_tilemap
-     00000008  ___bank_bg_title_copy_1            bg_title_copy_1
-     00000008  ___bank_bg_title_copy__tilemap     bg_title_copy__tilemap
-     00000008  ___bank_bg_title_tilemap_attr      bg_title_tilemap_attr
-     00000008  ___bank_bootstrap_script           
-     00000008  ___bank_frame_image                frame_image
-     00000008  ___bank_palette_0                  palette_0
-     00000008  ___bank_palette_1                  palette_1
-     00000008  ___bank_palette_10                 palette_10
-     00000008  ___bank_palette_11                 palette_11
-     00000008  ___bank_palette_2                  palette_2
-     00000008  ___bank_palette_3                  palette_3
-     00000008  ___bank_palette_4                  palette_4
-     00000008  ___bank_palette_5                  palette_5
-     00000008  ___bank_palette_6                  palette_6
-     00000008  ___bank_palette_7                  palette_7
-     00000008  ___bank_palette_8                  palette_8
-     00000008  ___bank_palette_9                  palette_9
-     00000008  ___bank_scene_1                    scene_1
-     00000008  ___bank_scene_10                   scene_10
-     00000008  ___bank_scene_10_collisions        scene_10_collisions
-     00000008  ___bank_scene_10_init              scene_10_init
-     00000008  ___bank_scene_11                   scene_11
-     00000008  ___bank_scene_11_collisions        scene_11_collisions
-     00000008  ___bank_scene_11_init              scene_11_init
-     00000008  ___bank_scene_12                   scene_12
-     00000008  ___bank_scene_12_collisions        scene_12_collisions
-     00000008  ___bank_scene_12_init              scene_12_init
-     00000008  ___bank_scene_13                   scene_13
-     00000008  ___bank_scene_13_collisions        scene_13_collisions
-     00000008  ___bank_scene_13_init              scene_13_init
-     00000008  ___bank_scene_1_collisions         scene_1_collisions
-     00000008  ___bank_scene_1_init               scene_1_init
-     00000008  ___bank_scene_2                    scene_2
-     00000008  ___bank_scene_2_actors             scene_2_actors
-     00000008  ___bank_scene_2_collisions         scene_2_collisions
-     00000008  ___bank_scene_2_init               scene_2_init
-     00000008  ___bank_scene_3                    scene_3
-     00000008  ___bank_scene_3_actors             scene_3_actors
+     0000000A  ___bank_bg_title_copy__tilemap     bg_title_copy__tilemap
+     0000000A  ___bank_bg_title_tilemap_attr      bg_title_tilemap_attr
+     0000000A  ___bank_scene_10_collisions        scene_10_collisions
+     0000000A  ___bank_scene_11_collisions        scene_11_collisions
+     0000000A  ___bank_scene_12_collisions        scene_12_collisions
+     0000000A  ___bank_scene_1_collisions         scene_1_collisions
+     0000000A  ___bank_script_input_3             script_input_3
+     0000000A  ___bank_script_input_6             script_input_6
+     0000000A  b___HandleCrash_banked             
+     0000000A  b_atan2                            math_atan2
+     0000000A  b_camera_shake_frames              vm_camera
+     0000000A  b_fade_applypalettechange          fade_manager
+     0000000A  b_fade_in                          fade_manager
+     0000000A  b_fade_in_modal                    fade_manager
+     0000000A  b_fade_init                        fade_manager
+     0000000A  b_fade_out                         fade_manager
+     0000000A  b_fade_out_modal                   fade_manager
+     0000000A  b_fade_setspeed                    fade_manager
+     0000000A  b_fade_update                      fade_manager
+     0000000A  b_gbprinter_detect                 gbprinter
+     0000000A  b_gbprinter_print_overlay          gbprinter
+     0000000A  b_pointnclick_init                 pointnclick
+     0000000A  b_pointnclick_update               pointnclick
+     0000000A  b_trigger_activate_at              trigger
+     0000000A  b_trigger_activate_at_intersecti   trigger
+     0000000A  b_trigger_at_intersection          trigger
+     0000000A  b_trigger_at_tile                  trigger
+     0000000A  b_trigger_interact                 trigger
+     0000000A  b_trigger_reset                    trigger
+     0000000A  b_vm_camera_move_to                vm_camera
+     0000000A  b_vm_camera_set_pos                vm_camera
+     0000000A  b_vm_sio_exchange                  vm_sio
+     0000000A  b_vm_sio_set_mode                  vm_sio
+     0000000B  ___bank_VM_GBPRINTER               vm_gbprinter
+     0000000B  ___bank_VM_LOAD_SAVE               vm_load_save
+     0000000B  ___bank_VM_MATH                    vm_math
+     0000000B  ___bank_VM_MUSIC                   vm_music
+     0000000B  ___bank_VM_PROJECTILE              vm_projectiles
+     0000000B  ___bank_VM_SCENE                   vm_scene
+     0000000B  ___bank_actor_6_interact           actor_6_interact
+     0000000B  ___bank_avatar_font_0              avatar_font_0
+     0000000B  ___bank_bg_controls_gb_copy_       bg_controls_gb_copy_
+     0000000B  ___bank_bg_controls_gb_copy_0      bg_controls_gb_copy_0
+     0000000B  ___bank_bg_controls_gba_copy_      bg_controls_gba_copy_
+     0000000B  ___bank_bg_controls_gba_copy_0     bg_controls_gba_copy_0
+     0000000B  ___bank_bg_controls_gbc_copy_      bg_controls_gbc_copy_
+     0000000B  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_
+     0000000B  ___bank_bg_controls_mobile_copy_   bg_controls_mobile_copy_0
+     0000000B  ___bank_bg_intro_scenary_copy_     bg_intro_scenary_copy_
+     0000000B  ___bank_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tiles
+     0000000B  ___bank_bg_intro_weather_copy_     bg_intro_weather_copy_
 ASxxxx Linker V03.00/V05.40 + sdld,  page 8.
 Hexadecimal  [32-Bits]
 
@@ -426,57 +426,57 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000008  ___bank_scene_3_collisions         scene_3_collisions
-     00000008  ___bank_scene_3_init               scene_3_init
-     00000008  ___bank_scene_4                    scene_4
-     00000008  ___bank_scene_4_collisions         scene_4_collisions
-     00000008  ___bank_scene_4_init               scene_4_init
-     00000008  ___bank_scene_5                    scene_5
-     00000008  ___bank_scene_5_collisions         scene_5_collisions
-     00000008  ___bank_scene_5_init               scene_5_init
-     00000008  ___bank_scene_6                    scene_6
-     00000008  ___bank_scene_6_collisions         scene_6_collisions
-     00000008  ___bank_scene_6_init               scene_6_init
-     00000008  ___bank_scene_7                    scene_7
-     00000008  ___bank_scene_7_collisions         scene_7_collisions
-     00000008  ___bank_scene_7_init               scene_7_init
-     00000008  ___bank_scene_8                    scene_8
-     00000008  ___bank_scene_8_collisions         scene_8_collisions
-     00000008  ___bank_scene_8_init               scene_8_init
-     00000008  ___bank_scene_9                    scene_9
-     00000008  ___bank_scene_9_collisions         scene_9_collisions
-     00000008  ___bank_scene_9_init               scene_9_init
-     00000008  ___bank_script_input_0             script_input_0
-     00000008  ___bank_script_input_1             script_input_1
-     00000008  ___bank_script_input_2             script_input_2
-     00000008  ___bank_script_input_3             script_input_3
-     00000008  ___bank_script_input_5             script_input_5
-     00000008  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect_til
-     00000008  ___bank_sprite_static_copy_tiles   sprite_static_copy_tileset
-     00000008  ___bank_spritesheet_none           spritesheet_none
-     00000008  b_CGBZeroPalette                   palette
-     00000008  b_SGBTransferPalettes              palette
-     00000008  b_SIO_init                         sio
-     00000008  b_camera_init                      camera
-     00000008  b_camera_reset                     camera
-     00000008  b_events_init                      events
-     00000008  b_input_init                       input
-     00000008  b_itoa_fmt                         vm_ui_a
-     00000008  b_logo_init                        logo
-     00000008  b_logo_update                      logo
-     00000008  b_music_events_poll                music_manager
-     00000008  b_music_init_driver                music_manager
-     00000008  b_music_init_events                music_manager
-     00000008  b_palette_init                     palette
-     00000008  b_parallax_init                    parallax
-     00000008  b_remove_LCD_ISRs                  interrupts
-     00000008  b_scroll_rect                      
-     00000008  b_set_sgb_border                   sgb_border
-     00000008  b_timers_init                      events
-     00000008  b_vm_cos_scale                     vm_math
-     00000008  b_vm_music_mute                    vm_music
-     00000008  b_vm_music_play                    vm_music
-     00000008  b_vm_music_routine                 vm_music
+     0000000B  ___bank_bg_intro_weather_copy__t   bg_intro_weather_copy__tiles
+     0000000B  ___bank_bg_lencityopen             bg_lencityopen
+     0000000B  ___bank_bg_options_copy_           bg_options_copy_
+     0000000B  ___bank_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy_
+     0000000B  ___bank_bg_title                   bg_title
+     0000000B  ___bank_bg_title_copy_             bg_title_copy_
+     0000000B  ___bank_bg_title_copy_0            bg_title_copy_0
+     0000000B  ___bank_bg_title_copy_1            bg_title_copy_1
+     0000000B  ___bank_bootstrap_script           
+     0000000B  ___bank_cursor_image               cursor_image
+     0000000B  ___bank_frame_image                frame_image
+     0000000B  ___bank_palette_0                  palette_0
+     0000000B  ___bank_palette_1                  palette_1
+     0000000B  ___bank_palette_10                 palette_10
+     0000000B  ___bank_palette_11                 palette_11
+     0000000B  ___bank_palette_12                 palette_12
+     0000000B  ___bank_palette_13                 palette_13
+     0000000B  ___bank_palette_14                 palette_14
+     0000000B  ___bank_palette_15                 palette_15
+     0000000B  ___bank_palette_16                 palette_16
+     0000000B  ___bank_palette_17                 palette_17
+     0000000B  ___bank_palette_2                  palette_2
+     0000000B  ___bank_palette_3                  palette_3
+     0000000B  ___bank_palette_4                  palette_4
+     0000000B  ___bank_palette_5                  palette_5
+     0000000B  ___bank_palette_6                  palette_6
+     0000000B  ___bank_palette_7                  palette_7
+     0000000B  ___bank_palette_8                  palette_8
+     0000000B  ___bank_palette_9                  palette_9
+     0000000B  ___bank_scene_1                    scene_1
+     0000000B  ___bank_scene_10                   scene_10
+     0000000B  ___bank_scene_10_init              scene_10_init
+     0000000B  ___bank_scene_11                   scene_11
+     0000000B  ___bank_scene_11_init              scene_11_init
+     0000000B  ___bank_scene_12                   scene_12
+     0000000B  ___bank_scene_12_init              scene_12_init
+     0000000B  ___bank_scene_13                   scene_13
+     0000000B  ___bank_scene_13_collisions        scene_13_collisions
+     0000000B  ___bank_scene_13_init              scene_13_init
+     0000000B  ___bank_scene_14                   scene_14
+     0000000B  ___bank_scene_14_collisions        scene_14_collisions
+     0000000B  ___bank_scene_14_init              scene_14_init
+     0000000B  ___bank_scene_15                   scene_15
+     0000000B  ___bank_scene_15_init              scene_15_init
+     0000000B  ___bank_scene_16                   scene_16
+     0000000B  ___bank_scene_16_collisions        scene_16_collisions
+     0000000B  ___bank_scene_16_init              scene_16_init
+     0000000B  ___bank_scene_17                   scene_17
+     0000000B  ___bank_scene_17_actors            scene_17_actors
+     0000000B  ___bank_scene_17_init              scene_17_init
+     0000000B  ___bank_scene_17_triggers          scene_17_triggers
 ASxxxx Linker V03.00/V05.40 + sdld,  page 9.
 Hexadecimal  [32-Bits]
 
@@ -486,26 +486,99 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000008  b_vm_music_setpos                  vm_music
-     00000008  b_vm_music_stop                    vm_music
-     00000008  b_vm_print_detect                  vm_gbprinter
-     00000008  b_vm_print_overlay                 vm_gbprinter
-     00000008  b_vm_projectile_launch             vm_projectiles
-     00000008  b_vm_projectile_load_type          vm_projectiles
-     00000008  b_vm_rtc_get                       vm_rtc
-     00000008  b_vm_rtc_latch                     vm_rtc
-     00000008  b_vm_rtc_set                       vm_rtc
-     00000008  b_vm_rtc_start                     vm_rtc
-     00000008  b_vm_save_clear                    vm_load_save
-     00000008  b_vm_save_peek                     vm_load_save
-     00000008  b_vm_scene_pop                     vm_scene
-     00000008  b_vm_scene_pop_all                 vm_scene
-     00000008  b_vm_scene_push                    vm_scene
-     00000008  b_vm_scene_stack_reset             vm_scene
-     00000008  b_vm_sfx_play                      vm_music
-     00000008  b_vm_sin_scale                     vm_math
-     00000008  b_vm_sound_mastervol               vm_music
-     00000008  l__HEADER3                      
+     0000000B  ___bank_scene_18                   scene_18
+     0000000B  ___bank_scene_18_actors            scene_18_actors
+     0000000B  ___bank_scene_18_init              scene_18_init
+     0000000B  ___bank_scene_1_init               scene_1_init
+     0000000B  ___bank_scene_2                    scene_2
+     0000000B  ___bank_scene_2_actors             scene_2_actors
+     0000000B  ___bank_scene_2_collisions         scene_2_collisions
+     0000000B  ___bank_scene_2_init               scene_2_init
+     0000000B  ___bank_scene_3                    scene_3
+     0000000B  ___bank_scene_3_actors             scene_3_actors
+     0000000B  ___bank_scene_3_collisions         scene_3_collisions
+     0000000B  ___bank_scene_3_init               scene_3_init
+     0000000B  ___bank_scene_4                    scene_4
+     0000000B  ___bank_scene_4_collisions         scene_4_collisions
+     0000000B  ___bank_scene_4_init               scene_4_init
+     0000000B  ___bank_scene_5                    scene_5
+     0000000B  ___bank_scene_5_collisions         scene_5_collisions
+     0000000B  ___bank_scene_5_init               scene_5_init
+     0000000B  ___bank_scene_6                    scene_6
+     0000000B  ___bank_scene_6_collisions         scene_6_collisions
+     0000000B  ___bank_scene_6_init               scene_6_init
+     0000000B  ___bank_scene_7                    scene_7
+     0000000B  ___bank_scene_7_collisions         scene_7_collisions
+     0000000B  ___bank_scene_8                    scene_8
+     0000000B  ___bank_scene_8_collisions         scene_8_collisions
+     0000000B  ___bank_scene_8_init               scene_8_init
+     0000000B  ___bank_scene_9                    scene_9
+     0000000B  ___bank_scene_9_collisions         scene_9_collisions
+     0000000B  ___bank_scene_9_init               scene_9_init
+     0000000B  ___bank_script_input_0             script_input_0
+     0000000B  ___bank_script_input_1             script_input_1
+     0000000B  ___bank_script_input_2             script_input_2
+     0000000B  ___bank_script_input_4             script_input_4
+     0000000B  ___bank_script_input_5             script_input_5
+     0000000B  ___bank_script_timer_0             script_timer_0
+     0000000B  ___bank_script_timer_1             script_timer_1
+     0000000B  ___bank_script_timer_2             script_timer_2
+     0000000B  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co
+     0000000B  ___bank_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co_
+     0000000B  ___bank_sprite_highlight_options   sprite_highlight_options_co
+     0000000B  ___bank_sprite_highlight_options   sprite_highlight_options_co_
+     0000000B  ___bank_sprite_square_cart_copy_   sprite_square_cart_copy_
+     0000000B  ___bank_sprite_square_cart_copy_   sprite_square_cart_copy__til
+     0000000B  ___bank_sprite_square_platformin   sprite_square_platforming_c
+     0000000B  ___bank_sprite_square_platformin   sprite_square_platforming_c_
+     0000000B  ___bank_sprite_static_copy         sprite_static_copy
+     0000000B  ___bank_sprite_static_copy_tiles   sprite_static_copy_tileset
+     0000000B  ___bank_spritesheet_none           spritesheet_none
+     0000000B  ___bank_trigger_0_interact         trigger_0_interact
+     0000000B  ___bank_trigger_2_interact         trigger_2_interact
+     0000000B  ___bank_trigger_3_interact         trigger_3_interact
+ASxxxx Linker V03.00/V05.40 + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000000B  b_SIO_init                         sio
+     0000000B  b_camera_init                      camera
+     0000000B  b_camera_reset                     camera
+     0000000B  b_events_init                      events
+     0000000B  b_input_init                       input
+     0000000B  b_itoa_fmt                         vm_ui_a
+     0000000B  b_logo_init                        logo
+     0000000B  b_logo_update                      logo
+     0000000B  b_music_events_poll                music_manager
+     0000000B  b_music_init_driver                music_manager
+     0000000B  b_music_init_events                music_manager
+     0000000B  b_remove_LCD_ISRs                  interrupts
+     0000000B  b_scroll_rect                      
+     0000000B  b_timers_init                      events
+     0000000B  b_vm_cos_scale                     vm_math
+     0000000B  b_vm_music_mute                    vm_music
+     0000000B  b_vm_music_play                    vm_music
+     0000000B  b_vm_music_routine                 vm_music
+     0000000B  b_vm_music_setpos                  vm_music
+     0000000B  b_vm_music_stop                    vm_music
+     0000000B  b_vm_print_detect                  vm_gbprinter
+     0000000B  b_vm_print_overlay                 vm_gbprinter
+     0000000B  b_vm_projectile_launch             vm_projectiles
+     0000000B  b_vm_projectile_load_type          vm_projectiles
+     0000000B  b_vm_save_clear                    vm_load_save
+     0000000B  b_vm_save_peek                     vm_load_save
+     0000000B  b_vm_scene_pop                     vm_scene
+     0000000B  b_vm_scene_pop_all                 vm_scene
+     0000000B  b_vm_scene_push                    vm_scene
+     0000000B  b_vm_scene_stack_reset             vm_scene
+     0000000B  b_vm_sfx_play                      vm_music
+     0000000B  b_vm_sin_scale                     vm_math
+     0000000B  b_vm_sound_mastervol               vm_music
      0000000C  __start_save                    
      0000001A  l__INITIALIZED                  
      0000001A  l__INITIALIZER                  
@@ -517,27 +590,14 @@ Area                                    Addr        Size        Decimal Bytes (A
      000001CB  l__CRASH_SCRATCH2               
      00000200  s__CODE                         
      00000700  ___size_SGB_border_map             border
-     00000ECB  l__CODE                         
-     000010CB  s__HOME                         
+     00000ECE  l__CODE                         
+     000010CE  s__HOME                         
      00001800  ___size_SGB_border_chr             border
      00001992  l__DATA                         
      00002000  _rROMB0                            
      00002B07  l__HOME                         
      00003000  _rROMB1                            
-     00003AA3  l__CODE_8                       
-     00003BD2  s__BASE                         
-     00003BD2  s__CODE_0                       
-     00003BD2  s__INITIALIZER                  
-     00003BD2  s__LIT                          
-     00003BEC  s__GSINIT                       
-     00003C13  s__GSFINAL                      
-     00003FF6  l__CODE_7                       
-     00003FF7  l__CODE_6                       
-     00003FFD  l__CODE_5                       
-     00004000  _RTC_SELECT_REG                    vm_rtc
-     00004000  _rRAMB                             
-     00004000  l__CODE_1                       
-ASxxxx Linker V03.00/V05.40 + sdld,  page 10.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 11.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -546,9 +606,25 @@ Area                                    Addr        Size        Decimal Bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     00003041  l__CODE_11                      
+     00003BD5  s__BASE                         
+     00003BD5  s__CODE_0                       
+     00003BD5  s__INITIALIZER                  
+     00003BD5  s__LIT                          
+     00003BEF  s__GSINIT                       
+     00003C16  s__GSFINAL                      
+     00003FFD  l__CODE_10                      
+     00003FFE  l__CODE_4                       
+     00003FFE  l__CODE_8                       
+     00003FFF  l__CODE_1                       
+     00004000  _RTC_SELECT_REG                    vm_rtc
+     00004000  _rRAMB                             
      00004000  l__CODE_2                       
      00004000  l__CODE_3                       
-     00004000  l__CODE_4                       
+     00004000  l__CODE_5                       
+     00004000  l__CODE_6                       
+     00004000  l__CODE_7                       
+     00004000  l__CODE_9                       
      00006000  _RTC_LATCH_REG                     vm_rtc
      00008000  __VRAM                             
      00008000  __VRAM8000                         
@@ -581,6 +657,15 @@ Area                                    Addr        Size        Decimal Bytes (A
      0000FF07  _TAC_REG                           
      0000FF0F  _IF_REG                            
      0000FF10  _NR10_REG                          
+ASxxxx Linker V03.00/V05.40 + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
      0000FF11  _NR11_REG                          
      0000FF12  _NR12_REG                          
      0000FF13  _NR13_REG                          
@@ -597,15 +682,6 @@ Area                                    Addr        Size        Decimal Bytes (A
      0000FF20  _NR41_REG                          
      0000FF21  _NR42_REG                          
      0000FF22  _NR43_REG                          
-ASxxxx Linker V03.00/V05.40 + sdld,  page 11.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
      0000FF23  _NR44_REG                          
      0000FF24  _NR50_REG                          
      0000FF25  _NR51_REG                          
@@ -641,6 +717,15 @@ Area                                    Addr        Size        Decimal Bytes (A
      0000FF76  _PCM12_REG                         
      0000FF77  _PCM34_REG                         
      0000FF80  .refresh_OAM                    
+ASxxxx Linker V03.00/V05.40 + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
      0000FF80  __HRAM                             
      0000FFFF  _IE_REG                            
      00014000  s__CODE_1                       
@@ -651,13 +736,15 @@ Area                                    Addr        Size        Decimal Bytes (A
      00064000  s__CODE_6                       
      00074000  s__CODE_7                       
      00084000  s__CODE_8                       
-
-ASxxxx Linker V03.00/V05.40 + sdld,  page 12.
+     00094000  s__CODE_9                       
+     000A4000  s__CODE_10                      
+     000B4000  s__CODE_11                      
+ASxxxx Linker V03.00/V05.40 + sdld,  page 14.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000ECB =        3787. bytes (REL,CON)
+_CODE                               00000200    00000ECE =        3790. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -681,80 +768,80 @@ _CODE                               00000200    00000ECB =        3787. bytes (R
      0000056C  _start_player_move_speed           
      0000056D  _start_player_anim_tick            
      0000056E  _ui_fonts                          
-     00000571  _core_reset_hook                   main
-     00000579  _main                              main
-     00000581  _state_start_fns                   
-     00000593  _state_update_fns                  
-     000005A5  _hUGE_init                         hUGEDriver_obj
-     000005A7  hUGE_init                          hUGEDriver_obj
-     000005FD  _hUGE_mute_channel                 hUGEDriver_obj
-     000005FF  hUGE_mute_channel                  hUGEDriver_obj
-     0000084D  _hUGE_set_position                 hUGEDriver_obj
-     0000084F  hUGE_set_position                  hUGEDriver_obj
-     00000A14  _hUGE_dosound                      hUGEDriver_obj
-     00000A14  hUGE_dosound                       hUGEDriver_obj
-     00000D40  _get_vram_byte                     
-     00000D48  _get_win_tile_xy                   
-     00000D50  _get_bkg_tile_xy                   
-     00000D77  _set_sprite_palette                CGB
-     00000D7C  _set_bkg_palette                   CGB
-     00000D7F  .set_palette                       CGB
-     00000D9E  _set_sprite_palette_entry          CGB
-     00000DA3  _set_bkg_palette_entry             CGB
-     00000DA6  .set_palette_entry                 CGB
-     00000DC2  _hide_sprites_range                Metasprites
-     00000DF1  __mulsuchar                        mul
-     00000DF4  __muluschar                        mul
-     00000DFD  __mulschar                         mul
-     00000E05  __mulint                           mul
-     00000E24  __muluchar                         mul
-     00000E36  _set_vram_byte                     
-     00000E3F  _set_win_tile_xy                   
-     00000E47  _set_bkg_tile_xy                   
-ASxxxx Linker V03.00/V05.40 + sdld,  page 13.
+     00000574  _core_reset_hook                   main
+     0000057C  _main                              main
+     00000584  _state_start_fns                   
+     00000596  _state_update_fns                  
+     000005A8  _hUGE_init                         hUGEDriver_obj
+     000005AA  hUGE_init                          hUGEDriver_obj
+     00000600  _hUGE_mute_channel                 hUGEDriver_obj
+     00000602  hUGE_mute_channel                  hUGEDriver_obj
+     00000850  _hUGE_set_position                 hUGEDriver_obj
+     00000852  hUGE_set_position                  hUGEDriver_obj
+     00000A17  _hUGE_dosound                      hUGEDriver_obj
+     00000A17  hUGE_dosound                       hUGEDriver_obj
+     00000D43  _get_vram_byte                     
+     00000D4B  _get_win_tile_xy                   
+     00000D53  _get_bkg_tile_xy                   
+     00000D7A  _set_sprite_palette                CGB
+     00000D7F  _set_bkg_palette                   CGB
+     00000D82  .set_palette                       CGB
+     00000DA1  _set_sprite_palette_entry          CGB
+     00000DA6  _set_bkg_palette_entry             CGB
+     00000DA9  .set_palette_entry                 CGB
+     00000DC5  _hide_sprites_range                Metasprites
+     00000DF4  __mulsuchar                        mul
+     00000DF7  __muluschar                        mul
+     00000E00  __mulschar                         mul
+     00000E08  __mulint                           mul
+     00000E27  __muluchar                         mul
+     00000E39  _set_vram_byte                     
+     00000E42  _set_win_tile_xy                   
+     00000E4A  _set_bkg_tile_xy                   
+ASxxxx Linker V03.00/V05.40 + sdld,  page 15.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE                               00000200    00000ECB =        3787. bytes (REL,CON)
+_CODE                               00000200    00000ECE =        3790. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00000E71  .sgb_check                         
-     00000E71  _sgb_check                         
-     00000EB9  _sgb_transfer                      
-     00000EBE  .sgb_transfer                      
-     00000EFF  .copy_vram                         
-     00000F05  _get_data                          
-     00000F05  _set_data                          
-     00000F05  _vmemcpy                           
-     00000F53  ___move_metasprite                 Metasprites
-     00000F90  ___memcpy                          
-     00000F90  _memcpy                            
-     00000FC2  _cpu_slow                          CGB
-     00000FDD  _cpu_fast                          CGB
-     00000FE4  __divsuchar                        divmod
-     00000FEA  __modsuchar                        divmod
-     00000FF3  __divuschar                        divmod
-     00000FFC  __moduschar                        divmod
-     00001008  __divschar                         divmod
-     0000100D  __modschar                         divmod
-     00001014  __divsint                          divmod
-     0000101D  __modsint                          divmod
-     00001029  __divuchar                         divmod
-     0000102E  __moduchar                         divmod
-     00001035  __divuint                          divmod
-     0000103E  __moduint                          divmod
-     0000104A  .div8                              divmod
-     0000104A  .mod8                              divmod
-     00001052  .div16                             divmod
-     00001052  .mod16                             divmod
-     00001088  .divu8                             divmod
-     00001088  .modu8                             divmod
-     0000108B  .divu16                            divmod
-     0000108B  .modu16                            divmod
+     00000E74  .sgb_check                         
+     00000E74  _sgb_check                         
+     00000EBC  _sgb_transfer                      
+     00000EC1  .sgb_transfer                      
+     00000F02  .copy_vram                         
+     00000F08  _get_data                          
+     00000F08  _set_data                          
+     00000F08  _vmemcpy                           
+     00000F56  ___move_metasprite                 Metasprites
+     00000F93  ___memcpy                          
+     00000F93  _memcpy                            
+     00000FC5  _cpu_slow                          CGB
+     00000FE0  _cpu_fast                          CGB
+     00000FE7  __divsuchar                        divmod
+     00000FED  __modsuchar                        divmod
+     00000FF6  __divuschar                        divmod
+     00000FFF  __moduschar                        divmod
+     0000100B  __divschar                         divmod
+     00001010  __modschar                         divmod
+     00001017  __divsint                          divmod
+     00001020  __modsint                          divmod
+     0000102C  __divuchar                         divmod
+     00001031  __moduchar                         divmod
+     00001038  __divuint                          divmod
+     00001041  __moduint                          divmod
+     0000104D  .div8                              divmod
+     0000104D  .mod8                              divmod
+     00001055  .div16                             divmod
+     00001055  .mod16                             divmod
+     0000108B  .divu8                             divmod
+     0000108B  .modu8                             divmod
+     0000108E  .divu16                            divmod
+     0000108E  .modu16                            divmod
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 14.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 16.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -765,7 +852,7 @@ _HEADER0                            00000000    00000001 =           1. bytes (A
       -----  --------------------------------   ------------------------
      00000020  .call_hl                           Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 15.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 17.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -776,7 +863,7 @@ _HEADER1                            00000000    00000005 =           5. bytes (A
       -----  --------------------------------   ------------------------
      00000028  .MemsetSmall                       Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 16.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 18.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -787,7 +874,7 @@ _HEADER2                            00000000    00000007 =           7. bytes (A
       -----  --------------------------------   ------------------------
      00000030  .MemcpySmall                       Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 17.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 19.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -796,7 +883,7 @@ _HEADER3                            00000000    00000008 =           8. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 18.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 20.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -811,7 +898,7 @@ _HEADER4                            00000000    00000060 =          96. bytes (A
      000000AB  _refresh_OAM                       Runtime
      000000CC  _set_interrupts                    Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 19.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 21.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -820,7 +907,7 @@ _HEADER5                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 20.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 22.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -829,7 +916,7 @@ _HEADER6                            00000000    00000002 =           2. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 21.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 23.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -838,7 +925,7 @@ _HEADER7                            00000000    00000030 =          48. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 22.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 24.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -847,7 +934,7 @@ _HEADER8                            00000000    00000006 =           6. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 23.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 25.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -856,7 +943,7 @@ _HEADER9                            00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 24.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 26.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -865,7 +952,7 @@ _HEADERa                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 25.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 27.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -874,7 +961,7 @@ _HEADERb                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 26.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -883,7 +970,7 @@ _HEADERc                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 27.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 29.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -892,7 +979,7 @@ _HEADERd                            00000000    00000002 =           2. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 28.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 30.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -901,7 +988,7 @@ _HEADERe                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 29.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 31.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -910,7 +997,7 @@ _HEADERf                            00000000    00000001 =           1. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 30.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 32.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -919,7 +1006,7 @@ _HEADER10                           00000000    00000002 =           2. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 31.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 33.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -942,144 +1029,144 @@ _HEADER11                           00000000    000000AB =         171. bytes (A
      000001ED  _add_VBL                           Runtime
      000001F0  .add_int                           Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 32.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_HOME                               000010CB    00002B07 =       11015. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     000010CB  .memset_simple                     Runtime
-     000010D4  .memcpy_simple                     Runtime
-     000010F1  .display_off                       Runtime
-     000010F1  _display_off                       Runtime
-     00001109  _actors_update                     actor
-     00001508  _SetBankedBkgData                  bankdata
-     00001524  _SetBankedSpriteData               bankdata
-     00001540  _SetBankedBkgTiles                 bankdata
-     0000155C  _SetBankedWinTiles                 bankdata
-     00001578  _ReadBankedFarPtr                  bankdata
-     0000159A  _ReadBankedUWORD                   bankdata
-     000015B4  _MemcpyBanked                      bankdata
-     000015D6  _MemcpyVRAMBanked                  bankdata
-     00001605  _IndexOfFarPtr                     bankdata
-     0000168A  _camera_update                     camera
-     000017BD  _load_animations                   data_manager
-     00001816  _events_update                     events
-     000018E9  _timers_update                     events
-     00001972  _input_update                      input
-     00001998  .sio_ISR                           
-     000019F2  .timer_ISR                         
-     00001A07  _simple_LCD_isr                    interrupts
-     00001A86  _fullscreen_LCD_isr                interrupts
-     00001AB2  _VBL_isr                           interrupts
-     00001AFC  _isqrt                             math
-     00001B59  _sine_wave                         math
-     00001C59  _dir_lookup                        math
-     00001C61  _dir_angle_lookup                  math
-     00001C65  _hUGETrackerRoutine                music_manager
-     00001C8C  _music_events_update               music_manager
-     00001D0E  _music_play_isr                    music_manager
-     00001DAF  _parallax_LCD_isr                  parallax
-     00001DEC  _projectiles_update                projectiles
-     0000226D  _projectiles_render                projectiles
-     000023C2  _scroll_load_pending_row           scroll
-     00002448  _scroll_load_row                   scroll
-     000024BD  _scroll_load_col                   scroll
-     00002526  _scroll_load_pending_col           scroll
-     000025AE  _set_bkg_submap                    
-     000025F1  _set_xy_win_submap                 
-     0000261E  .set_xy_win_submap                 
-     00002627  .set_xy_bkg_submap                 
-     00002636  .set_xy_submap                     
-     00002680  _sfx_play_isr                      sfx_player
-     00002759  _on_SIO_receive                    sio
-     0000279A  _SIO_update                        sio
-     00002801  _ui_update                         ui
-     00002939  _vm_sgb_transfer                   vm_sgb
-     00002986  _vm_load_text                      vm_ui
-     00002BDC  _vm_switch                         vm
-ASxxxx Linker V03.00/V05.40 + sdld,  page 33.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_HOME                               000010CB    00002B07 =       11015. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00002D0D  _vm_beginthread                    vm
-     00002E31  _vm_rpn                            vm
-     0000360A  _vm_get_far                        vm
-     00003678  _vm_call_native                    vm
-     0000368B  _VM_STEP                           vm
-     000036F5  _script_runner_update              vm
-     0000385A  _fill_win_rect                     
-     0000386C  _rand                              
-     0000386C  _randw                             
-     00003897  _initrand                          
-     00003899  .initrand                          
-     000038A2  _get_bkg_data                      
-     000038A2  _get_win_data                      
-     000038EF  _get_sprite_data                   
-     00003922  _abs                               abs
-     00003931  _set_win_tiles                     
-     00003945  _set_tile_data                     
-     0000394A  _set_bkg_data                      
-     0000394A  _set_win_data                      
-     00003952  _set_sprite_data                   
-     00003982  _reverse                           reverse
-     000039B6  ___call__banked                    far_ptr
-     000039D3  _to_far_ptr                        far_ptr
-     00003A09  .add_LCD                           
-     00003A09  _add_LCD                           
-     00003A0F  .remove_LCD                        
-     00003A0F  _remove_LCD                        
-     00003A15  .fill_rect_wtt                     
-     00003A1E  .fill_rect_btt                     
-     00003A6B  _joypad_init                       
-     00003AB9  .joypad_ex                         
-     00003AB9  _joypad_ex                         
-     00003B04  _fill_bkg_rect                     
-     00003B16  ___sdcc_call_hl                    call_hl
-     00003B17  _memset                            memset
-     00003B4A  .set_xy_wtt                        SetTileMap
-     00003B53  .set_xy_btt                        SetTileMap
-     00003B62  .set_xy_tt                         SetTileMap
-     00003BA4  ___sdcc_bcall_ehl                  
-     00003BBE  _set_bkg_tiles                     
 ASxxxx Linker V03.00/V05.40 + sdld,  page 34.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_INITIALIZER                        00003BD2    0000001A =          26. bytes (REL,CON)
+_HOME                               000010CE    00002B07 =       11015. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
+     000010CE  .memset_simple                     Runtime
+     000010D7  .memcpy_simple                     Runtime
+     000010F4  .display_off                       Runtime
+     000010F4  _display_off                       Runtime
+     0000110C  _actors_update                     actor
+     0000150B  _SetBankedBkgData                  bankdata
+     00001527  _SetBankedSpriteData               bankdata
+     00001543  _SetBankedBkgTiles                 bankdata
+     0000155F  _SetBankedWinTiles                 bankdata
+     0000157B  _ReadBankedFarPtr                  bankdata
+     0000159D  _ReadBankedUWORD                   bankdata
+     000015B7  _MemcpyBanked                      bankdata
+     000015D9  _MemcpyVRAMBanked                  bankdata
+     00001608  _IndexOfFarPtr                     bankdata
+     0000168D  _camera_update                     camera
+     000017C0  _load_animations                   data_manager
+     00001819  _events_update                     events
+     000018EC  _timers_update                     events
+     00001975  _input_update                      input
+     0000199B  .sio_ISR                           
+     000019F5  .timer_ISR                         
+     00001A0A  _simple_LCD_isr                    interrupts
+     00001A89  _fullscreen_LCD_isr                interrupts
+     00001AB5  _VBL_isr                           interrupts
+     00001AFF  _isqrt                             math
+     00001B5C  _sine_wave                         math
+     00001C5C  _dir_lookup                        math
+     00001C64  _dir_angle_lookup                  math
+     00001C68  _hUGETrackerRoutine                music_manager
+     00001C8F  _music_events_update               music_manager
+     00001D11  _music_play_isr                    music_manager
+     00001DB2  _parallax_LCD_isr                  parallax
+     00001DEF  _projectiles_update                projectiles
+     00002270  _projectiles_render                projectiles
+     000023C5  _scroll_load_pending_row           scroll
+     0000244B  _scroll_load_row                   scroll
+     000024C0  _scroll_load_col                   scroll
+     00002529  _scroll_load_pending_col           scroll
+     000025B1  _set_bkg_submap                    
+     000025F4  _set_xy_win_submap                 
+     00002621  .set_xy_win_submap                 
+     0000262A  .set_xy_bkg_submap                 
+     00002639  .set_xy_submap                     
+     00002683  _sfx_play_isr                      sfx_player
+     0000275C  _on_SIO_receive                    sio
+     0000279D  _SIO_update                        sio
+     00002804  _ui_update                         ui
+     0000293C  _vm_sgb_transfer                   vm_sgb
+     00002989  _vm_load_text                      vm_ui
+     00002BDF  _vm_switch                         vm
 ASxxxx Linker V03.00/V05.40 + sdld,  page 35.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSINIT                             00003BEC    00000027 =          39. bytes (REL,CON)
+_HOME                               000010CE    00002B07 =       11015. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00003BEC  gsinit                             Runtime
-
+     00002D10  _vm_beginthread                    vm
+     00002E34  _vm_rpn                            vm
+     0000360D  _vm_get_far                        vm
+     0000367B  _vm_call_native                    vm
+     0000368E  _VM_STEP                           vm
+     000036F8  _script_runner_update              vm
+     0000385D  _fill_win_rect                     
+     0000386F  _rand                              
+     0000386F  _randw                             
+     0000389A  _initrand                          
+     0000389C  .initrand                          
+     000038A5  _get_bkg_data                      
+     000038A5  _get_win_data                      
+     000038F2  _get_sprite_data                   
+     00003925  _abs                               abs
+     00003934  _set_win_tiles                     
+     00003948  _set_tile_data                     
+     0000394D  _set_bkg_data                      
+     0000394D  _set_win_data                      
+     00003955  _set_sprite_data                   
+     00003985  _reverse                           reverse
+     000039B9  ___call__banked                    far_ptr
+     000039D6  _to_far_ptr                        far_ptr
+     00003A0C  .add_LCD                           
+     00003A0C  _add_LCD                           
+     00003A12  .remove_LCD                        
+     00003A12  _remove_LCD                        
+     00003A18  .fill_rect_wtt                     
+     00003A21  .fill_rect_btt                     
+     00003A6E  _joypad_init                       
+     00003ABC  .joypad_ex                         
+     00003ABC  _joypad_ex                         
+     00003B07  _fill_bkg_rect                     
+     00003B19  ___sdcc_call_hl                    call_hl
+     00003B1A  _memset                            memset
+     00003B4D  .set_xy_wtt                        SetTileMap
+     00003B56  .set_xy_btt                        SetTileMap
+     00003B65  .set_xy_tt                         SetTileMap
+     00003BA7  ___sdcc_bcall_ehl                  
+     00003BC1  _set_bkg_tiles                     
 ASxxxx Linker V03.00/V05.40 + sdld,  page 36.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_GSFINAL                            00003C13    00000001 =           1. bytes (REL,CON)
+_INITIALIZER                        00003BD5    0000001A =          26. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
 ASxxxx Linker V03.00/V05.40 + sdld,  page 37.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSINIT                             00003BEF    00000027 =          39. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00003BEF  gsinit                             Runtime
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 38.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_GSFINAL                            00003C16    00000001 =           1. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 39.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1138,7 +1225,7 @@ _DATA                               0000C0A0    00001992 =        6546. bytes (R
      0000C5B9  _input_events                      events
      0000C5E1  _input_slots                       events
      0000C5E9  _timer_events                      events
-ASxxxx Linker V03.00/V05.40 + sdld,  page 38.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 40.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1198,7 +1285,7 @@ _DATA                               0000C0A0    00001992 =        6546. bytes (R
      0000C7E3  _new_row                           scroll
      0000C7E5  _current_col                       scroll
      0000C7E7  _new_col                           scroll
-ASxxxx Linker V03.00/V05.40 + sdld,  page 39.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 41.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1258,7 +1345,7 @@ _DATA                               0000C0A0    00001992 =        6546. bytes (R
      0000CA44  _text_sound_bank                   ui
      0000CA45  _text_sound_data                   ui
      0000CA47  _overlay_priority                  ui
-ASxxxx Linker V03.00/V05.40 + sdld,  page 40.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 42.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1315,7 +1402,7 @@ _DATA                               0000C0A0    00001992 =        6546. bytes (R
      0000DA30  ___current_base_tile               Metasprites
      0000DA31  ___current_base_prop               Metasprites
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 41.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 43.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1338,7 +1425,7 @@ _INITIALIZED                        0000DA32    0000001A =          26. bytes (R
      0000DA4A  ___render_shadow_OAM               Metasprites
      0000DA4B  __map_tile_offset                  SetTileMap
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 42.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 44.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1350,404 +1437,426 @@ _HRAM12                             00000000    00000003 =           3. bytes (A
      0000FF90  __current_bank                     Runtime
      0000FF92  __shadow_OAM_base                  Runtime
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 43.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_CODE_7                             00074000    00003FF6 =       16374. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00074000  ___func_ACTOR                      actor
-     00074000  _actors_init                       actor
-     0007403A  _emote_offsets                     actor
-     00074049  _emote_metasprite                  actor
-     00074055  _player_init                       actor
-     0007406A  _deactivate_actor                  actor
-     000741CB  _activate_actor                    actor
-     0007430A  _activate_actors_in_row            actor
-     00074401  _activate_actors_in_col            actor
-     00074552  _actor_set_frames                  actor
-     000745A8  _actor_set_frame_offset            actor
-     000745E3  _actor_get_frame_offset            actor
-     000745F5  _actor_set_anim_idle               actor
-     00074623  _actor_set_anim_moving             actor
-     00074654  _actor_set_dir                     actor
-     000746B9  _actor_at_tile                     actor
-     0007478D  _actor_in_front_of_player          actor
-     00074841  _actor_overlapping_player          actor
-     00074ADA  _actor_overlapping_bb              actor
-     00074CF9  _actors_handle_player_collision    actor
-     00074D85  _check_collision_in_direction      actor
-     000755A3  ___HandleCrash_banked              
-     0007590B  _CGBFadeToWhiteStep                fade_manager
-     00075944  _CGBFadeToBlackStep                fade_manager
-     0007597F  _ApplyPaletteChangeColor           fade_manager
-     000759BC  _fade_speeds                       fade_manager
-     000759C3  _DMGFadeToWhiteStep                fade_manager
-     000759E4  _DMGFadeToBlackStep                fade_manager
-     00075A07  _ApplyPaletteChangeDMG             fade_manager
-     00075A5D  _fade_init                         fade_manager
-     00075A7F  _fade_in                           fade_manager
-     00075AA9  _fade_out                          fade_manager
-     00075AD2  _fade_update                       fade_manager
-     00075B27  _fade_applypalettechange           fade_manager
-     00075B3B  _fade_setspeed                     fade_manager
-     00075B4B  _fade_in_modal                     fade_manager
-     00075B65  _fade_out_modal                    fade_manager
-     00075B7F  _printer_send_receive              gbprinter
-     00075BB5  _printer_send_byte                 gbprinter
-     00075BC8  _printer_send_command              gbprinter
-     00075BEB  _printer_print_tile                gbprinter
-     00075C7C  _printer_wait                      gbprinter
-     00075CAE  _gbprinter_detect                  gbprinter
-     00075CC8  _gbprinter_print_overlay           gbprinter
-     00075E95  _atan2                             math_atan2
-     00076034  _atan2_table                       math_atan2
-     0007619C  _trigger_reset                     trigger
-     000761AC  _trigger_interact                  trigger
-     000761EB  _trigger_activate_at               trigger
-     00076236  _trigger_at_intersection           trigger
-ASxxxx Linker V03.00/V05.40 + sdld,  page 44.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_CODE_7                             00074000    00003FF6 =       16374. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     0007635D  _trigger_activate_at_intersectio   trigger
-     0007649E  _trigger_at_tile                   trigger
-     0007652F  ___func_VM_CAMERA                  vm_camera
-     0007652F  _vm_camera_move_to                 vm_camera
-     00076682  _vm_camera_set_pos                 vm_camera
-     000766C9  _camera_shake_frames               vm_camera
-     000767C1  ___func_VM_GAMEBOY                 vm_gameboy
-     000767C1  _vm_set_sprites_visible            vm_gameboy
-     000767D8  _vm_input_wait                     vm_gameboy
-     00076801  _vm_context_prepare                vm_gameboy
-     0007682C  _vm_input_attach                   vm_gameboy
-     00076842  _vm_input_detach                   vm_gameboy
-     00076856  _vm_input_get                      vm_gameboy
-     0007688A  _vm_fade                           vm_gameboy
-     000768BA  _vm_timer_prepare                  vm_gameboy
-     000768E5  _vm_timer_set                      vm_gameboy
-     00076900  _vm_timer_stop                     vm_gameboy
-     00076914  _vm_timer_reset                    vm_gameboy
-     0007692B  _vm_get_tile_xy                    vm_gameboy
-     00076A01  _vm_replace_tile                   vm_gameboy
-     00076AA8  _vm_poll                           vm_gameboy
-     00076B7A  _vm_set_sprite_mode                vm_gameboy
-     00076B8E  _vm_replace_tile_xy                vm_gameboy
-     00076D6E  _vm_rumble                         vm_gameboy
-     00076D8E  _vm_load_tiles                     vm_gameboy
-     00076DA3  _vm_load_tileset                   vm_gameboy
-     00076E74  ___func_VM_SIO                     vm_sio
-     00076E74  _vm_sio_set_mode                   vm_sio
-     00076E86  _vm_sio_exchange                   vm_sio
-     00077168  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
-     00077168  _bg_controls_gba_copy__tilemap_a   bg_controls_gba_copy__tilema
-     000772D0  ___func_bg_title_copy__tileset     bg_title_copy__tileset
-     000772D0  _bg_title_copy__tileset            bg_title_copy__tileset
-     00077632  ___func_bg_title_copy_0_tileset    bg_title_copy_0_tileset
-     00077632  _bg_title_copy_0_tileset           bg_title_copy_0_tileset
-     000778C4  _script_input_6                    script_input_6
-     00077C11  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect
-     00077C11  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C1D  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C29  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C35  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C41  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C4D  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
-     00077C5D  _sprite_dhilly_saveselect_animat   sprite_dhilly_saveselect
-     00077C6D  _sprite_dhilly_saveselect_animat   sprite_dhilly_saveselect
-     00077C6F  _sprite_dhilly_saveselect          sprite_dhilly_saveselect
-     00077C82  _pointnclick_init                  pointnclick
-     00077CBB  _pointnclick_update                pointnclick
-
 ASxxxx Linker V03.00/V05.40 + sdld,  page 45.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00003AA3 =       15011. bytes (REL,CON)
+_CODE_8                             00084000    00003FFE =       16382. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00084000  _bootstrap_script                  
-     0008400B  _camera_init                       camera
-     00084029  _camera_reset                      camera
-     00084039  _events_init                       events
-     00084079  _timers_init                       events
-     000840B9  _input_init                        input
-     000840E4  _remove_LCD_ISRs                   interrupts
-     000840FF  _music_init_driver                 music_manager
-     0008415B  _music_init_events                 music_manager
-     00084197  _music_events_poll                 music_manager
-     000841BF  _music_pause                       music_manager
-     000841E1  _palette_init                      palette
-     00084218  _CGBZeroPalette                    palette
-     0008422D  _SGBTransferPalettes               palette
-     000842A5  _parallax_init                     parallax
-     000842C5  _scroll_rect                       
-     00084302  _set_sgb_border                    sgb_border
-     000844EC  _SIO_init                          sio
-     00084515  ___func_VM_GBPRINTER               vm_gbprinter
-     00084515  _vm_print_detect                   vm_gbprinter
-     00084564  _vm_print_overlay                  vm_gbprinter
-     000845B9  ___func_VM_LOAD_SAVE               vm_load_save
-     000845B9  _vm_save_clear                     vm_load_save
-     000845C8  _vm_save_peek                      vm_load_save
-     0008464A  ___func_VM_MATH                    vm_math
-     0008464A  _vm_sin_scale                      vm_math
-     000846E6  _vm_cos_scale                      vm_math
-     00084784  ___func_VM_MUSIC                   vm_music
-     00084784  _vm_music_play                     vm_music
-     000847D1  _vm_music_stop                     vm_music
-     000847F3  _vm_music_mute                     vm_music
-     00084831  _vm_music_routine                  vm_music
-     00084858  _vm_music_setpos                   vm_music
-     0008485F  _vm_sound_mastervol                vm_music
-     00084865  _vm_sfx_play                       vm_music
-     000848D8  ___func_VM_PROJECTILE              vm_projectiles
-     000848D8  _vm_projectile_launch              vm_projectiles
-     00084919  _vm_projectile_load_type           vm_projectiles
-     000849AB  ___func_VM_RTC                     vm_rtc
-     000849AB  _vm_rtc_latch                      vm_rtc
-     000849B3  _vm_rtc_get                        vm_rtc
-     00084A1A  _vm_rtc_set                        vm_rtc
-     00084A78  _vm_rtc_start                      vm_rtc
-     00084A9B  ___func_VM_SCENE                   vm_scene
-     00084A9B  _vm_scene_push                     vm_scene
-     00084B11  _vm_scene_pop                      vm_scene
-     00084B1F  _vm_scene_pop_all                  vm_scene
-     00084B2A  _vm_scene_stack_reset              vm_scene
-     00084B33  _itoa_fmt                          vm_ui_a
-     00084B6C  .utoa_fmt                          vm_ui_a
+     00084000  ___func_ACTOR                      actor
+     00084000  _actors_init                       actor
+     0008403A  _emote_offsets                     actor
+     00084049  _emote_metasprite                  actor
+     00084055  _player_init                       actor
+     0008406A  _deactivate_actor                  actor
+     000841CB  _activate_actor                    actor
+     0008430A  _activate_actors_in_row            actor
+     00084401  _activate_actors_in_col            actor
+     00084552  _actor_set_frames                  actor
+     000845A8  _actor_set_frame_offset            actor
+     000845E3  _actor_get_frame_offset            actor
+     000845F5  _actor_set_anim_idle               actor
+     00084623  _actor_set_anim_moving             actor
+     00084654  _actor_set_dir                     actor
+     000846B9  _actor_at_tile                     actor
+     0008478D  _actor_in_front_of_player          actor
+     00084841  _actor_overlapping_player          actor
+     00084ADA  _actor_overlapping_bb              actor
+     00084CF9  _actors_handle_player_collision    actor
+     00084D85  _check_collision_in_direction      actor
+     000855A3  ___func_VM_ACTOR                   vm_actor
+     000855A3  _vm_actor_move_to                  vm_actor
+     00085F3F  _vm_actor_move_cancel              vm_actor
+     00085F75  _vm_actor_activate                 vm_actor
+     00085FC6  _vm_actor_deactivate               vm_actor
+     00086017  _vm_actor_begin_update             vm_actor
+     0008609E  _vm_actor_terminate_update         vm_actor
+     000860E5  _vm_actor_set_dir                  vm_actor
+     0008612E  _vm_actor_set_anim                 vm_actor
+     000861BC  _vm_actor_set_pos                  vm_actor
+     00086236  _vm_actor_get_pos                  vm_actor
+     000862A5  _vm_actor_get_dir                  vm_actor
+     0008631F  _vm_actor_get_angle                vm_actor
+     000863A0  _vm_actor_emote                    vm_actor
+     00086464  _vm_actor_set_bounds               vm_actor
+     000864C2  _vm_actor_set_spritesheet          vm_actor
+     0008658C  _vm_actor_replace_tile             vm_actor
+     000865F7  _vm_actor_set_anim_tick            vm_actor
+     00086635  _vm_actor_set_move_speed           vm_actor
+     00086673  _vm_actor_set_anim_frame           vm_actor
+     000866B7  _vm_actor_get_anim_frame           vm_actor
+     00086701  _vm_actor_set_anim_set             vm_actor
+     00086789  _vm_actor_set_spritesheet_by_ref   vm_actor
+     00086896  _vm_actor_set_flags                vm_actor
+     00086944  _script_engine_init                
+     0008698C  _platform_init                     platform
+     00086B06  _platform_update                   platform
 ASxxxx Linker V03.00/V05.40 + sdld,  page 46.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00003AA3 =       15011. bytes (REL,CON)
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00084C16  ___func_bg_controls_gb_copy_       bg_controls_gb_copy_
-     00084C16  _bg_controls_gb_copy_              bg_controls_gb_copy_
-     00084C24  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
-     00084C24  _bg_controls_gba_copy__tilemap     bg_controls_gba_copy__tilema
-     00084D8C  ___func_bg_controls_gba_copy_      bg_controls_gba_copy_
-     00084D8C  _bg_controls_gba_copy_             bg_controls_gba_copy_
-     00084D9A  ___func_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tilem
-     00084D9A  _bg_controls_gba_copy_0_tilemap_   bg_controls_gba_copy_0_tilem
-     00084F02  ___func_bg_controls_gba_copy_0     bg_controls_gba_copy_0
-     00084F02  _bg_controls_gba_copy_0            bg_controls_gba_copy_0
-     00084F10  ___func_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilema
-     00084F10  _bg_controls_gbc_copy__tilemap_a   bg_controls_gbc_copy__tilema
-     00085078  ___func_bg_controls_gbc_copy_      bg_controls_gbc_copy_
-     00085078  _bg_controls_gbc_copy_             bg_controls_gbc_copy_
-     00085086  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
-     00085086  _bg_controls_mobile_copy__tilema   bg_controls_mobile_copy__til
-     000851EE  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_
-     000851EE  _bg_controls_mobile_copy_          bg_controls_mobile_copy_
-     000851FC  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
-     000851FC  _bg_controls_mobile_copy_0_tilem   bg_controls_mobile_copy_0_ti
-     00085364  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0
-     00085364  _bg_controls_mobile_copy_0         bg_controls_mobile_copy_0
-     00085372  ___func_bg_options_copy__tilemap   bg_options_copy__tilemap_att
-     00085372  _bg_options_copy__tilemap_attr     bg_options_copy__tilemap_att
-     000854DA  ___func_bg_options_copy_           bg_options_copy_
-     000854DA  _bg_options_copy_                  bg_options_copy_
-     000854E8  ___func_bg_title_copy__tilemap     bg_title_copy__tilemap
-     000854E8  _bg_title_copy__tilemap            bg_title_copy__tilemap
-     00085650  ___func_bg_title_copy_             bg_title_copy_
-     00085650  _bg_title_copy_                    bg_title_copy_
-     0008565E  ___func_bg_title_copy_0_tilemap    bg_title_copy_0_tilemap
-     0008565E  _bg_title_copy_0_tilemap           bg_title_copy_0_tilemap
-     000857C6  ___func_bg_title_copy_0            bg_title_copy_0
-     000857C6  _bg_title_copy_0                   bg_title_copy_0
-     000857D4  ___func_bg_title_copy_1            bg_title_copy_1
-     000857D4  _bg_title_copy_1                   bg_title_copy_1
-     000857E2  ___func_bg_title_tilemap_attr      bg_title_tilemap_attr
-     000857E2  _bg_title_tilemap_attr             bg_title_tilemap_attr
-     0008594A  ___func_bg_title                   bg_title
-     0008594A  _bg_title                          bg_title
-     00085958  ___func_frame_image                frame_image
-     00085958  _frame_image                       frame_image
-     000859E8  ___func_palette_0                  palette_0
-     000859E8  _palette_0                         palette_0
-     00085A2B  ___func_palette_1                  palette_1
-     00085A2B  _palette_1                         palette_1
-     00085A6E  ___func_palette_10                 palette_10
-     00085A6E  _palette_10                        palette_10
-     00085AB1  ___func_palette_11                 palette_11
-     00085AB1  _palette_11                        palette_11
-     00085AF4  ___func_palette_2                  palette_2
+     000B4000  _bootstrap_script                  
+     000B400B  _camera_init                       camera
+     000B4029  _camera_reset                      camera
+     000B4039  _events_init                       events
+     000B4079  _timers_init                       events
+     000B40B9  _input_init                        input
+     000B40E4  _remove_LCD_ISRs                   interrupts
+     000B40FF  _music_init_driver                 music_manager
+     000B415B  _music_init_events                 music_manager
+     000B4197  _music_events_poll                 music_manager
+     000B41BF  _music_pause                       music_manager
+     000B41E1  _scroll_rect                       
+     000B421E  _SIO_init                          sio
+     000B4247  ___func_VM_GBPRINTER               vm_gbprinter
+     000B4247  _vm_print_detect                   vm_gbprinter
+     000B4296  _vm_print_overlay                  vm_gbprinter
+     000B42EB  ___func_VM_LOAD_SAVE               vm_load_save
+     000B42EB  _vm_save_clear                     vm_load_save
+     000B42FA  _vm_save_peek                      vm_load_save
+     000B437C  ___func_VM_MATH                    vm_math
+     000B437C  _vm_sin_scale                      vm_math
+     000B4418  _vm_cos_scale                      vm_math
+     000B44B6  ___func_VM_MUSIC                   vm_music
+     000B44B6  _vm_music_play                     vm_music
+     000B4503  _vm_music_stop                     vm_music
+     000B4525  _vm_music_mute                     vm_music
+     000B4563  _vm_music_routine                  vm_music
+     000B458A  _vm_music_setpos                   vm_music
+     000B4591  _vm_sound_mastervol                vm_music
+     000B4597  _vm_sfx_play                       vm_music
+     000B460A  ___func_VM_PROJECTILE              vm_projectiles
+     000B460A  _vm_projectile_launch              vm_projectiles
+     000B464B  _vm_projectile_load_type           vm_projectiles
+     000B46DD  ___func_VM_SCENE                   vm_scene
+     000B46DD  _vm_scene_push                     vm_scene
+     000B4753  _vm_scene_pop                      vm_scene
+     000B4761  _vm_scene_pop_all                  vm_scene
+     000B476C  _vm_scene_stack_reset              vm_scene
+     000B4775  _itoa_fmt                          vm_ui_a
+     000B47AE  .utoa_fmt                          vm_ui_a
+     000B4858  _actor_6_interact                  actor_6_interact
+     000B4939  ___func_avatar_font_0              avatar_font_0
+     000B49C1  _avatar_font_0                     avatar_font_0
+     000B49C9  ___func_bg_controls_gb_copy_       bg_controls_gb_copy_
+     000B49C9  _bg_controls_gb_copy_              bg_controls_gb_copy_
+     000B49D7  ___func_bg_controls_gb_copy_0      bg_controls_gb_copy_0
+     000B49D7  _bg_controls_gb_copy_0             bg_controls_gb_copy_0
+     000B49E5  ___func_bg_controls_gba_copy_      bg_controls_gba_copy_
+     000B49E5  _bg_controls_gba_copy_             bg_controls_gba_copy_
+     000B49F3  ___func_bg_controls_gba_copy_0     bg_controls_gba_copy_0
 ASxxxx Linker V03.00/V05.40 + sdld,  page 47.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00003AA3 =       15011. bytes (REL,CON)
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00085AF4  _palette_2                         palette_2
-     00085B37  ___func_palette_3                  palette_3
-     00085B37  _palette_3                         palette_3
-     00085B7A  ___func_palette_4                  palette_4
-     00085B7A  _palette_4                         palette_4
-     00085BBD  ___func_palette_5                  palette_5
-     00085BBD  _palette_5                         palette_5
-     00085C00  ___func_palette_6                  palette_6
-     00085C00  _palette_6                         palette_6
-     00085C43  ___func_palette_7                  palette_7
-     00085C43  _palette_7                         palette_7
-     00085C86  ___func_palette_8                  palette_8
-     00085C86  _palette_8                         palette_8
-     00085CC9  ___func_palette_9                  palette_9
-     00085CC9  _palette_9                         palette_9
-     00085D0C  ___func_scene_1_collisions         scene_1_collisions
-     00085D0C  _scene_1_collisions                scene_1_collisions
-     00085E74  _scene_1_init                      scene_1_init
-     00085EAE  ___func_scene_1                    scene_1
-     00085EAE  _scene_1                           scene_1
-     00085EE9  ___func_scene_10_collisions        scene_10_collisions
-     00085EE9  _scene_10_collisions               scene_10_collisions
-     00086051  _scene_10_init                     scene_10_init
-     00086090  ___func_scene_10                   scene_10
-     00086090  _scene_10                          scene_10
-     000860CB  ___func_scene_11_collisions        scene_11_collisions
-     000860CB  _scene_11_collisions               scene_11_collisions
-     00086233  _scene_11_init                     scene_11_init
-     0008626D  ___func_scene_11                   scene_11
-     0008626D  _scene_11                          scene_11
-     000862A8  ___func_scene_12_collisions        scene_12_collisions
-     000862A8  _scene_12_collisions               scene_12_collisions
-     00086410  _scene_12_init                     scene_12_init
-     00086426  ___func_scene_12                   scene_12
-     00086426  _scene_12                          scene_12
-     00086461  ___func_scene_13_collisions        scene_13_collisions
-     00086461  _scene_13_collisions               scene_13_collisions
-     000865C9  _scene_13_init                     scene_13_init
-     000865DF  ___func_scene_13                   scene_13
-     000865DF  _scene_13                          scene_13
-     0008661A  ___func_scene_2_actors             scene_2_actors
-     0008661A  _scene_2_actors                    scene_2_actors
-     0008664E  ___func_scene_2_collisions         scene_2_collisions
-     0008664E  _scene_2_collisions                scene_2_collisions
-     000867B6  _scene_2_init                      scene_2_init
-     000867FD  ___func_scene_2                    scene_2
-     000867FD  _scene_2                           scene_2
-     00086838  ___func_scene_3_actors             scene_3_actors
-     00086838  _scene_3_actors                    scene_3_actors
-     0008686C  ___func_scene_3_collisions         scene_3_collisions
-     0008686C  _scene_3_collisions                scene_3_collisions
+     000B49F3  _bg_controls_gba_copy_0            bg_controls_gba_copy_0
+     000B4A01  ___func_bg_controls_gbc_copy_      bg_controls_gbc_copy_
+     000B4A01  _bg_controls_gbc_copy_             bg_controls_gbc_copy_
+     000B4A0F  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_
+     000B4A0F  _bg_controls_mobile_copy_          bg_controls_mobile_copy_
+     000B4A1D  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0
+     000B4A1D  _bg_controls_mobile_copy_0         bg_controls_mobile_copy_0
+     000B4A2B  ___func_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tiles
+     000B4A2B  _bg_intro_scenary_copy__tileset    bg_intro_scenary_copy__tiles
+     000B4A6D  ___func_bg_intro_scenary_copy_     bg_intro_scenary_copy_
+     000B4A6D  _bg_intro_scenary_copy_            bg_intro_scenary_copy_
+     000B4A7B  ___func_bg_intro_weather_copy__t   bg_intro_weather_copy__tiles
+     000B4A7B  _bg_intro_weather_copy__tileset    bg_intro_weather_copy__tiles
+     000B4B0D  ___func_bg_intro_weather_copy_     bg_intro_weather_copy_
+     000B4B0D  _bg_intro_weather_copy_            bg_intro_weather_copy_
+     000B4B1B  ___func_bg_lencityopen             bg_lencityopen
+     000B4B1B  _bg_lencityopen                    bg_lencityopen
+     000B4B29  ___func_bg_options_copy_           bg_options_copy_
+     000B4B29  _bg_options_copy_                  bg_options_copy_
+     000B4B37  ___func_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy_
+     000B4B37  _bg_pixil_frame_0_copy_copy_       bg_pixil_frame_0_copy_copy_
+     000B4B45  ___func_bg_title_copy_             bg_title_copy_
+     000B4B45  _bg_title_copy_                    bg_title_copy_
+     000B4B53  ___func_bg_title_copy_0            bg_title_copy_0
+     000B4B53  _bg_title_copy_0                   bg_title_copy_0
+     000B4B61  ___func_bg_title_copy_1            bg_title_copy_1
+     000B4B61  _bg_title_copy_1                   bg_title_copy_1
+     000B4B6F  ___func_bg_title                   bg_title
+     000B4B6F  _bg_title                          bg_title
+     000B4B7D  ___func_cursor_image               cursor_image
+     000B4B7D  _cursor_image                      cursor_image
+     000B4B8D  ___func_frame_image                frame_image
+     000B4B8D  _frame_image                       frame_image
+     000B4C1D  ___func_palette_0                  palette_0
+     000B4C1D  _palette_0                         palette_0
+     000B4C60  ___func_palette_1                  palette_1
+     000B4C60  _palette_1                         palette_1
+     000B4CA3  ___func_palette_10                 palette_10
+     000B4CA3  _palette_10                        palette_10
+     000B4CE6  ___func_palette_11                 palette_11
+     000B4CE6  _palette_11                        palette_11
+     000B4D29  ___func_palette_12                 palette_12
+     000B4D29  _palette_12                        palette_12
+     000B4D6C  ___func_palette_13                 palette_13
+     000B4D6C  _palette_13                        palette_13
+     000B4DAF  ___func_palette_14                 palette_14
+     000B4DAF  _palette_14                        palette_14
+     000B4DF2  ___func_palette_15                 palette_15
+     000B4DF2  _palette_15                        palette_15
+     000B4E35  ___func_palette_16                 palette_16
+     000B4E35  _palette_16                        palette_16
 ASxxxx Linker V03.00/V05.40 + sdld,  page 48.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_8                             00084000    00003AA3 =       15011. bytes (REL,CON)
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000869D4  _scene_3_init                      scene_3_init
-     00086A1A  ___func_scene_3                    scene_3
-     00086A1A  _scene_3                           scene_3
-     00086A55  ___func_scene_4_collisions         scene_4_collisions
-     00086A55  _scene_4_collisions                scene_4_collisions
-     00086BBD  _scene_4_init                      scene_4_init
-     00086BFC  ___func_scene_4                    scene_4
-     00086BFC  _scene_4                           scene_4
-     00086C37  ___func_scene_5_collisions         scene_5_collisions
-     00086C37  _scene_5_collisions                scene_5_collisions
-     00086D9F  _scene_5_init                      scene_5_init
-     00086DD9  ___func_scene_5                    scene_5
-     00086DD9  _scene_5                           scene_5
-     00086E14  ___func_scene_6_collisions         scene_6_collisions
-     00086E14  _scene_6_collisions                scene_6_collisions
-     00086F7C  _scene_6_init                      scene_6_init
-     00086F94  ___func_scene_6                    scene_6
-     00086F94  _scene_6                           scene_6
-     00086FCF  ___func_scene_7_collisions         scene_7_collisions
-     00086FCF  _scene_7_collisions                scene_7_collisions
-     00087137  _scene_7_init                      scene_7_init
-     0008722A  ___func_scene_7                    scene_7
-     0008722A  _scene_7                           scene_7
-     00087265  ___func_scene_8_collisions         scene_8_collisions
-     00087265  _scene_8_collisions                scene_8_collisions
-     000873CD  _scene_8_init                      scene_8_init
-     00087407  ___func_scene_8                    scene_8
-     00087407  _scene_8                           scene_8
-     00087442  ___func_scene_9_collisions         scene_9_collisions
-     00087442  _scene_9_collisions                scene_9_collisions
-     000875AA  _scene_9_init                      scene_9_init
-     000875E4  ___func_scene_9                    scene_9
-     000875E4  _scene_9                           scene_9
-     0008761F  _script_input_0                    script_input_0
-     00087644  _script_input_1                    script_input_1
-     000876C7  _script_input_2                    script_input_2
-     0008774A  _script_input_3                    script_input_3
-     000879BA  _script_input_5                    script_input_5
-     00087A15  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect_til
-     00087A15  _sprite_dhilly_saveselect_tilese   sprite_dhilly_saveselect_til
-     00087A37  ___func_sprite_static_copy_tiles   sprite_static_copy_tileset
-     00087A37  _sprite_static_copy_tileset        sprite_static_copy_tileset
-     00087A79  _spritesheet_none_metasprite       spritesheet_none
-     00087A7D  _spritesheet_none_metasprites      spritesheet_none
-     00087A7F  _spritesheet_none                  spritesheet_none
-     00087A92  _logo_init                         logo
-     00087AA2  _logo_update                       logo
-
+     000B4E78  ___func_palette_17                 palette_17
+     000B4E78  _palette_17                        palette_17
+     000B4EBB  ___func_palette_2                  palette_2
+     000B4EBB  _palette_2                         palette_2
+     000B4EFE  ___func_palette_3                  palette_3
+     000B4EFE  _palette_3                         palette_3
+     000B4F41  ___func_palette_4                  palette_4
+     000B4F41  _palette_4                         palette_4
+     000B4F84  ___func_palette_5                  palette_5
+     000B4F84  _palette_5                         palette_5
+     000B4FC7  ___func_palette_6                  palette_6
+     000B4FC7  _palette_6                         palette_6
+     000B500A  ___func_palette_7                  palette_7
+     000B500A  _palette_7                         palette_7
+     000B504D  ___func_palette_8                  palette_8
+     000B504D  _palette_8                         palette_8
+     000B5090  ___func_palette_9                  palette_9
+     000B5090  _palette_9                         palette_9
+     000B50D3  _scene_1_init                      scene_1_init
+     000B510D  ___func_scene_1                    scene_1
+     000B510D  _scene_1                           scene_1
+     000B5148  _scene_10_init                     scene_10_init
+     000B5187  ___func_scene_10                   scene_10
+     000B5187  _scene_10                          scene_10
+     000B51C2  _scene_11_init                     scene_11_init
+     000B51FC  ___func_scene_11                   scene_11
+     000B51FC  _scene_11                          scene_11
+     000B5237  _scene_12_init                     scene_12_init
+     000B524D  ___func_scene_12                   scene_12
+     000B524D  _scene_12                          scene_12
+     000B5288  ___func_scene_13_collisions        scene_13_collisions
+     000B5288  _scene_13_collisions               scene_13_collisions
+     000B53F0  _scene_13_init                     scene_13_init
+     000B5406  ___func_scene_13                   scene_13
+     000B5406  _scene_13                          scene_13
+     000B5441  ___func_scene_14_collisions        scene_14_collisions
+     000B5441  _scene_14_collisions               scene_14_collisions
+     000B55A9  _scene_14_init                     scene_14_init
+     000B56E9  ___func_scene_14                   scene_14
+     000B56E9  _scene_14                          scene_14
+     000B5724  _scene_15_init                     scene_15_init
+     000B574C  ___func_scene_15                   scene_15
+     000B574C  _scene_15                          scene_15
+     000B5787  ___func_scene_16_collisions        scene_16_collisions
+     000B5787  _scene_16_collisions               scene_16_collisions
+     000B58EF  _scene_16_init                     scene_16_init
+     000B5905  ___func_scene_16                   scene_16
+     000B5905  _scene_16                          scene_16
+     000B5940  ___func_scene_17_actors            scene_17_actors
+     000B5940  _scene_17_actors                   scene_17_actors
+     000B5974  _scene_17_init                     scene_17_init
 ASxxxx Linker V03.00/V05.40 + sdld,  page 49.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_5                             00054000    00003FFD =       16381. bytes (REL,CON)
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00054000  _core_reset                        core
-     00054075  _process_VM                        core
-     000542F7  _core_run                          core
-     0005441B  _restore_sram_bank                 flasher
-     00054451  _restore_sram                      flasher
-     00054467  _save_sram                         flasher
-     00054493  _scroll_init                       scroll
-     000544BD  _scroll_reset                      scroll
-     000544DD  _scroll_update                     scroll
-     000545EE  _scroll_viewport                   scroll
-     00054A87  _scroll_repaint                    scroll
-     00054A97  _scroll_render_rows                scroll
-     00054B2D  _scroll_queue_row                  scroll
-     00054B4F  _scroll_queue_col                  scroll
-     00054B9A  ___func_VM_UI                      vm_ui
-     00054B9A  _vm_display_text                   vm_ui
-     00054C08  _vm_switch_text_layer              vm_ui
-     00054C22  _vm_overlay_setpos                 vm_ui
-     00054C3C  _vm_overlay_wait                   vm_ui
-     00054CCC  _vm_overlay_move_to                vm_ui
-     00054D10  _vm_overlay_set_scroll             vm_ui
-     00054D49  _vm_overlay_clear                  vm_ui
-     00054E1B  _vm_overlay_show                   vm_ui
-     00054E69  _vm_choice                         vm_ui
-     00054F84  _vm_set_font                       vm_ui
-     00054FB3  _vm_overlay_scroll                 vm_ui
-     00055014  _vm_overlay_set_submap             vm_ui
-     00055080  _vm_overlay_set_submap_ex          vm_ui
-     00055181  _vm_overlay_set_map                vm_ui
-     000552E0  _vm_set_text_sound                 vm_ui
-     000552F9  ___func_bg_options_copy__tileset   bg_options_copy__tileset
-     000552F9  _bg_options_copy__tileset          bg_options_copy__tileset
-     0005697B  ___func_bg_title_copy_1_tileset    bg_title_copy_1_tileset
-     0005697B  _bg_title_copy_1_tileset           bg_title_copy_1_tileset
-
+     000B5992  ___func_scene_17_triggers          scene_17_triggers
+     000B5992  _scene_17_triggers                 scene_17_triggers
+     000B59A2  ___func_scene_17                   scene_17
+     000B59A2  _scene_17                          scene_17
+     000B59DD  ___func_scene_18_actors            scene_18_actors
+     000B59DD  _scene_18_actors                   scene_18_actors
+     000B5A11  _scene_18_init                     scene_18_init
+     000B5A34  ___func_scene_18                   scene_18
+     000B5A34  _scene_18                          scene_18
+     000B5A6F  ___func_scene_2_actors             scene_2_actors
+     000B5A6F  _scene_2_actors                    scene_2_actors
+     000B5B0B  ___func_scene_2_collisions         scene_2_collisions
+     000B5B0B  _scene_2_collisions                scene_2_collisions
+     000B5C73  _scene_2_init                      scene_2_init
+     000B5CBA  ___func_scene_2                    scene_2
+     000B5CBA  _scene_2                           scene_2
+     000B5CF5  ___func_scene_3_actors             scene_3_actors
+     000B5CF5  _scene_3_actors                    scene_3_actors
+     000B5D29  ___func_scene_3_collisions         scene_3_collisions
+     000B5D29  _scene_3_collisions                scene_3_collisions
+     000B5E91  _scene_3_init                      scene_3_init
+     000B5ED7  ___func_scene_3                    scene_3
+     000B5ED7  _scene_3                           scene_3
+     000B5F12  ___func_scene_4_collisions         scene_4_collisions
+     000B5F12  _scene_4_collisions                scene_4_collisions
+     000B607A  _scene_4_init                      scene_4_init
+     000B60B9  ___func_scene_4                    scene_4
+     000B60B9  _scene_4                           scene_4
+     000B60F4  ___func_scene_5_collisions         scene_5_collisions
+     000B60F4  _scene_5_collisions                scene_5_collisions
+     000B625C  _scene_5_init                      scene_5_init
+     000B6296  ___func_scene_5                    scene_5
+     000B6296  _scene_5                           scene_5
+     000B62D1  ___func_scene_6_collisions         scene_6_collisions
+     000B62D1  _scene_6_collisions                scene_6_collisions
+     000B6439  _scene_6_init                      scene_6_init
+     000B6473  ___func_scene_6                    scene_6
+     000B6473  _scene_6                           scene_6
+     000B64AE  ___func_scene_7_collisions         scene_7_collisions
+     000B64AE  _scene_7_collisions                scene_7_collisions
+     000B6616  ___func_scene_7                    scene_7
+     000B6616  _scene_7                           scene_7
+     000B6651  ___func_scene_8_collisions         scene_8_collisions
+     000B6651  _scene_8_collisions                scene_8_collisions
+     000B67B9  _scene_8_init                      scene_8_init
+     000B67F3  ___func_scene_8                    scene_8
+     000B67F3  _scene_8                           scene_8
+     000B682E  ___func_scene_9_collisions         scene_9_collisions
+     000B682E  _scene_9_collisions                scene_9_collisions
+     000B6996  _scene_9_init                      scene_9_init
+     000B69D0  ___func_scene_9                    scene_9
 ASxxxx Linker V03.00/V05.40 + sdld,  page 50.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000B69D0  _scene_9                           scene_9
+     000B6A0B  _script_input_0                    script_input_0
+     000B6A30  _script_input_1                    script_input_1
+     000B6A81  _script_input_2                    script_input_2
+     000B6AD2  _script_input_4                    script_input_4
+     000B6B2D  _script_input_5                    script_input_5
+     000B6B88  _script_timer_0                    script_timer_0
+     000B6BB9  _script_timer_1                    script_timer_1
+     000B6BEA  _script_timer_2                    script_timer_2
+     000B6C09  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co_
+     000B6C09  _sprite_dhilly_saveselect_co_til   sprite_dhilly_saveselect_co_
+     000B6C2B  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co
+     000B6C2B  _sprite_dhilly_saveselect_co_met   sprite_dhilly_saveselect_co
+     000B6C37  _sprite_dhilly_saveselect_co_met   sprite_dhilly_saveselect_co
+     000B6C39  _sprite_dhilly_saveselect_co_ani   sprite_dhilly_saveselect_co
+     000B6C49  _sprite_dhilly_saveselect_co_ani   sprite_dhilly_saveselect_co
+     000B6C4B  _sprite_dhilly_saveselect_co       sprite_dhilly_saveselect_co
+     000B6C5E  ___func_sprite_highlight_options   sprite_highlight_options_co_
+     000B6C5E  _sprite_highlight_options_co_til   sprite_highlight_options_co_
+     000B6D40  ___func_sprite_highlight_options   sprite_highlight_options_co
+     000B6D40  _sprite_highlight_options_co_met   sprite_highlight_options_co
+     000B6D44  _sprite_highlight_options_co_met   sprite_highlight_options_co
+     000B6D68  _sprite_highlight_options_co_met   sprite_highlight_options_co
+     000B6D84  _sprite_highlight_options_co_met   sprite_highlight_options_co
+     000B6D8A  _sprite_highlight_options_co_ani   sprite_highlight_options_co
+     000B6D9A  _sprite_highlight_options_co_ani   sprite_highlight_options_co
+     000B6D9C  _sprite_highlight_options_co       sprite_highlight_options_co
+     000B6DAF  ___func_sprite_square_cart_copy_   sprite_square_cart_copy__til
+     000B6DAF  _sprite_square_cart_copy__tilese   sprite_square_cart_copy__til
+     000B6E11  ___func_sprite_square_cart_copy_   sprite_square_cart_copy_
+     000B6E11  _sprite_square_cart_copy__metasp   sprite_square_cart_copy_
+     000B6E2D  _sprite_square_cart_copy__metasp   sprite_square_cart_copy_
+     000B6E2F  _sprite_square_cart_copy__animat   sprite_square_cart_copy_
+     000B6E3F  _sprite_square_cart_copy__animat   sprite_square_cart_copy_
+     000B6E41  _sprite_square_cart_copy_          sprite_square_cart_copy_
+     000B6E54  ___func_sprite_square_platformin   sprite_square_platforming_c_
+     000B6E54  _sprite_square_platforming_c_til   sprite_square_platforming_c_
+     000B6E76  ___func_sprite_square_platformin   sprite_square_platforming_c
+     000B6E76  _sprite_square_platforming_c_met   sprite_square_platforming_c
+     000B6E82  _sprite_square_platforming_c_met   sprite_square_platforming_c
+     000B6E84  _sprite_square_platforming_c_ani   sprite_square_platforming_c
+     000B6E94  _sprite_square_platforming_c_ani   sprite_square_platforming_c
+     000B6E96  _sprite_square_platforming_c       sprite_square_platforming_c
+     000B6EA9  ___func_sprite_static_copy_tiles   sprite_static_copy_tileset
+     000B6EA9  _sprite_static_copy_tileset        sprite_static_copy_tileset
+     000B6EEB  ___func_sprite_static_copy         sprite_static_copy
+     000B6EEB  _sprite_static_copy_metasprite_0   sprite_static_copy
+     000B6EF7  _sprite_static_copy_metasprites    sprite_static_copy
+     000B6EF9  _sprite_static_copy_animations     sprite_static_copy
+     000B6F09  _sprite_static_copy_animations_l   sprite_static_copy
+     000B6F0B  _sprite_static_copy                sprite_static_copy
+ASxxxx Linker V03.00/V05.40 + sdld,  page 51.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_11                            000B4000    00003041 =       12353. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000B6F1E  _spritesheet_none_metasprite       spritesheet_none
+     000B6F22  _spritesheet_none_metasprites      spritesheet_none
+     000B6F24  _spritesheet_none                  spritesheet_none
+     000B6F37  _trigger_0_interact                trigger_0_interact
+     000B6F5D  _trigger_2_interact                trigger_2_interact
+     000B6F83  _trigger_3_interact                trigger_3_interact
+     000B7030  _logo_init                         logo
+     000B7040  _logo_update                       logo
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 52.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_7                             00074000    00004000 =       16384. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00074000  _core_reset                        core
+     00074075  _process_VM                        core
+     000742F7  _core_run                          core
+     0007441B  _restore_sram_bank                 flasher
+     00074451  _restore_sram                      flasher
+     00074467  _save_sram                         flasher
+     00074493  _scroll_init                       scroll
+     000744BD  _scroll_reset                      scroll
+     000744DD  _scroll_update                     scroll
+     000745EE  _scroll_viewport                   scroll
+     00074A87  _scroll_repaint                    scroll
+     00074A97  _scroll_render_rows                scroll
+     00074B2D  _scroll_queue_row                  scroll
+     00074B4F  _scroll_queue_col                  scroll
+     00074B9A  ___func_VM_UI                      vm_ui
+     00074B9A  _vm_display_text                   vm_ui
+     00074C08  _vm_switch_text_layer              vm_ui
+     00074C22  _vm_overlay_setpos                 vm_ui
+     00074C3C  _vm_overlay_wait                   vm_ui
+     00074CCC  _vm_overlay_move_to                vm_ui
+     00074D10  _vm_overlay_set_scroll             vm_ui
+     00074D49  _vm_overlay_clear                  vm_ui
+     00074E1B  _vm_overlay_show                   vm_ui
+     00074E69  _vm_choice                         vm_ui
+     00074F84  _vm_set_font                       vm_ui
+     00074FB3  _vm_overlay_scroll                 vm_ui
+     00075014  _vm_overlay_set_submap             vm_ui
+     00075080  _vm_overlay_set_submap_ex          vm_ui
+     00075181  _vm_overlay_set_map                vm_ui
+     000752E0  _vm_set_text_sound                 vm_ui
+     000752F9  ___func_bg_title_copy_1_tileset    bg_title_copy_1_tileset
+     000752F9  _bg_title_copy_1_tileset           bg_title_copy_1_tileset
+     0007697B  ___func_bg_title_tileset           bg_title_tileset
+     0007697B  _bg_title_tileset                  bg_title_tileset
+     00077FFD  ___func_scene_3_sprites            scene_3_sprites
+     00077FFD  _scene_3_sprites                   scene_3_sprites
+ASxxxx Linker V03.00/V05.40 + sdld,  page 53.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1756,7 +1865,7 @@ _CRASH_HEADER0                      00000000    00000005 =           5. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 51.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 54.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1765,7 +1874,108 @@ _CRASH_HEADER1                      00000000    00000004 =           4. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 52.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 55.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_10                            000A4000    00003FFD =       16381. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000A4000  ___HandleCrash_banked              
+     000A4368  _CGBFadeToWhiteStep                fade_manager
+     000A43A1  _CGBFadeToBlackStep                fade_manager
+     000A43DC  _ApplyPaletteChangeColor           fade_manager
+     000A4419  _fade_speeds                       fade_manager
+     000A4420  _DMGFadeToWhiteStep                fade_manager
+     000A4441  _DMGFadeToBlackStep                fade_manager
+     000A4464  _ApplyPaletteChangeDMG             fade_manager
+     000A44BA  _fade_init                         fade_manager
+     000A44DC  _fade_in                           fade_manager
+     000A4506  _fade_out                          fade_manager
+     000A452F  _fade_update                       fade_manager
+     000A4584  _fade_applypalettechange           fade_manager
+     000A4598  _fade_setspeed                     fade_manager
+     000A45A8  _fade_in_modal                     fade_manager
+     000A45C2  _fade_out_modal                    fade_manager
+     000A45DC  _printer_send_receive              gbprinter
+     000A4612  _printer_send_byte                 gbprinter
+     000A4625  _printer_send_command              gbprinter
+     000A4648  _printer_print_tile                gbprinter
+     000A46D9  _printer_wait                      gbprinter
+     000A470B  _gbprinter_detect                  gbprinter
+     000A4725  _gbprinter_print_overlay           gbprinter
+     000A48F2  _atan2                             math_atan2
+     000A4A91  _atan2_table                       math_atan2
+     000A4BF9  _trigger_reset                     trigger
+     000A4C09  _trigger_interact                  trigger
+     000A4C48  _trigger_activate_at               trigger
+     000A4C93  _trigger_at_intersection           trigger
+     000A4DBA  _trigger_activate_at_intersectio   trigger
+     000A4EFB  _trigger_at_tile                   trigger
+     000A4F8C  ___func_VM_CAMERA                  vm_camera
+     000A4F8C  _vm_camera_move_to                 vm_camera
+     000A50DF  _vm_camera_set_pos                 vm_camera
+     000A5126  _camera_shake_frames               vm_camera
+     000A521E  ___func_VM_SIO                     vm_sio
+     000A521E  _vm_sio_set_mode                   vm_sio
+     000A5230  _vm_sio_exchange                   vm_sio
+     000A5512  ___func_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilese
+     000A5512  _bg_controls_gb_copy_0_tileset     bg_controls_gb_copy_0_tilese
+     000A5634  ___func_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tilem
+     000A5634  _bg_controls_gba_copy_0_tilemap_   bg_controls_gba_copy_0_tilem
+     000A579C  ___func_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilema
+     000A579C  _bg_controls_gbc_copy__tilemap_a   bg_controls_gbc_copy__tilema
+     000A5904  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
+     000A5904  _bg_controls_mobile_copy__tilema   bg_controls_mobile_copy__til
+     000A5A6C  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
+     000A5A6C  _bg_controls_mobile_copy_0_tilem   bg_controls_mobile_copy_0_ti
+     000A5BD4  ___func_bg_intro_weather_copy__t   bg_intro_weather_copy__tilem
+     000A5BD4  _bg_intro_weather_copy__tilemap_   bg_intro_weather_copy__tilem
+ASxxxx Linker V03.00/V05.40 + sdld,  page 56.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_10                            000A4000    00003FFD =       16381. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000A5D3C  ___func_bg_intro_weather_copy__t   bg_intro_weather_copy__tilem
+     000A5D3C  _bg_intro_weather_copy__tilemap    bg_intro_weather_copy__tilem
+     000A5EA4  ___func_bg_lencityopen_tileset     bg_lencityopen_tileset
+     000A5EA4  _bg_lencityopen_tileset            bg_lencityopen_tileset
+     000A6236  ___func_bg_options_copy__tilemap   bg_options_copy__tilemap_att
+     000A6236  _bg_options_copy__tilemap_attr     bg_options_copy__tilemap_att
+     000A639E  ___func_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     000A639E  _bg_pixil_frame_0_copy_copy__til   bg_pixil_frame_0_copy_copy__
+     000A6506  ___func_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     000A6506  _bg_pixil_frame_0_copy_copy__til   bg_pixil_frame_0_copy_copy__
+     000A666E  ___func_bg_pixil_frame_0_copy_co   bg_pixil_frame_0_copy_copy__
+     000A666E  _bg_pixil_frame_0_copy_copy__til   bg_pixil_frame_0_copy_copy__
+     000A69F0  ___func_bg_title_copy__tilemap     bg_title_copy__tilemap
+     000A69F0  _bg_title_copy__tilemap            bg_title_copy__tilemap
+     000A6B58  ___func_bg_title_copy_0_tilemap    bg_title_copy_0_tilemap
+     000A6B58  _bg_title_copy_0_tilemap           bg_title_copy_0_tilemap
+     000A6CC0  ___func_bg_title_copy_0_tileset    bg_title_copy_0_tileset
+     000A6CC0  _bg_title_copy_0_tileset           bg_title_copy_0_tileset
+     000A6F52  ___func_bg_title_tilemap_attr      bg_title_tilemap_attr
+     000A6F52  _bg_title_tilemap_attr             bg_title_tilemap_attr
+     000A70BA  ___func_scene_1_collisions         scene_1_collisions
+     000A70BA  _scene_1_collisions                scene_1_collisions
+     000A7222  ___func_scene_10_collisions        scene_10_collisions
+     000A7222  _scene_10_collisions               scene_10_collisions
+     000A738A  ___func_scene_11_collisions        scene_11_collisions
+     000A738A  _scene_11_collisions               scene_11_collisions
+     000A74F2  ___func_scene_12_collisions        scene_12_collisions
+     000A74F2  _scene_12_collisions               scene_12_collisions
+     000A765A  _script_input_3                    script_input_3
+     000A793C  _script_input_6                    script_input_6
+     000A7C89  _pointnclick_init                  pointnclick
+     000A7CC2  _pointnclick_update                pointnclick
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 57.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1774,82 +1984,45 @@ _CRASH_SCRATCH2                     00000000    000001CB =         459. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 53.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 58.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_4                             00044000    00004000 =       16384. bytes (REL,CON)
+_CODE_1                             00014000    00003FFF =       16383. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00044000  _load_init                         data_manager
-     00044013  _spritesheet_none_far              data_manager
-     00044016  _load_bkg_tileset                  data_manager
-     000440F3  _load_background                   data_manager
-     000441B9  _load_sprite                       data_manager
-     0004428F  _load_bounds                       data_manager
-     000442AC  _do_load_palette                   data_manager
-     00044331  _load_scene                        data_manager
-     000449BC  _load_player                       data_manager
-     00044A05  _load_emote                        data_manager
-     00044A86  _save_sram_banks                   
-     00044B0E  _erase_flash                       
-     00044B24  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
-     00044B24  _bg_controls_mobile_copy__tilese   bg_controls_mobile_copy__til
-     000461A6  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
-     000461A6  _bg_controls_mobile_copy_0_tiles   bg_controls_mobile_copy_0_ti
-     00047828  ___func_cursor_image               cursor_image
-     00047828  _cursor_image                      cursor_image
-     00047838  _shmup_init                        shmup
-     000478D5  _shmup_update                      shmup
+     00014000  _load_init                         data_manager
+     00014013  _spritesheet_none_far              data_manager
+     00014016  _load_bkg_tileset                  data_manager
+     000140F3  _load_background                   data_manager
+     000141B9  _load_sprite                       data_manager
+     0001428F  _load_bounds                       data_manager
+     000142AC  _do_load_palette                   data_manager
+     00014331  _load_scene                        data_manager
+     000149BC  _load_player                       data_manager
+     00014A05  _load_emote                        data_manager
+     00014A1E  _set_sgb_border                    sgb_border
+     00014C08  _ui_swap_tiles                     
+     00014C52  _ui_print_make_mask_lr             
+     00014C6E  _ui_print_make_mask_rl             
+     00014C8A  _ui_init                           ui
+     00014D5B  _ui_load_tiles                     ui
+     00014DB2  _ui_draw_frame                     ui
+     00014E4C  _ui_print_reset                    ui
+     00014E9D  _ui_set_start_tile                 ui
+     00014EC9  _ui_print_render                   ui
+     00015160  _ui_draw_text_buffer_char          ui
+     00015644  _ui_run_menu                       ui
+     0001582D  _ui_run_modal                      ui
+     000158E7  ___func_VM_SGB                     vm_sgb
+     000158E7  ___func_bg_lencityopen_tilemap_a   bg_lencityopen_tilemap_attr
+     000158E7  _bg_lencityopen_tilemap_attr       bg_lencityopen_tilemap_attr
+     00017FF7  ___func_scene_15_triggers          scene_15_triggers
+     00017FF7  _scene_15_triggers                 scene_15_triggers
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 54.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_HEADER_SIO0                        00000000    00000004 =           4. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 55.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_HEADER_TIMER0                      00000000    00000004 =           4. bytes (ABS,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 56.
-Hexadecimal  [32-Bits]
-
-Area                                    Addr        Size        Decimal Bytes (Attributes)
---------------------------------        ----        ----        ------- ----- ------------
-_CODE_6                             00064000    00003FF7 =       16375. bytes (REL,CON)
-
-      Value  Global                              Global Defined In Module
-      -----  --------------------------------   ------------------------
-     00064000  _data_init                         load_save
-     0006404B  _save_points                       load_save
-     000640AB  _data_slot_address                 load_save
-     00064123  _data_save                         load_save
-     000641E4  _data_load                         load_save
-     000642F8  _data_clear                        load_save
-     00064325  _data_peek                         load_save
-     000643C6  ___func_bg_controls_gb_copy__til   bg_controls_gb_copy__tilemap
-     000643C6  _bg_controls_gb_copy__tilemap_at   bg_controls_gb_copy__tilemap
-     0006452E  ___func_bg_title_tileset           bg_title_tileset
-     0006452E  _bg_title_tileset                  bg_title_tileset
-     00065BB0  _script_engine_init                
-     00065BF8  _adventure_init                    adventure
-     00065C0D  _adventure_update                  adventure
-     000662C4  _platform_init                     platform
-     0006643E  _platform_update                   platform
-     00067936  _topdown_init                      topdown
-     000679CD  _topdown_update                    topdown
-ASxxxx Linker V03.00/V05.40 + sdld,  page 57.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 59.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1858,75 +2031,142 @@ _CODE_3                             00034000    00004000 =       16384. bytes (R
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00034000  _projectiles_init                  projectiles
-     0003402F  _projectile_launch                 projectiles
-     00034446  ___func_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tiles
-     00034446  _bg_controls_gba_copy_0_tileset    bg_controls_gba_copy_0_tiles
-     00035AC8  ___func_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilese
-     00035AC8  _bg_controls_gbc_copy__tileset     bg_controls_gbc_copy__tilese
-     0003714A  ___func_font_gbs_variable_width    font_gbs_variable_width
-     00037FC5  _font_gbs_variable_width           font_gbs_variable_width
-     00037FCD  ___func_sprite_static_copy         sprite_static_copy
-     00037FCD  _sprite_static_copy_metasprite_0   sprite_static_copy
-     00037FD9  _sprite_static_copy_metasprites    sprite_static_copy
-     00037FDB  _sprite_static_copy_animations     sprite_static_copy
-     00037FEB  _sprite_static_copy_animations_l   sprite_static_copy
-     00037FED  _sprite_static_copy                sprite_static_copy
+     00034068  _save_sram_banks                   
+     000340F0  _erase_flash                       
+     00034106  ___func_bg_controls_gb_copy__til   bg_controls_gb_copy__tilemap
+     00034106  _bg_controls_gb_copy__tilemap_at   bg_controls_gb_copy__tilemap
+     0003426E  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilese
+     0003426E  _bg_controls_gba_copy__tileset     bg_controls_gba_copy__tilese
+     000358F0  ___func_scene_18_collisions        scene_18_collisions
+     000358F0  _scene_18_collisions               scene_18_collisions
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 58.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 60.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_1                             00014000    00004000 =       16384. bytes (REL,CON)
+_HEADER_SIO0                        00000000    00000004 =           4. bytes (ABS,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00014000  _ui_swap_tiles                     
-     0001404A  _ui_print_make_mask_lr             
-     00014066  _ui_print_make_mask_rl             
-     00014082  _ui_init                           ui
-     00014153  _ui_load_tiles                     ui
-     000141AA  _ui_draw_frame                     ui
-     00014244  _ui_print_reset                    ui
-     00014295  _ui_set_start_tile                 ui
-     000142C1  _ui_print_render                   ui
-     00014558  _ui_draw_text_buffer_char          ui
-     00014A3C  _ui_run_menu                       ui
-     00014C25  _ui_run_modal                      ui
-     00014CDF  ___func_VM_ACTOR                   vm_actor
-     00014CDF  _vm_actor_move_to                  vm_actor
-     0001567B  _vm_actor_move_cancel              vm_actor
-     000156B1  _vm_actor_activate                 vm_actor
-     00015702  _vm_actor_deactivate               vm_actor
-     00015753  _vm_actor_begin_update             vm_actor
-     000157DA  _vm_actor_terminate_update         vm_actor
-     00015821  _vm_actor_set_dir                  vm_actor
-     0001586A  _vm_actor_set_anim                 vm_actor
-     000158F8  _vm_actor_set_pos                  vm_actor
-     00015972  _vm_actor_get_pos                  vm_actor
-     000159E1  _vm_actor_get_dir                  vm_actor
-     00015A5B  _vm_actor_get_angle                vm_actor
-     00015ADC  _vm_actor_emote                    vm_actor
-     00015BA0  _vm_actor_set_bounds               vm_actor
-     00015BFE  _vm_actor_set_spritesheet          vm_actor
-     00015CC8  _vm_actor_replace_tile             vm_actor
-     00015D33  _vm_actor_set_anim_tick            vm_actor
-     00015D71  _vm_actor_set_move_speed           vm_actor
-     00015DAF  _vm_actor_set_anim_frame           vm_actor
-     00015DF3  _vm_actor_get_anim_frame           vm_actor
-     00015E3D  _vm_actor_set_anim_set             vm_actor
-     00015EC5  _vm_actor_set_spritesheet_by_ref   vm_actor
-     00015FD2  _vm_actor_set_flags                vm_actor
-     00016080  _SGB_border_chr                    border
-     00016080  ___func_SGB_border_chr             border
-     00016080  ___func_SGB_border_map             border
-     00016080  ___func_SGB_border_pal             border
-     00016080  ___func_VM_SGB                     vm_sgb
-     00017880  _SGB_border_map                    border
-     00017F80  _SGB_border_pal                    border
+ASxxxx Linker V03.00/V05.40 + sdld,  page 61.
+Hexadecimal  [32-Bits]
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 59.
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_HEADER_TIMER0                      00000000    00000004 =           4. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00/V05.40 + sdld,  page 62.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_9                             00094000    00004000 =       16384. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00094000  _data_init                         load_save
+     0009404B  _save_points                       load_save
+     000940AB  _data_slot_address                 load_save
+     00094123  _data_save                         load_save
+     000941E4  _data_load                         load_save
+     000942F8  _data_clear                        load_save
+     00094325  _data_peek                         load_save
+     000943C6  _parallax_init                     parallax
+     000943E6  ___func_VM_GAMEBOY                 vm_gameboy
+     000943E6  _vm_set_sprites_visible            vm_gameboy
+     000943FD  _vm_input_wait                     vm_gameboy
+     00094426  _vm_context_prepare                vm_gameboy
+     00094451  _vm_input_attach                   vm_gameboy
+     00094467  _vm_input_detach                   vm_gameboy
+     0009447B  _vm_input_get                      vm_gameboy
+     000944AF  _vm_fade                           vm_gameboy
+     000944DF  _vm_timer_prepare                  vm_gameboy
+     0009450A  _vm_timer_set                      vm_gameboy
+     00094525  _vm_timer_stop                     vm_gameboy
+     00094539  _vm_timer_reset                    vm_gameboy
+     00094550  _vm_get_tile_xy                    vm_gameboy
+     00094626  _vm_replace_tile                   vm_gameboy
+     000946CD  _vm_poll                           vm_gameboy
+     0009479F  _vm_set_sprite_mode                vm_gameboy
+     000947B3  _vm_replace_tile_xy                vm_gameboy
+     00094993  _vm_rumble                         vm_gameboy
+     000949B3  _vm_load_tiles                     vm_gameboy
+     000949C8  _vm_load_tileset                   vm_gameboy
+     00094A99  ___func_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilema
+     00094A99  _bg_controls_gb_copy_0_tilemap_a   bg_controls_gb_copy_0_tilema
+     00094E2F  ___func_bg_controls_gb_copy_0_ti   bg_controls_gb_copy_0_tilema
+     00094E2F  _bg_controls_gb_copy_0_tilemap     bg_controls_gb_copy_0_tilema
+     000951C5  ___func_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tilem
+     000951C5  _bg_intro_scenary_copy__tilemap_   bg_intro_scenary_copy__tilem
+     000957A1  ___func_bg_intro_scenary_copy__t   bg_intro_scenary_copy__tilem
+     000957A1  _bg_intro_scenary_copy__tilemap    bg_intro_scenary_copy__tilem
+     00095D7D  ___func_bg_title_copy__tileset     bg_title_copy__tileset
+     00095D7D  _bg_title_copy__tileset            bg_title_copy__tileset
+     0009629F  ___func_scene_15_collisions        scene_15_collisions
+     0009629F  _scene_15_collisions               scene_15_collisions
+     00096635  ___func_scene_17_collisions        scene_17_collisions
+     00096635  _scene_17_collisions               scene_17_collisions
+     00096C11  _scene_7_init                      scene_7_init
+     00096D04  _trigger_1_interact                trigger_1_interact
+     00097273  _adventure_init                    adventure
+     00097288  _adventure_update                  adventure
+     0009793F  _topdown_init                      topdown
+     000979D6  _topdown_update                    topdown
+ASxxxx Linker V03.00/V05.40 + sdld,  page 63.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_4                             00044000    00003FFE =       16382. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00044000  _palette_init                      palette
+     00044037  _CGBZeroPalette                    palette
+     0004404C  _SGBTransferPalettes               palette
+     000440C4  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
+     000440C4  _bg_controls_gba_copy__tilemap_a   bg_controls_gba_copy__tilema
+     0004422C  ___func_bg_controls_gba_copy_0_t   bg_controls_gba_copy_0_tiles
+     0004422C  _bg_controls_gba_copy_0_tileset    bg_controls_gba_copy_0_tiles
+     000458AE  _SGB_border_chr                    border
+     000458AE  ___func_SGB_border_chr             border
+     000458AE  ___func_SGB_border_map             border
+     000458AE  ___func_SGB_border_pal             border
+     000470AE  _SGB_border_map                    border
+     000477AE  _SGB_border_pal                    border
+     0004782E  ___func_scene_18_triggers          scene_18_triggers
+     0004782E  _scene_18_triggers                 scene_18_triggers
+     00047836  _shmup_init                        shmup
+     000478D3  _shmup_update                      shmup
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 64.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_6                             00064000    00004000 =       16384. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00064000  _projectiles_init                  projectiles
+     0006402F  _projectile_launch                 projectiles
+     00064446  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy_0_ti
+     00064446  _bg_controls_mobile_copy_0_tiles   bg_controls_mobile_copy_0_ti
+     00065AC8  ___func_bg_options_copy__tileset   bg_options_copy__tileset
+     00065AC8  _bg_options_copy__tileset          bg_options_copy__tileset
+     0006714A  ___func_font_gbs_variable_width    font_gbs_variable_width
+     00067FC5  _font_gbs_variable_width           font_gbs_variable_width
+     00067FCD  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect_co_
+     00067FCD  _sprite_dhilly_saveselect_co_0_m   sprite_dhilly_saveselect_co_
+     00067FD9  _sprite_dhilly_saveselect_co_0_m   sprite_dhilly_saveselect_co_
+     00067FDB  _sprite_dhilly_saveselect_co_0_a   sprite_dhilly_saveselect_co_
+     00067FEB  _sprite_dhilly_saveselect_co_0_a   sprite_dhilly_saveselect_co_
+     00067FED  _sprite_dhilly_saveselect_co_0     sprite_dhilly_saveselect_co_
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 65.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -1937,71 +2177,101 @@ _CODE_2                             00024000    00004000 =       16384. bytes (R
       -----  --------------------------------   ------------------------
      00024000  ___func_VM_PALETTE                 vm_palette
      00024000  _vm_load_palette                   vm_palette
-     000241F7  ___func_VM_MAIN                    vm
-     000241F7  _vm_call                           vm
-     00024239  _vm_ret                            vm
-     00024299  _vm_call_far                       vm
-     00024318  _vm_ret_far                        vm
-     00024390  _vm_push                           vm
-     000243BB  _vm_pop                            vm
-     000243F6  _vm_loop                           vm
-     00024481  _vm_jump                           vm
-     0002448D  _wait_frames                       vm
-     00024503  _vm_invoke                         vm
-     00024630  _vm_join                           vm
-     00024692  _vm_terminate                      vm
-     000246BF  _vm_if                             vm
-     00024804  _vm_if_const                       vm
-     00024919  _vm_push_value                     vm
-     0002496B  _vm_push_value_ind                 vm
-     000249E0  _vm_push_reference                 vm
-     00024A37  _vm_reserve                        vm
-     00024A65  _vm_set                            vm
-     00024AC6  _vm_set_const                      vm
-     00024AF2  _vm_get_tlocal                     vm
-     00024B7F  _vm_test_terminate                 vm
-     00024B8A  _vm_idle                           vm
-     00024B96  _vm_get_uint8                      vm
-     00024BC9  _vm_get_int8                       vm
-     00024BFD  _vm_get_int16                      vm
-     00024C3F  _vm_set_uint8                      vm
-     00024C6B  _vm_set_int8                       vm
-     00024C97  _vm_set_int16                      vm
-     00024CD6  _vm_set_const_int8                 vm
-     00024CDF  _vm_set_const_int16                vm
-     00024CEB  _vm_init_rng                       vm
-     00024D17  _vm_rand                           vm
-     00024D9C  _vm_lock                           vm
-     00024DAB  _vm_unlock                         vm
-     00024DBE  _vm_raise                          vm
-     00024E00  _vm_set_indirect                   vm
-     00024E7B  _vm_get_indirect                   vm
-     00024EF6  _vm_poll_loaded                    vm
-     00024F26  _vm_memset                         vm
-     00024F60  _vm_memcpy                         vm
-     00024FDD  _script_runner_init                vm
-     00025094  _script_execute                    vm
-     000251FA  _script_terminate                  vm
-     0002525F  _script_detach_hthread             vm
-     0002529B  ___func_bg_controls_gb_copy__til   bg_controls_gb_copy__tileset
-     0002529B  _bg_controls_gb_copy__tileset      bg_controls_gb_copy__tileset
-ASxxxx Linker V03.00/V05.40 + sdld,  page 60.
+     000241F7  ___func_bg_controls_gb_copy__til   bg_controls_gb_copy__tileset
+     000241F7  _bg_controls_gb_copy__tileset      bg_controls_gb_copy__tileset
+     00025879  ___func_bg_lencityopen_tilemap     bg_lencityopen_tilemap
+     00025879  _bg_lencityopen_tilemap            bg_lencityopen_tilemap
+     00027F89  ___func_scene_17_sprites           scene_17_sprites
+     00027F89  _scene_17_sprites                  scene_17_sprites
+     00027F8C  ___func_scene_18_sprites           scene_18_sprites
+     00027F8C  _scene_18_sprites                  scene_18_sprites
+     00027F8F  ___func_sprite_dhilly_saveselect   sprite_dhilly_saveselect
+     00027F8F  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027F9B  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027FA7  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027FB3  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027FBF  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027FCB  _sprite_dhilly_saveselect_metasp   sprite_dhilly_saveselect
+     00027FDB  _sprite_dhilly_saveselect_animat   sprite_dhilly_saveselect
+     00027FEB  _sprite_dhilly_saveselect_animat   sprite_dhilly_saveselect
+     00027FED  _sprite_dhilly_saveselect          sprite_dhilly_saveselect
+
+ASxxxx Linker V03.00/V05.40 + sdld,  page 66.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_2                             00024000    00004000 =       16384. bytes (REL,CON)
+_CODE_5                             00054000    00004000 =       16384. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0002691D  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilese
-     0002691D  _bg_controls_gba_copy__tileset     bg_controls_gba_copy__tilese
-     00027F9F  ___func_scene_2_sprites            scene_2_sprites
-     00027F9F  _scene_2_sprites                   scene_2_sprites
-     00027FA2  ___func_scene_3_sprites            scene_3_sprites
-     00027FA2  _scene_3_sprites                   scene_3_sprites
-     00027FA5  _script_input_4                    script_input_4
-ASxxxx Linker V03.00/V05.40 + sdld,  page 61.
+     00054000  ___func_VM_RTC                     vm_rtc
+     00054000  _vm_rtc_latch                      vm_rtc
+     00054008  _vm_rtc_get                        vm_rtc
+     0005406F  _vm_rtc_set                        vm_rtc
+     000540CD  _vm_rtc_start                      vm_rtc
+     000540F0  ___func_VM_MAIN                    vm
+     000540F0  _vm_call                           vm
+     00054132  _vm_ret                            vm
+     00054192  _vm_call_far                       vm
+     00054211  _vm_ret_far                        vm
+     00054289  _vm_push                           vm
+     000542B4  _vm_pop                            vm
+     000542EF  _vm_loop                           vm
+     0005437A  _vm_jump                           vm
+     00054386  _wait_frames                       vm
+     000543FC  _vm_invoke                         vm
+     00054529  _vm_join                           vm
+     0005458B  _vm_terminate                      vm
+     000545B8  _vm_if                             vm
+     000546FD  _vm_if_const                       vm
+     00054812  _vm_push_value                     vm
+     00054864  _vm_push_value_ind                 vm
+     000548D9  _vm_push_reference                 vm
+     00054930  _vm_reserve                        vm
+     0005495E  _vm_set                            vm
+     000549BF  _vm_set_const                      vm
+     000549EB  _vm_get_tlocal                     vm
+     00054A78  _vm_test_terminate                 vm
+     00054A83  _vm_idle                           vm
+     00054A8F  _vm_get_uint8                      vm
+     00054AC2  _vm_get_int8                       vm
+     00054AF6  _vm_get_int16                      vm
+     00054B38  _vm_set_uint8                      vm
+     00054B64  _vm_set_int8                       vm
+     00054B90  _vm_set_int16                      vm
+     00054BCF  _vm_set_const_int8                 vm
+     00054BD8  _vm_set_const_int16                vm
+     00054BE4  _vm_init_rng                       vm
+     00054C10  _vm_rand                           vm
+     00054C95  _vm_lock                           vm
+     00054CA4  _vm_unlock                         vm
+     00054CB7  _vm_raise                          vm
+     00054CF9  _vm_set_indirect                   vm
+     00054D74  _vm_get_indirect                   vm
+     00054DEF  _vm_poll_loaded                    vm
+     00054E1F  _vm_memset                         vm
+     00054E59  _vm_memcpy                         vm
+     00054ED6  _script_runner_init                vm
+     00054F8D  _script_execute                    vm
+     000550F3  _script_terminate                  vm
+ASxxxx Linker V03.00/V05.40 + sdld,  page 67.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE_5                             00054000    00004000 =       16384. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00055158  _script_detach_hthread             vm
+     00055194  ___func_bg_controls_gba_copy__ti   bg_controls_gba_copy__tilema
+     00055194  _bg_controls_gba_copy__tilemap     bg_controls_gba_copy__tilema
+     000552FC  ___func_bg_controls_gbc_copy__ti   bg_controls_gbc_copy__tilese
+     000552FC  _bg_controls_gbc_copy__tileset     bg_controls_gbc_copy__tilese
+     0005697E  ___func_bg_controls_mobile_copy_   bg_controls_mobile_copy__til
+     0005697E  _bg_controls_mobile_copy__tilese   bg_controls_mobile_copy__til
+ASxxxx Linker V03.00/V05.40 + sdld,  page 68.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
@@ -2010,7 +2280,7 @@ _HEADER_LCD0                        00000000    00000003 =           3. bytes (A
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-ASxxxx Linker V03.00/V05.40 + sdld,  page 62.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 69.
 
 Files Linked                              [ module(s) ]
 
@@ -2068,12 +2338,22 @@ Files Linked                              [ module(s) ]
 /tmp/_gbsbuild/obj/vm_ui_a.rel            [ vm_ui_a ]
 /tmp/_gbsbuild/obj/vm_ui.rel              [ vm_ui ]
 /tmp/_gbsbuild/obj/vm.rel                 [ vm ]
+/tmp/_gbsbuild/obj/actor_6_interact.rel   [ actor_6_interact ]
+/tmp/_gbsbuild/obj/avatar_font_0.rel      [ avatar_font_0 ]
 /tmp/_gbsbuild/obj/bg_controls_gb_copy__tilemap_attr.rel
                                           [ bg_controls_gb_copy__tilemap_att ]
 /tmp/_gbsbuild/obj/bg_controls_gb_copy__tileset.rel
                                           [ bg_controls_gb_copy__tileset ]
 /tmp/_gbsbuild/obj/bg_controls_gb_copy_.rel
                                           [ bg_controls_gb_copy_ ]
+/tmp/_gbsbuild/obj/bg_controls_gb_copy_0_tilemap_attr.rel
+                                          [ bg_controls_gb_copy_0_tilemap_at ]
+/tmp/_gbsbuild/obj/bg_controls_gb_copy_0_tilemap.rel
+                                          [ bg_controls_gb_copy_0_tilemap ]
+/tmp/_gbsbuild/obj/bg_controls_gb_copy_0_tileset.rel
+                                          [ bg_controls_gb_copy_0_tileset ]
+/tmp/_gbsbuild/obj/bg_controls_gb_copy_0.rel
+                                          [ bg_controls_gb_copy_0 ]
 /tmp/_gbsbuild/obj/bg_controls_gba_copy__tilemap_attr.rel
                                           [ bg_controls_gba_copy__tilemap_at ]
 /tmp/_gbsbuild/obj/bg_controls_gba_copy__tilemap.rel
@@ -2106,11 +2386,42 @@ Files Linked                              [ module(s) ]
                                           [ bg_controls_mobile_copy_0_tilese ]
 /tmp/_gbsbuild/obj/bg_controls_mobile_copy_0.rel
                                           [ bg_controls_mobile_copy_0 ]
+/tmp/_gbsbuild/obj/bg_intro_scenary_copy__tilemap_attr.rel
+                                          [ bg_intro_scenary_copy__tilemap_a ]
+/tmp/_gbsbuild/obj/bg_intro_scenary_copy__tilemap.rel
+                                          [ bg_intro_scenary_copy__tilemap ]
+/tmp/_gbsbuild/obj/bg_intro_scenary_copy__tileset.rel
+                                          [ bg_intro_scenary_copy__tileset ]
+/tmp/_gbsbuild/obj/bg_intro_scenary_copy_.rel
+                                          [ bg_intro_scenary_copy_ ]
+/tmp/_gbsbuild/obj/bg_intro_weather_copy__tilemap_attr.rel
+                                          [ bg_intro_weather_copy__tilemap_a ]
+/tmp/_gbsbuild/obj/bg_intro_weather_copy__tilemap.rel
+                                          [ bg_intro_weather_copy__tilemap ]
+/tmp/_gbsbuild/obj/bg_intro_weather_copy__tileset.rel
+                                          [ bg_intro_weather_copy__tileset ]
+/tmp/_gbsbuild/obj/bg_intro_weather_copy_.rel
+                                          [ bg_intro_weather_copy_ ]
+/tmp/_gbsbuild/obj/bg_lencityopen_tilemap_attr.rel
+                                          [ bg_lencityopen_tilemap_attr ]
+/tmp/_gbsbuild/obj/bg_lencityopen_tilemap.rel
+                                          [ bg_lencityopen_tilemap ]
+/tmp/_gbsbuild/obj/bg_lencityopen_tileset.rel
+                                          [ bg_lencityopen_tileset ]
+/tmp/_gbsbuild/obj/bg_lencityopen.rel     [ bg_lencityopen ]
 /tmp/_gbsbuild/obj/bg_options_copy__tilemap_attr.rel
                                           [ bg_options_copy__tilemap_attr ]
 /tmp/_gbsbuild/obj/bg_options_copy__tileset.rel
                                           [ bg_options_copy__tileset ]
 /tmp/_gbsbuild/obj/bg_options_copy_.rel   [ bg_options_copy_ ]
+/tmp/_gbsbuild/obj/bg_pixil_frame_0_copy_copy__tilemap_attr.rel
+                                          [ bg_pixil_frame_0_copy_copy__tile ]
+/tmp/_gbsbuild/obj/bg_pixil_frame_0_copy_copy__tilemap.rel
+                                          [ bg_pixil_frame_0_copy_copy__tile ]
+/tmp/_gbsbuild/obj/bg_pixil_frame_0_copy_copy__tileset.rel
+                                          [ bg_pixil_frame_0_copy_copy__tile ]
+/tmp/_gbsbuild/obj/bg_pixil_frame_0_copy_copy_.rel
+                                          [ bg_pixil_frame_0_copy_copy_ ]
 /tmp/_gbsbuild/obj/bg_title_copy__tilemap.rel
                                           [ bg_title_copy__tilemap ]
 /tmp/_gbsbuild/obj/bg_title_copy__tileset.rel
@@ -2138,6 +2449,12 @@ Files Linked                              [ module(s) ]
 /tmp/_gbsbuild/obj/palette_1.rel          [ palette_1 ]
 /tmp/_gbsbuild/obj/palette_10.rel         [ palette_10 ]
 /tmp/_gbsbuild/obj/palette_11.rel         [ palette_11 ]
+/tmp/_gbsbuild/obj/palette_12.rel         [ palette_12 ]
+/tmp/_gbsbuild/obj/palette_13.rel         [ palette_13 ]
+/tmp/_gbsbuild/obj/palette_14.rel         [ palette_14 ]
+/tmp/_gbsbuild/obj/palette_15.rel         [ palette_15 ]
+/tmp/_gbsbuild/obj/palette_16.rel         [ palette_16 ]
+/tmp/_gbsbuild/obj/palette_17.rel         [ palette_17 ]
 /tmp/_gbsbuild/obj/palette_2.rel          [ palette_2 ]
 /tmp/_gbsbuild/obj/palette_3.rel          [ palette_3 ]
 /tmp/_gbsbuild/obj/palette_4.rel          [ palette_4 ]
@@ -2166,11 +2483,37 @@ Files Linked                              [ module(s) ]
                                           [ scene_13_collisions ]
 /tmp/_gbsbuild/obj/scene_13_init.rel      [ scene_13_init ]
 /tmp/_gbsbuild/obj/scene_13.rel           [ scene_13 ]
+/tmp/_gbsbuild/obj/scene_14_collisions.rel
+                                          [ scene_14_collisions ]
+/tmp/_gbsbuild/obj/scene_14_init.rel      [ scene_14_init ]
+/tmp/_gbsbuild/obj/scene_14.rel           [ scene_14 ]
+/tmp/_gbsbuild/obj/scene_15_collisions.rel
+                                          [ scene_15_collisions ]
+/tmp/_gbsbuild/obj/scene_15_init.rel      [ scene_15_init ]
+/tmp/_gbsbuild/obj/scene_15_triggers.rel  [ scene_15_triggers ]
+/tmp/_gbsbuild/obj/scene_15.rel           [ scene_15 ]
+/tmp/_gbsbuild/obj/scene_16_collisions.rel
+                                          [ scene_16_collisions ]
+/tmp/_gbsbuild/obj/scene_16_init.rel      [ scene_16_init ]
+/tmp/_gbsbuild/obj/scene_16.rel           [ scene_16 ]
+/tmp/_gbsbuild/obj/scene_17_actors.rel    [ scene_17_actors ]
+/tmp/_gbsbuild/obj/scene_17_collisions.rel
+                                          [ scene_17_collisions ]
+/tmp/_gbsbuild/obj/scene_17_init.rel      [ scene_17_init ]
+/tmp/_gbsbuild/obj/scene_17_sprites.rel   [ scene_17_sprites ]
+/tmp/_gbsbuild/obj/scene_17_triggers.rel  [ scene_17_triggers ]
+/tmp/_gbsbuild/obj/scene_17.rel           [ scene_17 ]
+/tmp/_gbsbuild/obj/scene_18_actors.rel    [ scene_18_actors ]
+/tmp/_gbsbuild/obj/scene_18_collisions.rel
+                                          [ scene_18_collisions ]
+/tmp/_gbsbuild/obj/scene_18_init.rel      [ scene_18_init ]
+/tmp/_gbsbuild/obj/scene_18_sprites.rel   [ scene_18_sprites ]
+/tmp/_gbsbuild/obj/scene_18_triggers.rel  [ scene_18_triggers ]
+/tmp/_gbsbuild/obj/scene_18.rel           [ scene_18 ]
 /tmp/_gbsbuild/obj/scene_2_actors.rel     [ scene_2_actors ]
 /tmp/_gbsbuild/obj/scene_2_collisions.rel
                                           [ scene_2_collisions ]
 /tmp/_gbsbuild/obj/scene_2_init.rel       [ scene_2_init ]
-/tmp/_gbsbuild/obj/scene_2_sprites.rel    [ scene_2_sprites ]
 /tmp/_gbsbuild/obj/scene_2.rel            [ scene_2 ]
 /tmp/_gbsbuild/obj/scene_3_actors.rel     [ scene_3_actors ]
 /tmp/_gbsbuild/obj/scene_3_collisions.rel
@@ -2211,15 +2554,42 @@ Files Linked                              [ module(s) ]
 /tmp/_gbsbuild/obj/script_input_4.rel     [ script_input_4 ]
 /tmp/_gbsbuild/obj/script_input_5.rel     [ script_input_5 ]
 /tmp/_gbsbuild/obj/script_input_6.rel     [ script_input_6 ]
-/tmp/_gbsbuild/obj/sprite_dhilly_saveselect_tileset.rel
-                                          [ sprite_dhilly_saveselect_tileset ]
+/tmp/_gbsbuild/obj/script_timer_0.rel     [ script_timer_0 ]
+/tmp/_gbsbuild/obj/script_timer_1.rel     [ script_timer_1 ]
+/tmp/_gbsbuild/obj/script_timer_2.rel     [ script_timer_2 ]
+/tmp/_gbsbuild/obj/sprite_dhilly_saveselect_co_0.rel
+                                          [ sprite_dhilly_saveselect_co_0 ]
+/tmp/_gbsbuild/obj/sprite_dhilly_saveselect_co_tileset.rel
+                                          [ sprite_dhilly_saveselect_co_tile ]
+/tmp/_gbsbuild/obj/sprite_dhilly_saveselect_co.rel
+                                          [ sprite_dhilly_saveselect_co ]
 /tmp/_gbsbuild/obj/sprite_dhilly_saveselect.rel
                                           [ sprite_dhilly_saveselect ]
+/tmp/_gbsbuild/obj/sprite_highlight_options_co_tileset.rel
+                                          [ sprite_highlight_options_co_tile ]
+/tmp/_gbsbuild/obj/sprite_highlight_options_co.rel
+                                          [ sprite_highlight_options_co ]
+/tmp/_gbsbuild/obj/sprite_square_cart_copy__tileset.rel
+                                          [ sprite_square_cart_copy__tileset ]
+/tmp/_gbsbuild/obj/sprite_square_cart_copy_.rel
+                                          [ sprite_square_cart_copy_ ]
+/tmp/_gbsbuild/obj/sprite_square_platforming_c_tileset.rel
+                                          [ sprite_square_platforming_c_tile ]
+/tmp/_gbsbuild/obj/sprite_square_platforming_c.rel
+                                          [ sprite_square_platforming_c ]
 /tmp/_gbsbuild/obj/sprite_static_copy_tileset.rel
                                           [ sprite_static_copy_tileset ]
 /tmp/_gbsbuild/obj/sprite_static_copy.rel
                                           [ sprite_static_copy ]
 /tmp/_gbsbuild/obj/spritesheet_none.rel   [ spritesheet_none ]
+/tmp/_gbsbuild/obj/trigger_0_interact.rel
+                                          [ trigger_0_interact ]
+/tmp/_gbsbuild/obj/trigger_1_interact.rel
+                                          [ trigger_1_interact ]
+/tmp/_gbsbuild/obj/trigger_2_interact.rel
+                                          [ trigger_2_interact ]
+/tmp/_gbsbuild/obj/trigger_3_interact.rel
+                                          [ trigger_3_interact ]
 /tmp/_gbsbuild/obj/main.rel               [ main ]
 /tmp/_gbsbuild/obj/adventure.rel          [ adventure ]
 /tmp/_gbsbuild/obj/logo.rel               [ logo ]
@@ -2263,13 +2633,13 @@ lib/hUGEDriver.lib                        [ hUGEDriver.o ]
 /tmp/_gbstools/gbdk/lib/sm83/sm83.lib     [ div.o ]
 /tmp/_gbstools/gbdk/lib/gb/gb.lib         [ set_bk_t.o ]
 
-ASxxxx Linker V03.00/V05.40 + sdld,  page 63.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 70.
 
 User Base Address Definitions
 
 _DATA=0xC0A0
 _CODE=0x0200
-ASxxxx Linker V03.00/V05.40 + sdld,  page 64.
+ASxxxx Linker V03.00/V05.40 + sdld,  page 71.
 
 User Global Definitions
 
