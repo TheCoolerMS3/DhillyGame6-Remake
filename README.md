@@ -7,9 +7,12 @@ Dhilly Game 6 is a homebrew Game Boy Color game made with GB Studio 3.1. The sou
 - Multiplayer via link cable (Will work wirelessly on the Nintendo 3DS Virtual Console release, if emulating, check your favourite emulator for link cable emulation support)
 - Compatibility with Game Boy hardware (Previous only worked with Game Boy Color hardware)
 - Super Game Boy (SNES) enhancements (Border and preset palettes)
-- **Difficulty balencing**
+- **Difficulty balenceing**
 
 Please edit the .gbsproj file with GB Studio 4.0. Check your GB Studio version before editing.
+
+**Known bugs**
+Textbox glitches on GB, SGB devices, unpleasant colours on SGB devices. 
 
 **Running on Game Boy**
 
