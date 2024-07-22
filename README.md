@@ -12,6 +12,7 @@ Dhilly Game 6 is a homebrew Game Boy Color game made with GB Studio 3.1. The sou
 Please edit the .gbsproj file with GB Studio 4.0. Check your GB Studio version before editing.
 
 **Known bugs**
+
 Textbox glitches on GB, SGB devices, unpleasant colours on SGB devices. 
 
 **Running on Game Boy**
