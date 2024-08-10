@@ -76032,7 +76032,7 @@
                             "args": {
                                 "variable": "L0",
                                 "trueText": "No!!",
-                                "falseText": "Actually,you're Square"
+                                "falseText": "No,you're Square"
                             },
                             "id": "2af45625-4336-4a11-a44d-5ed1d0f88f99"
                         },
@@ -76048,14 +76048,38 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_IF_COLOR_SUPPORTED",
                                         "args": {
-                                            "text": [
-                                                "I'm not Square! I'm\njust an innocent\npedestrian in dire\nneed of a car to\nborrow!!"
-                                            ],
-                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                            "__collapseElse": false
                                         },
-                                        "id": "094a33a6-5c8e-427c-b571-a55719aa9de2"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "I'm not Square! I'm\njust an innocent\npedestrian in dire\nneed of a car to\nborrow!!"
+                                                        ],
+                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                    },
+                                                    "id": "094a33a6-5c8e-427c-b571-a55719aa9de2"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "I'm not Square! I'm\njust an innocent\npedestrian in dire",
+                                                            "need of a car to\nborrow!!"
+                                                        ],
+                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                    },
+                                                    "id": "3d65491f-fe95-4733-a875-4c1d91be4965"
+                                                }
+                                            ]
+                                        },
+                                        "id": "746b2b1a-40eb-41c7-941a-0a4a80e6460c"
                                     },
                                     {
                                         "command": "EVENT_TEXT",
@@ -76072,7 +76096,7 @@
                                         "command": "EVENT_CHOICE",
                                         "args": {
                                             "variable": "L1",
-                                            "trueText": "I'll vote for Trump",
+                                            "trueText": "I'll vote Trump",
                                             "falseText": "I'll hug you"
                                         },
                                         "id": "c0b9d6dd-a59f-442b-8ff2-e5a3f431ece9"
@@ -76099,15 +76123,40 @@
                                                     "id": "d58b58c3-2811-4c24-8bee-f5b9be0a3e8e"
                                                 },
                                                 {
-                                                    "command": "EVENT_TEXT",
+                                                    "command": "EVENT_IF_COLOR_SUPPORTED",
                                                     "args": {
-                                                        "text": [
-                                                            "Oh my!!",
-                                                            "Very well, as long as\nyou promise to vote\nfor Trump I will lend\nyou my car!"
-                                                        ],
-                                                        "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                        "__collapseElse": false
                                                     },
-                                                    "id": "c5a5ab1a-f634-4a5d-a4b9-f02a490e054b"
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Oh my!!",
+                                                                        "Very well, as long as\nyou promise to vote\nfor Trump I will lend\nyou my car!"
+                                                                    ],
+                                                                    "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                                },
+                                                                "id": "c5a5ab1a-f634-4a5d-a4b9-f02a490e054b"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Oh my!!",
+                                                                        "Very well, as long as\nyou promise to vote\nfor Trump I will lend",
+                                                                        "you my car!"
+                                                                    ],
+                                                                    "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                                },
+                                                                "id": "598df941-49a1-44a9-9800-a67eb3798057"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "dc2c81fa-7dfb-4365-b453-4b73c54bc032"
                                                 }
                                             ],
                                             "false": [
@@ -92052,7 +92101,13 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SHOW_SPRITES",
+                    "args": {},
+                    "id": "42582032-0008-4e29-892b-4d6891d9259a"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -146714,9 +146769,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 5575,
-        "worldScrollY": 2532,
-        "zoom": 210.5,
+        "worldScrollX": 12613,
+        "worldScrollY": 484,
+        "zoom": 131,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
@@ -146801,7 +146856,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": true,
+        "debuggerEnabled": false,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
