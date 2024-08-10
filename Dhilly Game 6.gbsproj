@@ -88810,7 +88810,7 @@
             "tilesetId": "",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "PLATFORM",
             "paletteIds": [
                 "b552be98-c1e7-42fb-93ee-96540b755ad2",
                 null,
@@ -89302,7 +89302,7 @@
             "tilesetId": "",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "PLATFORM",
             "paletteIds": [
                 null,
                 null,
@@ -89783,7 +89783,7 @@
             "tilesetId": "",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "PLATFORM",
             "paletteIds": [
                 null,
                 null,
@@ -148148,8 +148148,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 17826,
-        "worldScrollY": 83,
+        "worldScrollX": 19582,
+        "worldScrollY": 42,
         "zoom": 184,
         "sgbEnabled": true,
         "customHead": "",
