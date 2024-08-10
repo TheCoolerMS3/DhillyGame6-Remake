@@ -59265,11 +59265,28 @@
                             "args": {
                                 "text": [
                                     "Square?",
-                                    "I would let you in, but\nEve hasn't put my\nhouse in the game yet."
+                                    "Come in!"
                                 ],
                                 "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
                             },
-                            "id": "c5f768ac-a3d9-4d45-a5fa-d8a9ed289914"
+                            "id": "d368d088-4379-42c0-8bf4-839f8dfde9c5"
+                        },
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "d0b2c51b-5dab-4b58-9ebf-827cc8752837",
+                                "x": {
+                                    "type": "number",
+                                    "value": 9
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 16
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "1f2dbf95-976e-480c-911d-01a35e5f8165"
                         }
                     ],
                     "startScript": [],
@@ -59759,10 +59776,18 @@
             ],
             "script": [
                 {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 30
+                    },
+                    "id": "fb6e399e-453d-4440-97d7-f9cda2d6c7e6"
+                },
+                {
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Square! Need help\nwith anything."
+                            "Square! Need help\nwith anything?"
                         ],
                         "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
                     },
@@ -59773,7 +59798,7 @@
                     "args": {
                         "variable": "L0",
                         "trueText": "Cool snail facts",
-                        "falseText": "How to leave the city?"
+                        "falseText": "How to leave city?"
                     },
                     "id": "879d4390-2983-4521-a993-f1e0f3e333b5"
                 },
@@ -184629,8 +184654,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 15414,
-        "worldScrollY": 407,
+        "worldScrollX": 10890,
+        "worldScrollY": 3030,
         "zoom": 157.5,
         "sgbEnabled": true,
         "customHead": "",
