@@ -62589,7 +62589,7 @@
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 15
+                                    "value": 17
                                 },
                                 "direction": "",
                                 "fadeSpeed": "2"
@@ -184666,9 +184666,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 10799,
-        "worldScrollY": 2766,
-        "zoom": 157.5,
+        "worldScrollX": 15142,
+        "worldScrollY": 1255,
+        "zoom": 210.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
