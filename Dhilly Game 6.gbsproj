@@ -75655,6 +75655,14 @@
                     "children": {
                         "true": [
                             {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 1,
+                                    "frames": 30
+                                },
+                                "id": "98367c59-c2ed-426c-95af-a70ed301545b"
+                            },
+                            {
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
@@ -184605,8 +184613,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 19973,
-        "worldScrollY": 941,
+        "worldScrollX": 20329,
+        "worldScrollY": 676,
         "zoom": 237,
         "sgbEnabled": true,
         "customHead": "",
