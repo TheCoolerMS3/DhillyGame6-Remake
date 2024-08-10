@@ -56173,7 +56173,7 @@
                                         "You probably want\nrevenge on Dhilly,\nright?",
                                         "Wide Guy told us...\nhe trapped you...",
                                         "Well it's simple!",
-                                        "You go through here,\nand get yourself to\nDhilly's city, get a car\nand drive forth to\nDhilly's lair.",
+                                        "You go through here,\nand get yourself to\nDhilly's city, get a\ncar and drive forth\nto Dhilly's lair.",
                                         "This is,\nunfortunately, as far\nas I can take you.",
                                         "Good luck, Square."
                                     ],
@@ -184605,9 +184605,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 18118,
-        "worldScrollY": 5292,
-        "zoom": 263.5,
+        "worldScrollX": 6958,
+        "worldScrollY": 1583,
+        "zoom": 104.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
