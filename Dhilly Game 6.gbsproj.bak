@@ -21617,9 +21617,6 @@
                 0,
                 0,
                 15,
-                15,
-                15,
-                15,
                 0,
                 0,
                 0,
@@ -21638,6 +21635,9 @@
                 0,
                 0,
                 0,
+                0,
+                0,
+                0,
                 15,
                 15,
                 15,
@@ -21676,7 +21676,6 @@
                 0,
                 0,
                 0,
-                15,
                 15,
                 0,
                 0,
@@ -21698,6 +21697,7 @@
                 0,
                 0,
                 0,
+                0,
                 15,
                 15,
                 0,
@@ -21737,7 +21737,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 15,
@@ -21797,7 +21797,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 15,
@@ -21857,7 +21857,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0
             ],
@@ -21985,6 +21985,35 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "da65b242-b482-4921-b996-c135138f85c4"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "15943f25-4aad-490a-88dc-c4acc21bd88f",
+                    "x": 57,
+                    "y": 25,
+                    "symbol": "trigger_94",
+                    "width": 3,
+                    "height": 5,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "f1cab8ef-2f7d-4f41-8107-e4732890a14b",
+                                "x": {
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 27
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "571909c1-cdb9-448f-996e-42bcad433538"
                         }
                     ],
                     "leaveScript": []
@@ -146685,9 +146714,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 10516,
-        "worldScrollY": 31,
-        "zoom": 104.5,
+        "worldScrollX": 5575,
+        "worldScrollY": 2532,
+        "zoom": 210.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [

@@ -1135,6 +1135,7 @@
 00:0017 ___bank_trigger_91_interact
 00:0017 ___bank_trigger_92_interact
 00:0017 ___bank_trigger_93_interact
+00:0017 ___bank_trigger_94_interact
 00:0017 ___bank_trigger_9_interact
 00:0017 b_SIO_init
 00:0017 b_camera_init
@@ -1160,7 +1161,7 @@
 00:2000 _rROMB0
 00:2DB1 l__HOME
 00:3000 _rROMB1
-00:327F l__CODE_23
+00:32BD l__CODE_23
 00:3E85 s__BASE
 00:3E85 s__CODE_0
 00:3E85 s__INITIALIZER
