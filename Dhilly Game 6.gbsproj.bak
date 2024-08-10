@@ -75657,7 +75657,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 1,
+                                    "time": 0.5,
                                     "frames": 30
                                 },
                                 "id": "98367c59-c2ed-426c-95af-a70ed301545b"
@@ -86665,7 +86665,7 @@
                                 "sceneId": "ad13ef57-e4d5-4ed6-b029-79457d4d8a89",
                                 "x": {
                                     "type": "number",
-                                    "value": 7
+                                    "value": 9
                                 },
                                 "y": {
                                     "type": "number",
@@ -87077,7 +87077,15 @@
                     "collisionGroup": "",
                     "symbol": "actor_44",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "7815f32b-39ef-4c5c-b7ec-2a90096ded49"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -90145,7 +90153,15 @@
                     "collisionGroup": "",
                     "symbol": "actor_45",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "248594c9-755a-4e21-9cb5-95667eb14a03"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -184613,9 +184629,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 20329,
-        "worldScrollY": 676,
-        "zoom": 237,
+        "worldScrollX": 15414,
+        "worldScrollY": 407,
+        "zoom": 157.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
