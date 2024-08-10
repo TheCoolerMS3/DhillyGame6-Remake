@@ -53455,7 +53455,7 @@
                         {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
-                                "actorId": "d2780545-33c7-4f33-8c61-49b04b3f9563",
+                                "actorId": "player",
                                 "x": {
                                     "type": "number",
                                     "value": 18
@@ -148129,8 +148129,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 16060,
-        "worldScrollY": 3116,
+        "worldScrollX": 16481,
+        "worldScrollY": 4522,
         "zoom": 263.5,
         "sgbEnabled": true,
         "customHead": "",
