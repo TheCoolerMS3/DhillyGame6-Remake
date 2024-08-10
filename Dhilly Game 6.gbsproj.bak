@@ -59116,7 +59116,19 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_35",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Square!",
+                                    "I'm actually at LEN\nCITY, but I can\nspeak through this\nstatue!"
+                                ],
+                                "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+                            },
+                            "id": "3c5f8f94-23ad-45fd-bc5a-f11c88129c0a"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -184654,8 +184666,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 10890,
-        "worldScrollY": 3030,
+        "worldScrollX": 10799,
+        "worldScrollY": 2766,
         "zoom": 157.5,
         "sgbEnabled": true,
         "customHead": "",
