@@ -88833,7 +88833,7 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 11
+                                    "value": 0
                                 },
                                 "y": {
                                     "type": "number",
@@ -91400,6 +91400,16 @@
                         "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
                     },
                     "id": "529236ff-8701-472b-a32d-c161dd6d7c25"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "10",
+                        "value": {
+                            "type": "true"
+                        }
+                    },
+                    "id": "35c55f96-9345-4c78-9831-47f3d5f52a55"
                 },
                 {
                     "command": "EVENT_SWITCH_SCENE",
@@ -184700,8 +184710,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 30002,
-        "worldScrollY": 472,
+        "worldScrollX": 28571,
+        "worldScrollY": 1651,
         "zoom": 290,
         "sgbEnabled": true,
         "customHead": "",
