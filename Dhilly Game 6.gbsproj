@@ -88816,7 +88816,7 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 11
+                                    "value": 9
                                 },
                                 "y": {
                                     "type": "number",
@@ -88826,6 +88826,23 @@
                                 "useCollisions": false
                             },
                             "id": "4b85daed-3469-48c4-8cf4-53ae15403a79"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                    "type": "number",
+                                    "value": 11
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 6
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                            },
+                            "id": "c55b39d6-2ef4-4817-82f2-11406b97e18c"
                         },
                         {
                             "command": "EVENT_ACTOR_SET_POSITION",
@@ -140409,24 +140426,6 @@
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 4,
                 0,
                 0,
@@ -140447,11 +140446,29 @@
                 0,
                 0,
                 0,
-                4,
-                4,
-                4,
-                4,
-                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
                 4,
                 4,
                 4,
@@ -184683,9 +184700,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 18498,
-        "worldScrollY": 652,
-        "zoom": 210.5,
+        "worldScrollX": 30002,
+        "worldScrollY": 472,
+        "zoom": 290,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
