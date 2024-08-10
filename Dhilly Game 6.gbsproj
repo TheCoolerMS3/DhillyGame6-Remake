@@ -44805,10 +44805,10 @@
                     "name": "",
                     "id": "f83e4ebc-f259-4326-ac5e-ab6e8bea3131",
                     "x": 19,
-                    "y": 23,
+                    "y": 24,
                     "symbol": "trigger_54",
                     "width": 1,
-                    "height": 2,
+                    "height": 1,
                     "script": [
                         {
                             "command": "EVENT_SWITCH_SCENE",
@@ -51885,7 +51885,7 @@
                 {
                     "name": "",
                     "id": "ec738390-e50e-4331-9a63-63dfe6d0c61e",
-                    "x": 24,
+                    "x": 25,
                     "y": 0,
                     "symbol": "trigger_52",
                     "width": 1,
@@ -51920,7 +51920,7 @@
                                     "type": "number",
                                     "value": 0
                                 },
-                                "speed": 1
+                                "speed": 0.5
                             },
                             "id": "87e5b62f-5b8c-4a72-a151-aee184034be6"
                         },
@@ -51930,6 +51930,14 @@
                                 "actorId": "82dca26f-43f0-4816-9b68-43edac8c6a5c"
                             },
                             "id": "8a77ac94-348c-40d2-9871-19074a19ebf5"
+                        },
+                        {
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "frames": 30
+                            },
+                            "id": "58869997-d3ba-4798-a301-d46a7c761921"
                         },
                         {
                             "command": "EVENT_CAMERA_LOCK",
@@ -148121,9 +148129,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 14451,
-        "worldScrollY": 2605,
-        "zoom": 290,
+        "worldScrollX": 16060,
+        "worldScrollY": 3116,
+        "zoom": 263.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
