@@ -104832,7 +104832,7 @@
             "tilesetId": "",
             "width": 20,
             "height": 57,
-            "type": "TOPDOWN",
+            "type": "PLATFORM",
             "paletteIds": [
                 null,
                 null,
@@ -106013,14 +106013,151 @@
                     "id": "b609a770-4a56-4674-bfbd-5731f18a44dd",
                     "x": 13,
                     "y": 54
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "07efcbad-8ecf-45d8-a568-4306e3d767c4",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_54",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "e2e2b94a-4d61-44be-a05c-f2871a593f78"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8150eb38-06b4-4f65-92cc-97aca37604f8",
+                    "x": 11,
+                    "y": 54
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "07efcbad-8ecf-45d8-a568-4306e3d767c4",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_56",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "70348248-2f63-4c7d-a69c-841036d61f31"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "c720e3ff-26b1-4270-b4b5-62911ff87025",
+                    "x": 15,
+                    "y": 54
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "07efcbad-8ecf-45d8-a568-4306e3d767c4",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_57",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "99f9177a-e1f8-41ef-b450-19d2262e21a8"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "75a15b86-7e06-474d-8a2b-0919bac9baa9",
+                    "x": 13,
+                    "y": 54
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "162a1181-ce79-4ca5-a203-0cb02b2e7e8c",
+                    "x": 10,
+                    "y": 51,
+                    "symbol": "trigger_105",
+                    "width": 8,
+                    "height": 4,
+                    "script": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "8150eb38-06b4-4f65-92cc-97aca37604f8"
+                            },
+                            "id": "f42f4942-fa0a-4b90-a380-ee4c969681df"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "c720e3ff-26b1-4270-b4b5-62911ff87025"
+                            },
+                            "id": "1e04bab9-b5b0-4df4-baac-bfe950646710"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "75a15b86-7e06-474d-8a2b-0919bac9baa9"
+                            },
+                            "id": "550cea5c-2937-49c9-9ced-67da6159be25"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "You got Shilly's pieces."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "21b717bf-a0de-487a-97c2-5f32fbca8055"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 0.5,
+                        "time": 2,
                         "frames": 30
                     },
                     "id": "f0af8fa9-5954-4442-a6ab-c2449c25b8e8"
@@ -106060,43 +106197,71 @@
                     "id": "6666d375-ee09-4aa2-ad1a-b4be921f795e"
                 },
                 {
-                    "command": "EVENT_IF_COLOR_SUPPORTED",
+                    "command": "EVENT_TEXT",
                     "args": {
-                        "__collapseElse": false
-                    },
-                    "children": {
-                        "true": [
-                            {
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "More importantly,\nyou need to attack\nhim with pieces that\nare of the same\npower as his.",
-                                        "The only pieces like\nthat in existence,\nare the ones I am\ncomprised of.",
-                                        "Take my life..\nTake my pieces.."
-                                    ],
-                                    "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a"
-                                },
-                                "id": "1a30f6ca-3b26-4b2b-be47-3e48b2787210"
-                            }
+                        "text": [
+                            "But that's not\nenough.",
+                            "The only weapon that\ncan take down Dhilly..",
+                            "Is the \"Shilly\nPieces\" that make me.",
+                            "I have decided to\nsacrifice myself for\nyour cause.",
+                            "...",
+                            "....",
+                            ".......",
+                            "..................."
                         ],
-                        "false": [
-                            {
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "More importantly,\nyou need to attack\nhim with pieces that",
-                                        "are of the same\npower as his.",
-                                        "The only pieces like\nthat in existence,\nare the ones I am",
-                                        "comprised of.",
-                                        "Take my life..\nTake my pieces.."
-                                    ],
-                                    "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a"
-                                },
-                                "id": "5dd91ad6-c41e-4504-8b00-225ef960a8c9"
-                            }
-                        ]
+                        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a"
                     },
-                    "id": "11dd95b9-13c1-4edf-b382-16062b904da3"
+                    "id": "1a30f6ca-3b26-4b2b-be47-3e48b2787210"
+                },
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "b609a770-4a56-4674-bfbd-5731f18a44dd"
+                    },
+                    "id": "4fbf6707-3a78-42b0-a3c9-0150eacfa107"
+                },
+                {
+                    "command": "EVENT_CAMERA_SHAKE",
+                    "args": {
+                        "time": 2,
+                        "frames": 30,
+                        "shakeDirection": "vertical",
+                        "magnitude": {
+                            "type": "number",
+                            "value": 5
+                        }
+                    },
+                    "id": "472270da-5ec5-4669-871a-3b7dbb59b9d3"
+                },
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 2,
+                        "frames": 30,
+                        "__collapse": false
+                    },
+                    "id": "6d348af8-1efd-4731-aa5b-38b822a15cfe"
+                },
+                {
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "8150eb38-06b4-4f65-92cc-97aca37604f8"
+                    },
+                    "id": "77038ecd-9c69-4cf2-ab5d-2dde2b12e75a"
+                },
+                {
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "c720e3ff-26b1-4270-b4b5-62911ff87025"
+                    },
+                    "id": "fe8b3be6-6be5-433e-b866-b3b5537a140b"
+                },
+                {
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "75a15b86-7e06-474d-8a2b-0919bac9baa9"
+                    },
+                    "id": "4655ecd7-8eda-4390-b79b-22b873a46438"
                 }
             ],
             "playerHit1Script": [],
@@ -106476,7 +106641,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "d0b70f13-4c16-4c14-bf6d-4ae5a846e59a",
@@ -120349,7 +120515,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "7799db09-1d36-4ac2-93db-249e267c1108",
@@ -120721,7 +120888,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "9288c84b-124c-4ae8-a7f5-114141ecc553",
@@ -121933,7 +122101,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "c1cf20cc-845f-4711-82f1-a15d8a95d4f3",
@@ -129355,7 +129524,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "fb2ff945-3c02-4573-bc7a-d9a8eccd00f4",
@@ -129727,7 +129897,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "1899857d-6ac2-4ad2-81a5-86429beb1aab",
@@ -130472,7 +130643,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "0862723e-64fe-4a36-b295-e1b911c8b583",
@@ -130844,7 +131016,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "f49617be-4e68-466a-a636-e5ad854eea83",
@@ -131228,7 +131401,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "lair_right_3.png",
-            "autoColor": false,
             "tileColors": [
                 4,
                 4,
@@ -131590,7 +131762,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "047cbe4a-4c09-4b7e-a211-7e933cbfb5cb",
@@ -131601,7 +131774,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "lair_right_4.png",
-            "autoColor": false,
             "tileColors": [
                 4,
                 4,
@@ -131963,7 +132135,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "f9975459-7d00-42fa-b821-3ecc96dcf7d2",
@@ -131973,7 +132146,9 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "lair_right_5.png"
+            "filename": "lair_right_5.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "905837da-fe4d-46cd-8294-7a840e26db73",
@@ -131984,7 +132159,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "lair_right_6.png",
-            "autoColor": false,
             "tileColors": [
                 4,
                 4,
@@ -132346,7 +132520,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "bdb92021-a22a-47e7-8fae-089e8150d21b",
@@ -132357,7 +132532,6 @@
             "imageWidth": 272,
             "imageHeight": 144,
             "filename": "lair_right.png",
-            "autoColor": false,
             "tileColors": [
                 4,
                 4,
@@ -132971,7 +133145,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "3614977e-71e0-4833-872a-8b59009ede3a",
@@ -149653,7 +149828,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "e13cee90-b72d-4e8b-b74f-733673ad4809",
@@ -151178,7 +151354,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "9c98df2b-d0d2-4b5b-9bdc-5c2fdaf6aed7",
@@ -159488,7 +159665,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "def29a0b-2d23-4435-ae4c-ad8e4ef5fe46",
@@ -159860,7 +160038,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "4bd143bc-304b-4e27-8d02-fb2c0d9fab56",
@@ -160232,7 +160411,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "eee5057b-305c-444a-905b-6aa78c5d6a16",
@@ -160604,7 +160784,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "a6459fb8-effe-40ec-960e-07762d5023d3",
@@ -160976,7 +161157,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "95605d33-0f1a-4e98-93e4-c296ffdf95a3",
@@ -161348,7 +161530,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "be5c1f7f-baa9-4978-8890-6b717fd67238",
@@ -161720,7 +161903,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "34eb449d-82c0-48c5-a0d2-c73c9d3aae05",
@@ -161730,7 +161914,9 @@
             "height": 50,
             "imageWidth": 400,
             "imageHeight": 400,
-            "filename": "wakeupsquare_9.png"
+            "filename": "wakeupsquare_9.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "b743b574-7bd5-45a3-b60e-0db9dee819e3",
@@ -161740,7 +161926,9 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "wakeupsquare_10.png"
+            "filename": "wakeupsquare_10.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "2b14a445-417e-4a7e-897b-b8581230a463",
@@ -163174,7 +163362,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         }
     ],
     "spriteSheets": [
@@ -168712,7 +168901,7 @@
         {
             "id": "19e8573f-ccb7-4418-9a08-43d4ab5d4336",
             "name": "square_jetpack",
-            "symbol": "sprite_square_full_hitbox_c_5",
+            "symbol": "sprite_square_full_hitbox_c_4",
             "numFrames": 1,
             "filename": "square_jetpack.png",
             "checksum": "9535a378c9b062c76cedac2aaa649636508fe03a",
@@ -168839,7 +169028,7 @@
         {
             "id": "7dcc4868-f23b-42c9-af91-dcb7e6173dc0",
             "name": "square_sara_cutscene",
-            "symbol": "sprite_square_full_hitbox_c_4",
+            "symbol": "sprite_square_full_hitbox_c_5",
             "numFrames": 2,
             "filename": "square_sara_cutscene.png",
             "checksum": "bc5a7645bfc6a9c13fb2bdc0b70f064fb0a612bf",
@@ -170475,9 +170664,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "a3571a4d-81d9-4295-9e66-cbe8cc67ce07",
-        "startX": 8,
-        "startY": 24,
+        "startSceneId": "7936335f-264a-4dcf-9361-bdc699781162",
+        "startX": 5,
+        "startY": 53,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -170486,7 +170675,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 36807,
-        "worldScrollY": 1117,
+        "worldScrollY": 1475,
         "zoom": 263.5,
         "sgbEnabled": true,
         "customHead": "",
@@ -170572,7 +170761,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
