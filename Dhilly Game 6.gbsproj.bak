@@ -185062,7 +185062,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "4fdef477-b95e-43ad-8903-80bbdf0847bc",
+        "startSceneId": "a3571a4d-81d9-4295-9e66-cbe8cc67ce07",
         "startX": 5,
         "startY": 54,
         "startMoveSpeed": 1,
@@ -185072,9 +185072,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 45734,
-        "worldScrollY": 1825,
-        "zoom": 290,
+        "worldScrollX": 32556,
+        "worldScrollY": 1724,
+        "zoom": 210.5,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
@@ -185159,7 +185159,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
