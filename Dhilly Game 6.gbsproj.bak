@@ -43737,7 +43737,7 @@
                 {
                     "command": "EVENT_ACTOR_EMOTE",
                     "args": {
-                        "actorId": "$self$",
+                        "actorId": "c244c344-33c7-457f-b4f6-5c56de14ddc3",
                         "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
                     },
                     "id": "1f86a1f2-2951-46ec-aa17-c8a0bf112074"
