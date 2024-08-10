@@ -76064,252 +76064,7 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_43",
-                    "script": [
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Hello. My name is Ben\nShapiro.",
-                                    "You!!!!!! You're that\nWOKE Square,\naren't you?"
-                                ],
-                                "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                            },
-                            "id": "23433dcc-1154-4b52-9f7f-edf0fec083a3"
-                        },
-                        {
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "L0",
-                                "trueText": "No!!",
-                                "falseText": "No,you're Square"
-                            },
-                            "id": "2af45625-4336-4a11-a44d-5ed1d0f88f99"
-                        },
-                        {
-                            "command": "EVENT_IF",
-                            "args": {
-                                "condition": {
-                                    "type": "variable",
-                                    "value": "L0"
-                                },
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_IF_COLOR_SUPPORTED",
-                                        "args": {
-                                            "__collapseElse": false
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "I'm not Square! I'm\njust an innocent\npedestrian in dire\nneed of a car to\nborrow!!"
-                                                        ],
-                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                                    },
-                                                    "id": "094a33a6-5c8e-427c-b571-a55719aa9de2"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "I'm not Square! I'm\njust an innocent\npedestrian in dire",
-                                                            "need of a car to\nborrow!!"
-                                                        ],
-                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                                    },
-                                                    "id": "3d65491f-fe95-4733-a875-4c1d91be4965"
-                                                }
-                                            ]
-                                        },
-                                        "id": "746b2b1a-40eb-41c7-941a-0a4a80e6460c"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "NEVER!!!",
-                                                "Only WOKE people\nborrow cars!!!"
-                                            ],
-                                            "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                        },
-                                        "id": "97c6c634-bb4e-4364-a1e4-85214376b401"
-                                    },
-                                    {
-                                        "command": "EVENT_CHOICE",
-                                        "args": {
-                                            "variable": "L1",
-                                            "trueText": "I'll vote Trump",
-                                            "falseText": "I'll hug you"
-                                        },
-                                        "id": "c0b9d6dd-a59f-442b-8ff2-e5a3f431ece9"
-                                    },
-                                    {
-                                        "command": "EVENT_IF",
-                                        "args": {
-                                            "condition": {
-                                                "type": "variable",
-                                                "value": "L1"
-                                            },
-                                            "__collapseElse": false
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "If you lend me your\ncar, I'll vote Trump!"
-                                                        ],
-                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                                    },
-                                                    "id": "d58b58c3-2811-4c24-8bee-f5b9be0a3e8e"
-                                                },
-                                                {
-                                                    "command": "EVENT_IF_COLOR_SUPPORTED",
-                                                    "args": {
-                                                        "__collapseElse": false
-                                                    },
-                                                    "children": {
-                                                        "true": [
-                                                            {
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "Oh my!!",
-                                                                        "Very well, as long as\nyou promise to vote\nfor Trump I will lend\nyou my car!"
-                                                                    ],
-                                                                    "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                                                },
-                                                                "id": "c5a5ab1a-f634-4a5d-a4b9-f02a490e054b"
-                                                            }
-                                                        ],
-                                                        "false": [
-                                                            {
-                                                                "command": "EVENT_TEXT",
-                                                                "args": {
-                                                                    "text": [
-                                                                        "Oh my!!",
-                                                                        "Very well, as long as\nyou promise to vote\nfor Trump I will lend",
-                                                                        "you my car!"
-                                                                    ],
-                                                                    "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                                                },
-                                                                "id": "598df941-49a1-44a9-9800-a67eb3798057"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "id": "dc2c81fa-7dfb-4365-b453-4b73c54bc032"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "If you lend me your\ncar, I'll hug you!"
-                                                        ],
-                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                                    },
-                                                    "id": "500d5bfa-abd5-4b3a-94dd-42e3061ad60a"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Oh my, I'm so touch\ndeprived.. Very well."
-                                                        ],
-                                                        "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                                    },
-                                                    "id": "c205ed01-5c9f-41a0-b515-239e5dc16c38"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "*hugs*"
-                                                        ],
-                                                        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                                    },
-                                                    "id": "beec8b9e-7681-4663-98b6-feaaa5ed14bd"
-                                                }
-                                            ]
-                                        },
-                                        "id": "a7c68992-73fc-4bbb-9eb6-dd2800373185"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "I can't be Square!\nBecause you're\nSquare!"
-                                            ],
-                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                        },
-                                        "id": "22e0afe2-ed09-47a9-941d-76f54435c52a"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "WHAT. I'm not \nSquare, I'd never be\nso WOKE!!!!"
-                                            ],
-                                            "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                        },
-                                        "id": "d2cb568c-6ce5-4f01-ad9b-b1535e874566"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Prove it!!!!!"
-                                            ],
-                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
-                                        },
-                                        "id": "1e9963e0-bf2a-4bbe-a81c-3883012cb028"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Alright! Very well, I'll\nprove it by lending\nyou my car."
-                                            ],
-                                            "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
-                                        },
-                                        "id": "d9541645-2744-4c9a-a935-10130920e62f"
-                                    }
-                                ]
-                            },
-                            "id": "6e4e7074-d7a9-40b1-b473-5e9e0930a0ce"
-                        },
-                        {
-                            "command": "EVENT_SET_VALUE",
-                            "args": {
-                                "variable": "8",
-                                "value": {
-                                    "type": "true"
-                                }
-                            },
-                            "id": "25a0393f-bc0b-47e8-bae5-3aad73a97764"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Ben Shapiro gave\nSquare his car keys!"
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "26d49e04-ffe7-40da-bfc7-3b16c97748f8"
-                        }
-                    ],
+                    "script": [],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -76351,7 +76106,271 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_IF",
+                    "args": {
+                        "condition": {
+                            "type": "not",
+                            "value": {
+                                "type": "variable",
+                                "value": "8"
+                            }
+                        },
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Hello. My name is Ben\nShapiro.",
+                                        "You!!!!!! You're that\nWOKE Square,\naren't you?"
+                                    ],
+                                    "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                },
+                                "id": "ac05ebe6-542f-4b62-9fa0-b5a2c9c1478d"
+                            },
+                            {
+                                "command": "EVENT_CHOICE",
+                                "args": {
+                                    "variable": "L0",
+                                    "trueText": "No!!",
+                                    "falseText": "No,you're Square"
+                                },
+                                "id": "91d922f4-c896-48ba-aefd-0a3359c08ef1"
+                            },
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "variable",
+                                        "value": "L0"
+                                    },
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_IF_COLOR_SUPPORTED",
+                                            "args": {
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "I'm not Square! I'm\njust an innocent\npedestrian in dire\nneed of a car to\nborrow!!"
+                                                            ],
+                                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                        },
+                                                        "id": "f30f573f-7b19-4ad0-af15-1391daffd3ef"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "I'm not Square! I'm\njust an innocent\npedestrian in dire",
+                                                                "need of a car to\nborrow!!"
+                                                            ],
+                                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                        },
+                                                        "id": "3e2beb71-68bc-4fc0-aec4-da33e942b921"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "f72ba775-11d5-4aad-ace2-5525e2bfb2da"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "NEVER!!!",
+                                                    "Only WOKE people\nborrow cars!!!"
+                                                ],
+                                                "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                            },
+                                            "id": "a347cbc6-95b0-4f4a-9da2-3ec0073810cc"
+                                        },
+                                        {
+                                            "command": "EVENT_CHOICE",
+                                            "args": {
+                                                "variable": "L1",
+                                                "trueText": "I'll vote Trump",
+                                                "falseText": "I'll hug you"
+                                            },
+                                            "id": "dd4d5267-efe9-49e7-96fd-e017997cccf7"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "variable",
+                                                    "value": "L1"
+                                                },
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "If you lend me your\ncar, I'll vote Trump!"
+                                                            ],
+                                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                        },
+                                                        "id": "458dd584-00b5-48a7-90b0-d09f3611df6e"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_COLOR_SUPPORTED",
+                                                        "args": {
+                                                            "__collapseElse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Oh my!!",
+                                                                            "Very well, as long as\nyou promise to vote\nfor Trump I will lend\nyou my car!"
+                                                                        ],
+                                                                        "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                                    },
+                                                                    "id": "bb9c59d8-15cf-4b89-b82f-dedc9b47df76"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "command": "EVENT_TEXT",
+                                                                    "args": {
+                                                                        "text": [
+                                                                            "Oh my!!",
+                                                                            "Very well, as long as\nyou promise to vote\nfor Trump I will lend",
+                                                                            "you my car!"
+                                                                        ],
+                                                                        "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                                    },
+                                                                    "id": "95896111-57cf-41a9-8e5a-0ace800c4b05"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "id": "3604b350-305c-4f79-814d-a4c774fb51fb"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "If you lend me your\ncar, I'll hug you!"
+                                                            ],
+                                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                        },
+                                                        "id": "444709c7-79d5-48a5-9657-3e5ca63f96f8"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "Oh my, I'm so touch\ndeprived.. Very well."
+                                                            ],
+                                                            "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                                        },
+                                                        "id": "ebd45b0b-7e4e-4c4f-ad46-1aa4a2ec46a7"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "*hugs*"
+                                                            ],
+                                                            "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                                        },
+                                                        "id": "3d735b9a-af4a-4f2e-9963-74bc1fb73e15"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "2e16fcc2-9842-4daf-9898-2b9861f616c5"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "I can't be Square!\nBecause you're\nSquare!"
+                                                ],
+                                                "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                            },
+                                            "id": "a0cda12c-32a8-4639-ab6f-f2655c622989"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "WHAT. I'm not \nSquare, I'd never be\nso WOKE!!!!"
+                                                ],
+                                                "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                            },
+                                            "id": "8ca7bafe-669e-4119-b135-e5f8589b65ab"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Prove it!!!!!"
+                                                ],
+                                                "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+                                            },
+                                            "id": "81627faf-c13b-4a13-b7d6-585002227c4a"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Alright! Very well, I'll\nprove it by lending\nyou my car."
+                                                ],
+                                                "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
+                                            },
+                                            "id": "21429fc1-c20e-4ccd-bf0e-57d574a93a95"
+                                        }
+                                    ]
+                                },
+                                "id": "ec41c41a-73d1-407e-89d1-34306f0c6f22"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "8",
+                                    "value": {
+                                        "type": "true"
+                                    }
+                                },
+                                "id": "48f97692-8a61-4a59-8bcd-48e5a6a978d1"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Ben Shapiro gave\nSquare his car keys!"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "869f66ab-94bb-4cef-945e-9ab6cb816627"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "fb3ea0aa-331a-4a0f-916c-f9175e9571e7"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -148129,9 +148148,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 19843,
-        "worldScrollY": 1332,
-        "zoom": 263.5,
+        "worldScrollX": 15761,
+        "worldScrollY": 574,
+        "zoom": 184,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
