@@ -113652,9 +113652,201 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
+        },
+        {
+            "name": "Scene 100",
+            "backgroundId": "50cd756f-fb9a-486d-a6cc-9b87dc59b49c",
+            "tilesetId": "",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "824c64d1-0f2f-47d3-b671-3d4acb40bbd8",
+            "symbol": "scene_21",
+            "x": 700,
+            "y": 1764,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Connect your link cable\nand press A"
+                        ],
+                        "avatarId": "",
+                        "__collapse": false
+                    },
+                    "id": "bdeaf0ed-5b6c-4524-8df4-e038cb2d3898"
+                },
+                {
+                    "command": "EVENT_CHOICE",
+                    "args": {
+                        "variable": "L0",
+                        "trueText": "Host",
+                        "falseText": "Join"
+                    },
+                    "id": "6c451027-4798-43be-8bb4-d8556086d1ac"
+                },
+                {
+                    "command": "EVENT_IF",
+                    "args": {
+                        "condition": {
+                            "type": "variable",
+                            "value": "L0"
+                        },
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_LINK_HOST",
+                                "args": {},
+                                "id": "efe9653e-83df-4e5d-b1f1-e95ebb80c7fa"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Choose \"Join\" on other\ndevice and press A"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "43d8dd79-98d2-4e82-9a4c-ead702ea2cc1"
+                            },
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "variable",
+                                        "value": "12"
+                                    },
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_TIMER_SCRIPT",
+                                            "args": {
+                                                "timer": 4,
+                                                "duration": 0.1,
+                                                "frames": 30,
+                                                "__scriptTabs": "end"
+                                            },
+                                            "children": {
+                                                "script": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "13",
+                                                            "value": {
+                                                                "type": "property",
+                                                                "target": "player",
+                                                                "property": "xpos"
+                                                            }
+                                                        },
+                                                        "id": "48fe38ca-e04b-4a76-bf76-b434e643d7c7"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "14",
+                                                            "value": {
+                                                                "type": "property",
+                                                                "target": "player",
+                                                                "property": "ypos"
+                                                            }
+                                                        },
+                                                        "id": "63a5c457-0450-4809-940e-7414d23ead45"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_LINK_TRANSFER",
+                                                        "args": {
+                                                            "sendVariable": "13",
+                                                            "receiveVariable": "15",
+                                                            "size": 1
+                                                        },
+                                                        "id": "93faad46-9bfa-4845-9a79-f61f1e39ea77"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_LINK_TRANSFER",
+                                                        "args": {
+                                                            "sendVariable": "14",
+                                                            "receiveVariable": "16",
+                                                            "size": 1
+                                                        },
+                                                        "id": "b89241c2-26f1-442f-9144-797c00069516"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "41a384bf-e3db-4c53-81bc-4a47228fe504"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Something has went\nwrong."
+                                                ],
+                                                "avatarId": ""
+                                            },
+                                            "id": "ea961c5c-966d-4df6-9f78-de66d61e5956"
+                                        }
+                                    ]
+                                },
+                                "id": "068e14c7-3e9a-41e0-bb51-c9becb555361"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_LINK_JOIN",
+                                "args": {},
+                                "id": "ae46eb13-d939-4021-8c0d-fa44d76edd79"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "12",
+                                    "value": {
+                                        "type": "true"
+                                    }
+                                },
+                                "id": "24d1946c-8d3c-43de-b895-0ee65f783124"
+                            },
+                            {
+                                "command": "EVENT_LINK_TRANSFER",
+                                "args": {
+                                    "sendVariable": "12",
+                                    "receiveVariable": "12",
+                                    "size": 1
+                                },
+                                "id": "6f7a797b-3f90-473b-8376-15ff95f0baff"
+                            }
+                        ]
+                    },
+                    "id": "d829eb56-ede9-4e58-8c61-d435ba7116a1"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
+        {
+            "id": "50cd756f-fb9a-486d-a6cc-9b87dc59b49c",
+            "name": "announcer",
+            "symbol": "bg_announcer",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "announcer.png"
+        },
         {
             "id": "f52fce5e-f681-4b20-8316-4f52dc141213",
             "name": "Ben shapiros house",
@@ -128272,7 +128464,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "7799db09-1d36-4ac2-93db-249e267c1108",
@@ -129017,7 +129210,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "fe6f1522-5754-429d-a2c5-7a11dfa2bfdf",
@@ -129028,7 +129222,6 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "endingscene1.png",
-            "autoColor": false,
             "tileColors": [
                 4,
                 4,
@@ -129390,7 +129583,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "c5e92bb8-dbca-46b3-bde5-da4dc7092086",
@@ -129762,7 +129956,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "38d8f7f1-d5d7-4579-9320-0f02bda9af2a",
@@ -130134,7 +130329,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "9288c84b-124c-4ae8-a7f5-114141ecc553",
@@ -165112,7 +165308,8 @@
                 0,
                 0,
                 0
-            ]
+            ],
+            "autoColor": false
         },
         {
             "id": "9c98df2b-d0d2-4b5b-9bdc-5c2fdaf6aed7",
@@ -177741,7 +177938,7 @@
         {
             "id": "6acc65f6-5878-446b-afe5-2cb4e8a9d7ae",
             "name": "dhilly_battle",
-            "symbol": "sprite_dhilly_bridge_intera_0",
+            "symbol": "sprite_dhilly_bridge_intera",
             "numFrames": 1.9375,
             "filename": "dhilly_battle.png",
             "checksum": "0a24e56071434295bc1fdfc6ec0f294832aca2c4",
@@ -177868,7 +178065,7 @@
         {
             "id": "074fb6d7-9179-4ffe-98cc-de3cd3850498",
             "name": "dhilly_bridge_interaction",
-            "symbol": "sprite_dhilly_bridge_intera",
+            "symbol": "sprite_dhilly_bridge_intera_0",
             "numFrames": 1.9375,
             "filename": "dhilly_bridge_interaction.png",
             "checksum": "0a24e56071434295bc1fdfc6ec0f294832aca2c4",
@@ -184691,6 +184888,31 @@
             "id": "22",
             "name": "Dhilly Health",
             "symbol": "var_dhilly_health"
+        },
+        {
+            "id": "12",
+            "name": "Link test",
+            "symbol": "var_link_test"
+        },
+        {
+            "id": "13",
+            "name": "Square X",
+            "symbol": "var_square_x_0"
+        },
+        {
+            "id": "14",
+            "name": "Square Y",
+            "symbol": "var_square_y"
+        },
+        {
+            "id": "15",
+            "name": "Other player X",
+            "symbol": "var_other_player_x"
+        },
+        {
+            "id": "16",
+            "name": "Other player Y",
+            "symbol": "var_other_player_y"
         }
     ],
     "engineFieldValues": [
@@ -184700,7 +184922,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "a3571a4d-81d9-4295-9e66-cbe8cc67ce07",
+        "startSceneId": "824c64d1-0f2f-47d3-b671-3d4acb40bbd8",
         "startX": 5,
         "startY": 54,
         "startMoveSpeed": 1,
@@ -184710,9 +184932,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 28571,
-        "worldScrollY": 1651,
-        "zoom": 290,
+        "worldScrollX": 1197,
+        "worldScrollY": 3512.5,
+        "zoom": 200,
         "sgbEnabled": true,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
