@@ -15,7 +15,7 @@ Please edit the .gbsproj file with GB Studio 4.0. Check your GB Studio version b
 So far, the project has been exclusively made by me, Eve, mainly due to the motivation of hack club's Arcade. However. others are free to help, and this remake does retain the story and a few of the levels of the original game, which were made by StanDX.
 
 # Testing
-While I still intend to add more to the game, it is playable from start to finish, and you may enjoy it at the [online demo](https://bottom.monster/rand/dhilly6)
+While I still intend to add more to the game, it is playable from start to finish, and you may enjoy it at the [online demo](https://bottom.monster/rand/dhilly6).
 
 # Build instructions
 You can build the game using [GB Studio 4.0](https://chrismaltby.itch.io/gb-studio).
