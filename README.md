@@ -19,3 +19,6 @@ While I still intend to add more to the game, it is playable from start to finis
 
 # Build instructions
 You can build the game using [GB Studio 4.1](https://chrismaltby.itch.io/gb-studio).
+
+# todo
+Make Sara yap less when Square falls
