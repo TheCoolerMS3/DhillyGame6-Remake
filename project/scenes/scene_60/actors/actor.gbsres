@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "3c1290a4-56ef-47a0-8567-537ab965a515",
+  "_index": 0,
+  "symbol": "actor_41",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6f49b2b9-78f8-4c69-9085-4aacd3aa88e1",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "7"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Transporting to:\nDHILLY CITY"
+              ],
+              "avatarId": ""
+            },
+            "id": "962b166a-91b4-444d-8c5a-f30b017d1194"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 5,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "de6e1b4e-18db-4552-8fc5-86ab92a599ac"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "b452ad40-e980-4b5c-8e76-84358c3856c6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Already transported."
+              ],
+              "avatarId": ""
+            },
+            "id": "3b768aea-b173-4db1-9db6-02ead9eee601"
+          }
+        ]
+      },
+      "id": "db5288b9-bae1-4558-81d9-06e9d9842a1a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

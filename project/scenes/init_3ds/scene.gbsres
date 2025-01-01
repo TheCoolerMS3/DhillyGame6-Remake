@@ -1,0 +1,82 @@
+{
+  "_resourceType": "scene",
+  "id": "3443f0d9-1153-4e5a-b72a-aef265c46f62",
+  "_index": 9,
+  "type": "LOGO",
+  "name": "Init 3DS",
+  "symbol": "scene_10",
+  "x": 124.40181340968755,
+  "y": 798.4920066809839,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "01fd7b81-71a8-4d7b-b658-1194264cc55c",
+  "tilesetId": "",
+  "paletteIds": [
+    "acbf04a7-1d65-49ae-ab55-2b2750cb0fbc",
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Build Flags:\nSee scene \"Web init\" for more info, Flag 2 is for 3DS builds"
+      },
+      "id": "0ebd6202-1a75-47ea-ae40-167925784833"
+    },
+    {
+      "command": "EVENT_SET_FLAGS",
+      "args": {
+        "variable": "0",
+        "flag1": false,
+        "flag2": true,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "5b4533a4-b5d0-4343-9a8f-568c90687279"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "28df34de-4d51-480b-82c4-4530a9830d46"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "acbf89f4-f070-4377-bb56-b995e51cadb0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "d42f2841-346b-43dc-9d3f-4ed89c7de071"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

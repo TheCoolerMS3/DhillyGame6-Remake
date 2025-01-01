@@ -1,0 +1,137 @@
+{
+  "_resourceType": "scene",
+  "id": "af3d7069-6f5e-4735-91c2-f1f7db694a8e",
+  "_index": 90,
+  "type": "TOPDOWN",
+  "name": "Scene 92",
+  "symbol": "scene_92",
+  "x": 14496,
+  "y": 568,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8cbfb3e4-a61e-4b71-b0ea-5d4d6d313723",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "889aa170-6729-47df-92e5-3e0585f6e6f3"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "8ad6d92d-fc6e-4a31-a389-b6f50cca1e49"
+      },
+      "id": "0bc671ee-a3e3-45e8-8492-b0ca43aa9eee"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "6ca190b0-0046-4c3a-b43a-50dd781498c3"
+      },
+      "id": "c9ea0215-0ddf-43b6-9c99-5236a45148df"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "ed3f59a3-8241-43e2-aa50-dd426f42aa2d"
+      },
+      "id": "999a0919-c39a-4532-a8a4-79caf3b5abf3"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1.5,
+        "frames": 30
+      },
+      "id": "9e82a076-89df-4af0-b6ed-02a498057e2d"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "8ad6d92d-fc6e-4a31-a389-b6f50cca1e49"
+      },
+      "id": "04c0e42c-8d5c-4546-8a62-0ee21af2f8f5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30
+      },
+      "id": "463e25b2-ac5c-4231-bafb-fcc05662b721"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "6ca190b0-0046-4c3a-b43a-50dd781498c3"
+      },
+      "id": "785b28fd-1794-4d89-9438-7bc2e4cdf77e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30
+      },
+      "id": "feb5a7d5-e3cf-470d-938a-d5b3cb2bd90c"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "ed3f59a3-8241-43e2-aa50-dd426f42aa2d"
+      },
+      "id": "16637bd7-f74c-4c95-85e3-79d1b266d3d9"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 1.6,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "2cd516e3-ead7-4a59-ad9d-b899a397a7f3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You loaded the gun with\nShilly pieces."
+        ],
+        "avatarId": ""
+      },
+      "id": "a7758eba-174b-408a-9c6a-7f17c4cf950e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "ed308e29-89ec-4d1f-9e6e-f2e154a3228a",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 54
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "a53c3e67-1dd6-467b-a005-1a113a083d9b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

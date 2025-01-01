@@ -1,0 +1,56 @@
+{
+  "_resourceType": "trigger",
+  "id": "b3f14c62-3065-445c-b151-8ff1360eff55",
+  "_index": 0,
+  "symbol": "trigger_115",
+  "prefabId": "",
+  "name": "",
+  "x": 76,
+  "y": 5,
+  "width": 3,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "c56c3f2b-c185-45cf-9fe0-f449885b385d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Wake up Square!"
+        ],
+        "avatarId": ""
+      },
+      "id": "f1270080-5570-4de7-8af3-ce40921ee31f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f0c27c7e-3b2f-4b82-b9c0-00801942e704",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "c457e176-0596-4bc3-9e1b-b662cb671c9e"
+    }
+  ],
+  "leaveScript": []
+}

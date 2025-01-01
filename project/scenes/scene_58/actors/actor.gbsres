@@ -1,0 +1,72 @@
+{
+  "_resourceType": "actor",
+  "id": "f9cebc9e-b1a8-4eb0-809f-be89c50b6d35",
+  "_index": 0,
+  "symbol": "actor_42",
+  "prefabId": "",
+  "name": "",
+  "x": 70,
+  "y": 34,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "54082af1-8197-4c04-95c2-e318d6e6817b",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "8"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "9fcd7f86-d5df-48ff-8d63-ab64589b983a",
+              "x": {
+                "type": "number",
+                "value": 84
+              },
+              "y": {
+                "type": "number",
+                "value": 48
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "a21dbd82-f20d-43dd-b7e9-d775d9f2cf6a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You need keys to use\nthe car."
+              ],
+              "avatarId": ""
+            },
+            "id": "5f10e037-a428-4209-aca6-4a94c46f2571"
+          }
+        ]
+      },
+      "id": "63768d5b-9957-489e-ad91-71800e67bad9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,43 @@
+{
+  "_resourceType": "trigger",
+  "id": "d6cb2bcd-0cf6-4952-8ab2-6335d0d8521f",
+  "_index": 0,
+  "symbol": "trigger_108",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 13,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You found all the\nDhilly pieces!"
+        ],
+        "avatarId": ""
+      },
+      "id": "29719827-6f1d-46d4-b7ce-ff0731a87d61"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "44267c62-0568-44cb-bb0b-a4aedf85654e",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "22bfc5c8-53e4-4d48-b2b9-ec28f091a18d"
+    }
+  ],
+  "leaveScript": []
+}

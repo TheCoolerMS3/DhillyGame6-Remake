@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "c53d29f3-adf0-4a6d-b582-35b7180c2783",
+  "name": "tiles",
+  "symbol": "bg_intro_weather_copy_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "tiles.png",
+  "tileColors": "0086+042+0012+042+00cc+",
+  "autoColor": false
+}

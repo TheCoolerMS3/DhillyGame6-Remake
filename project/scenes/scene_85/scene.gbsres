@@ -1,0 +1,65 @@
+{
+  "_resourceType": "scene",
+  "id": "44267c62-0568-44cb-bb0b-a4aedf85654e",
+  "_index": 83,
+  "type": "PLATFORM",
+  "name": "Scene 79",
+  "symbol": "scene_85",
+  "x": 12168,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "be5c1f7f-baa9-4978-8890-6b717fd67238",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "dmg",
+    "",
+    "",
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "55b7ac1c-1f2c-4da9-a2a0-ddce4b4a32e5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "....Wake up Square........"
+        ],
+        "avatarId": ""
+      },
+      "id": "a8c71478-9174-40c9-b924-8111dcaf87de"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "759ae01c-fbec-472f-857e-edadcd0fe29d",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 47
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "8ad86c3a-d96a-4fab-bff1-b288bd6fd7e5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

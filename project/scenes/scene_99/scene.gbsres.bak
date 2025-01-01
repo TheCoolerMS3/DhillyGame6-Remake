@@ -1,0 +1,155 @@
+{
+  "_resourceType": "scene",
+  "id": "14b182e0-2ac4-4d9a-9671-6fb91d6e5575",
+  "_index": 97,
+  "type": "TOPDOWN",
+  "name": "Scene 99",
+  "symbol": "scene_99",
+  "x": 15720,
+  "y": 312,
+  "width": 50,
+  "height": 90,
+  "backgroundId": "dd91cd2b-38d1-44ac-a4fd-721148af1c03",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "dmg",
+    "",
+    "",
+    "86b27831-e3a7-4de0-845e-0aefcd543218"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": null,
+  "script": [
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 7
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "speed": 0
+      },
+      "id": "b88d3a46-fc7a-4f4a-9f7b-6483634aeda2"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2"
+      },
+      "id": "49bd3f66-2a0f-4c47-96d8-a78d78f43db9"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        },
+        "speed": 1
+      },
+      "id": "7eedae8b-899e-46c2-9472-896d06667341"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "d547cc20-1926-4f73-914e-01473d76d728"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It seems like Dhilly's\nevil reign is finally\nover."
+        ],
+        "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+      },
+      "id": "c9598ea5-3f29-410a-8384-d41cbdfbf314"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Square.. I knew he\nhad it in him."
+        ],
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+      },
+      "id": "5c055f98-43a1-46f4-b472-1859e8bf873a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "295e1186-fac5-4b5c-bc1d-612929ff62f7"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 52
+        },
+        "speed": 1
+      },
+      "id": "f09b0747-5271-40b6-bdea-e5649edfae3a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "When Dhilly died, The\nDHILLYHUB CORE\nexploded.",
+          "It took everyone\npresent down.",
+          "In just one night,\nSquare, Dhilly, Shilly\nand Joe all died.",
+          "It seems the story has\ncame to an end."
+        ],
+        "avatarId": ""
+      },
+      "id": "c805c7ea-5b74-4548-9dce-4456fcdbf6d3"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "43e89bc6-7a7f-42bb-95eb-1b213e51a4c9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "bacad252-4297-40d9-9cf6-3f1e7765c8b8",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "6fafe1e7-8c33-48f3-b668-a1f0a1496899"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001cb+0f18+002+0f6+0011+0f!0020+0f!0010+0f!002+0f9+0015+0f!0010+0f!002+0f!007+0f!0015+0f!00f+0f!003+0f!007+0f!0026+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f3+002+0f4+0015+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0032+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!002+0f9+0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!00f+0f!003+0f!007+0f!0016+0f!00f+0f!002+0f3+002+0f4+0015+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0011+0f20+001fd+"
+}

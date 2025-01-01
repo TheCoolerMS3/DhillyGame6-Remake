@@ -1,0 +1,90 @@
+{
+  "_resourceType": "scene",
+  "id": "40bce43c-40eb-414d-8c15-5157a6fe3de3",
+  "_index": 47,
+  "type": "PLATFORM",
+  "name": "Scene 49",
+  "symbol": "scene_49",
+  "x": 4736,
+  "y": 1232,
+  "width": 103,
+  "height": 18,
+  "backgroundId": "897708d0-0e1a-4181-9b9e-65056b629b32",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-ui",
+    "",
+    "",
+    "",
+    "f5f876fe-bf82-4a90-b53f-a9c364345995"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 60,
+        "__scriptTabs": "end",
+        "units": "frames"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "0fb4e4a8-6650-4962-abf8-48c5c82d36e1",
+              "spriteStateId": "",
+              "actorId": "03a88e3a-a56a-40c5-abaa-72ebc865ceb1",
+              "x": 0,
+              "y": 0,
+              "directionType": "direction",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 3,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "07caf72c-887a-4fa5-9e20-ad12960624ac"
+          }
+        ]
+      },
+      "id": "8861a7c2-fc58-42ca-8314-7c529a9bbf2a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "40bce43c-40eb-414d-8c15-5157a6fe3de3",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "51de444a-5bb8-49b4-ace1-cb755641e05e"
+    }
+  ],
+  "collisions": "00338+0fd+0027+0f9+00a+0f7+00a+0f3+0019+0f!002e+0f!0037+0f!002e+0f!0015+0f!00f+0f3+00f+0f!002e+0f!0037+0f!001d+0f6+00b+0f7+0031+0f!0066+0f!0067+0f18+0010f+"
+}

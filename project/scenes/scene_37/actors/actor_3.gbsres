@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "4977ffbc-bf47-46d6-8b21-d58e4795e317",
+  "_index": 2,
+  "symbol": "actor_18",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2d9f9493-8785-4f7c-a5c8-52ee1215cc69",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The owner of this\nlaptop has disabled\nguest logins. For\nassistance please visit:\n\nhttps://bottom.monster\n/dhilly/tidbits\n/iceoslogin"
+        ],
+        "avatarId": ""
+      },
+      "id": "c825261d-d8d8-4fd9-89fe-5a237c64cdff"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

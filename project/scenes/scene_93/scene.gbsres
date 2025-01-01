@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "ed308e29-89ec-4d1f-9e6e-f2e154a3228a",
+  "_index": 91,
+  "type": "TOPDOWN",
+  "name": "Scene 91",
+  "symbol": "scene_93",
+  "x": 14704,
+  "y": 256,
+  "width": 20,
+  "height": 57,
+  "backgroundId": "264c253e-1fbf-4d25-9c96-3cc5b65c5497",
+  "tilesetId": "",
+  "paletteIds": [
+    "52c76f8b-3c83-4b60-93b2-30543a886365",
+    "",
+    "",
+    "",
+    "e1b60852-5f2b-4af2-a284-a0b46b6c18e5"
+  ],
+  "spritePaletteIds": [
+    "",
+    "1ab34aa7-4ada-45f2-8c3c-627a8c3ea786",
+    "049688c6-e4ac-4f76-beb8-90fbc95ab9d0"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "19e8573f-ccb7-4418-9a08-43d4ab5d4336",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "21"
+      },
+      "id": "b91b26b7-69ab-4d93-b761-a35718584d1b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Square died."
+              ],
+              "avatarId": ""
+            },
+            "id": "9282fe03-1777-4007-aa0b-01e2d5592212"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "4fdef477-b95e-43ad-8903-80bbdf0847bc",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "eef473a3-45be-4c98-84eb-872feeff5e07"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Square has $21$ health."
+              ],
+              "avatarId": ""
+            },
+            "id": "475d0adc-2e4b-4cc8-a990-f1d01bfcd044"
+          }
+        ]
+      },
+      "id": "dc718dc0-051c-4e75-9adf-2943814f4243"
+    }
+  ],
+  "collisions": "00168+0114+002d0+0f28+"
+}

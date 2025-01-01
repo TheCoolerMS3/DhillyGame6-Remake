@@ -1,0 +1,95 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Build Flags",
+      "symbol": "var_build_flags_0"
+    },
+    {
+      "id": "1",
+      "name": "LOOP_OFFSET",
+      "symbol": "var_loop_offset"
+    },
+    {
+      "id": "2",
+      "name": "OFFSET_ALT",
+      "symbol": "var_offset_alt"
+    },
+    {
+      "id": "3",
+      "name": "Game Flags",
+      "symbol": "var_game_flags"
+    },
+    {
+      "id": "4",
+      "name": "SaveSlot",
+      "symbol": "var_saveslot"
+    },
+    {
+      "id": "5",
+      "name": "square warmed",
+      "symbol": "var_square_warmed"
+    },
+    {
+      "id": "6",
+      "name": "papyrus ticket",
+      "symbol": "var_papyrus_ticket"
+    },
+    {
+      "id": "7",
+      "name": "elevatordone",
+      "symbol": "var_elevatordone"
+    },
+    {
+      "id": "8",
+      "name": "has car?",
+      "symbol": "var_has_car_"
+    },
+    {
+      "id": "9",
+      "name": "Has key card?",
+      "symbol": "var_has_key_card_"
+    },
+    {
+      "id": "10",
+      "name": "has gun?",
+      "symbol": "var_has_gun_"
+    },
+    {
+      "id": "11",
+      "name": "Maze pieces",
+      "symbol": "var_maze_pieces"
+    },
+    {
+      "id": "12",
+      "name": "Link test",
+      "symbol": "var_link_test"
+    },
+    {
+      "id": "13",
+      "name": "Square X",
+      "symbol": "var_square_x_0"
+    },
+    {
+      "id": "14",
+      "name": "Square Y",
+      "symbol": "var_square_y"
+    },
+    {
+      "id": "15",
+      "name": "Other player X",
+      "symbol": "var_other_player_x"
+    },
+    {
+      "id": "16",
+      "name": "Other player Y",
+      "symbol": "var_other_player_y"
+    },
+    {
+      "id": "22",
+      "name": "Dhilly Health",
+      "symbol": "var_dhilly_health"
+    }
+  ]
+}

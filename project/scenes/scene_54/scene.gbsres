@@ -1,0 +1,95 @@
+{
+  "_resourceType": "scene",
+  "id": "d0b2c51b-5dab-4b58-9ebf-827cc8752837",
+  "_index": 52,
+  "type": "TOPDOWN",
+  "name": "Scene 54",
+  "symbol": "scene_54",
+  "x": 7464,
+  "y": 1960,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "9c98df2b-d0d2-4b5b-9bdc-5c2fdaf6aed7",
+  "tilesetId": "",
+  "paletteIds": [
+    "1f6eb6f4-3a1d-4262-829a-bced3a5c32d0",
+    "",
+    "",
+    "",
+    "ed6ea21a-69e6-4585-bf83-9721beec79a3"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "fb6e399e-453d-4440-97d7-f9cda2d6c7e6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Square! Need help\nwith anything?"
+        ],
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+      },
+      "id": "6763bb91-1f3e-41f7-833c-dbe7d23fa98c"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Cool snail facts",
+        "falseText": "How to leave city?"
+      },
+      "id": "879d4390-2983-4521-a993-f1e0f3e333b5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "What makes you think\nI know anything \nabout snails?"
+              ],
+              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+            },
+            "id": "1ba458ac-5737-4d05-baa4-e1ba7b426ebe"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Remember that dark\npathway I showed\nyou? It's straight on\nfrom the city!",
+                "Just follow that!"
+              ],
+              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+            },
+            "id": "87d9f00b-79f4-430b-be6d-eac847648ca8"
+          }
+        ]
+      },
+      "id": "22bfcb52-db09-4e34-ac61-66f9f214b8c3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "008d+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f8+002+0f8+00!"
+}

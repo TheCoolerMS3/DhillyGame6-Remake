@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "bf9e2e6b-a770-43ea-8d76-fe9fc6e0d21b",
+  "_index": 45,
+  "type": "TOPDOWN",
+  "name": "Scene 47",
+  "symbol": "scene_47",
+  "x": 2392,
+  "y": 128,
+  "width": 57,
+  "height": 22,
+  "backgroundId": "3614977e-71e0-4833-872a-8b59009ede3a",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "4c026214-7aea-451a-827e-43f5d8625c64",
+    "",
+    "1fb5c806-9b12-46ee-bc15-7d06bb8f32ca"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00ae+0fc+00!0fc+00!0fc+00!0fc+006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!00!0f!00a+0f!006+0f!003+0f8+00!0f!003+0f8+00!0f!003+0f8+00!0f!003+0f4+002+0f2+001cb+"
+}

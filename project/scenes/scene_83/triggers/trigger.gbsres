@@ -1,0 +1,43 @@
+{
+  "_resourceType": "trigger",
+  "id": "e28555ad-09dc-468d-b86f-bd03aa27099b",
+  "_index": 0,
+  "symbol": "trigger_106",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 8,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You found an\ninvisible Dhilly\npiece! 1 left."
+        ],
+        "avatarId": ""
+      },
+      "id": "f1bd392a-16ef-4efe-bd38-a39830df6ca4"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f208758a-d627-4edd-ab51-b11f219839a8",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "a0ab7260-b5cc-488a-bc60-871d0e7b2d2d"
+    }
+  ],
+  "leaveScript": []
+}

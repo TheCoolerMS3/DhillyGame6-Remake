@@ -1,0 +1,61 @@
+{
+  "_resourceType": "trigger",
+  "id": "1259cca0-d7d1-426c-bb72-21ea1b80a58f",
+  "_index": 0,
+  "symbol": "trigger_89",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 7,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "9"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "property",
+                "target": "player",
+                "property": "ypos"
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "cc593621-44ae-470e-8ea9-feb36c2e65ea"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bzzt!",
+                "You can't pass without\nan Official Dhilly\nWeapons Locker Key\nCard."
+              ],
+              "avatarId": ""
+            },
+            "id": "066c399f-6a64-400e-af00-129d88c70062"
+          }
+        ]
+      },
+      "id": "8c370b82-fb52-4384-ac21-841c90a6b1ad"
+    }
+  ],
+  "leaveScript": []
+}

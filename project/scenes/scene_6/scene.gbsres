@@ -1,0 +1,49 @@
+{
+  "_resourceType": "scene",
+  "id": "dfecfcfd-b3eb-4dc1-8415-31958dfcf62b",
+  "_index": 5,
+  "type": "LOGO",
+  "name": "Scene 6",
+  "symbol": "scene_6",
+  "x": 128.30614149710632,
+  "y": 626.7388463692361,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "10b7dc9e-6cf9-4466-88cb-db79a2c81247",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "335c1883-ea5f-4dea-a3d8-3d11a69b7147"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "acbf89f4-f070-4377-bb56-b995e51cadb0",
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "658a8332-3df7-4cb1-a4c5-af949d3051cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

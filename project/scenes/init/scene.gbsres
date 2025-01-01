@@ -1,0 +1,170 @@
+{
+  "_resourceType": "scene",
+  "id": "a3571a4d-81d9-4295-9e66-cbe8cc67ce07",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "Init",
+  "symbol": "scene_7",
+  "x": 131.27272727272737,
+  "y": 461.09090909090907,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a9c79bb7-622d-4d24-8681-34bfe261d14f",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "a28f898c-1a47-4f76-bf65-8b251518c831"
+    },
+    {
+      "command": "EVENT_IF_DEVICE_GBA",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "5627dada-96ab-4a86-8c9c-2a739c665621",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "db2f5a6b-be6f-4bbe-8bbc-67b9000eafa3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_COLOR_SUPPORTED",
+            "args": {
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "4e26a9d2-0eb8-4b43-b049-330c11e23e09",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "4acdde8b-f7d8-4023-97e9-312323de82cd"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Support for Game Boy\nand Super Game Boy\ndevices incomplete.",
+                      "Please use a Game Boy\nColor or Advance\ndevice for testing.",
+                      "If you are using an\nemulator, configure it\nto emulate a color\nsystem."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "24408b02-f7d8-4683-a906-d07b6c781213"
+                },
+                {
+                  "command": "EVENT_IF_DEVICE_SGB",
+                  "args": {
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "d3df2481-26e7-4508-ab0d-b72a17ba9aa9",
+                          "x": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "3c77fa29-4a0a-4aff-81ba-c57a8f87799a"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "dfecfcfd-b3eb-4dc1-8415-31958dfcf62b",
+                          "x": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 5
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "2c9926e3-3e60-4b37-b227-bd31a9915fbe"
+                      }
+                    ]
+                  },
+                  "id": "d6f16c20-137d-4385-ab73-b06254d81587"
+                }
+              ]
+            },
+            "id": "c68c1476-e6de-44e7-b637-ecbccc6856d5"
+          }
+        ]
+      },
+      "id": "a8a9ea39-582e-4821-88c5-529bbf910dd7"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "acbf89f4-f070-4377-bb56-b995e51cadb0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "9d8e7023-49cf-4546-8137-eed55d3b59fd"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

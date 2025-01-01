@@ -1,0 +1,159 @@
+{
+  "_resourceType": "scene",
+  "id": "090e5952-1a17-48f8-9eac-9853a7a5c684",
+  "_index": 16,
+  "type": "PLATFORM",
+  "name": "Scene 15",
+  "symbol": "scene_17",
+  "x": 1364.0731707317075,
+  "y": 120.78048780487808,
+  "width": 20,
+  "height": 75,
+  "backgroundId": "41a5eece-6041-4e5c-b446-4ac1151fe17f",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "212e8c21-5496-4040-ba29-74bba8eb1ff6",
+    "",
+    "",
+    "a850b63c-b2db-419e-af25-61f8f55a99bc"
+  ],
+  "spritePaletteIds": [
+    "9aeaee5c-abbe-4da0-8289-f5293a3e72ca"
+  ],
+  "autoFadeSpeed": null,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "The code below is responsible\nfor the rain animation, feel\nfree to try reusing it yourself\nor ask me for help\n- Eve"
+      },
+      "id": "cefb32c8-e934-40a3-ad5c-a0e9447f20e7"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 0.1,
+        "frames": 16,
+        "__scriptTabs": "end",
+        "units": "frames"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_REPLACE_TILE_XY 1, 1, ___bank_bg_intro_weather_copy__tileset, _bg_intro_weather_copy__tileset, VAR_LOOP_OFFSET",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "c53d29f3-adf0-4a6d-b582-35b7180c2783"
+                }
+              ]
+            },
+            "id": "2f5b301e-8899-43ff-a708-5017359035b6"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_REPLACE_TILE_XY 1, 2, ___bank_bg_intro_weather_copy__tileset, _bg_intro_weather_copy__tileset, VAR_OFFSET_ALT",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "c53d29f3-adf0-4a6d-b582-35b7180c2783"
+                }
+              ],
+              "__comment": false
+            },
+            "id": "0f8abb82-1520-4418-acbb-39a0b5bcd395"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "1",
+              "operator": "==",
+              "comparator": 1,
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "63b7fefa-27ed-44f8-b94b-9c3787aa47a8"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "2",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "46cb08d0-a149-48e9-baf9-b2582033acb3"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "182f11e3-e747-4111-aaea-2e782cd52e86"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "2",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "9be5b23c-52ad-4d6c-a8a0-b4db8a5bdf6e"
+                }
+              ]
+            },
+            "id": "d4f918fc-f37c-4562-a469-c869000a0c69"
+          }
+        ]
+      },
+      "id": "52cb8907-0394-4d8e-bd4b-4e594b8bcae3"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 2
+      },
+      "id": "46f9034a-ca1e-4cc2-9290-48f7737277b3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0014d+04!0013+0f6+0044+0f3+002a+0f2+005f+0f2+005d+0f2+0078+0f2+003e+0f2+0075+0f2+0036+0f2+0035+0f2+003a+0f3+0011+0fe+006+0fe+0050+0f6+00d+0f!0012+0f!0012+0f!0012+0f!0012+0f!0012+0f!0012+0f!0012+0f!0012+0f!00e+0f28+"
+}

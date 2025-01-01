@@ -1,0 +1,180 @@
+{
+  "_resourceType": "scene",
+  "id": "0bdfac7e-2bda-452b-9684-b19ea0827c49",
+  "_index": 50,
+  "type": "TOPDOWN",
+  "name": "Scene 52",
+  "symbol": "scene_52",
+  "x": 6625.260869565217,
+  "y": 1710.586956521739,
+  "width": 50,
+  "height": 57,
+  "backgroundId": "9ea40185-30b9-42e7-9009-48a41cee8272",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "",
+    "",
+    "",
+    "86b27831-e3a7-4de0-845e-0aefcd543218"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7dcc4868-f23b-42c9-af91-dcb7e6173dc0",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 33
+        },
+        "y": {
+          "type": "number",
+          "value": 42
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "2e7e813e-479e-4c46-a432-0b109bd868ed"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This is my house!\nCome here if you\never need help in the\ncity."
+        ],
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+      },
+      "id": "027b7477-7797-4c25-b4a9-9026ea364233"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 23
+        },
+        "y": {
+          "type": "number",
+          "value": 29
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "380be75a-7d48-40ec-a55b-891e4d133563"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This statue is a\nperfect replica of\nWide Guy!",
+          "He supports us from\nafar.",
+          "It even has a\nspeaker, so he can\ntalk to us through it!"
+        ],
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+      },
+      "id": "221ca81e-d7b5-4924-bbb0-48d485828f57"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Hello Square! I'm\nglad you made it out\nof Len City!"
+        ],
+        "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+      },
+      "id": "51f9cdd0-1cd8-4312-b390-c50ba9297f7f"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "24e00350-a0de-4ff9-bfaf-6fb63f3f3a2f"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This dark path takes\nyou straight to Dhilly\ncity! Where the\nmainstream lives.",
+                "Even us Shilly\nfollowers have family\nand friends to keep\nconnected with, you\nknow?",
+                "You probably want\nrevenge on Dhilly,\nright?",
+                "Well it's simple!",
+                "You go through here,\nand get yourself to\nDhilly's city,",
+                "get a car, and drive\nforth to Dhilly's lair.",
+                "This is, sadly, as far\nas I can take you.",
+                "Goodbye, Square."
+              ],
+              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+            },
+            "id": "54f4a1c1-9982-4eeb-bb5e-e6b9a3e969a6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This dark path takes\nyou straight to Dhilly\ncity! Where the",
+                "mainstream lives.",
+                "Even us Shilly\nfollowers have family\nand friends to keep",
+                "connected with, you\nknow?",
+                "You probably want\nrevenge on Dhilly,\nright?",
+                "Wide Guy told us...\nhe trapped you...",
+                "Well it's simple!",
+                "You go through here,\nand get yourself to\nDhilly's city, get a car",
+                "and drive forth to\nDhilly's lair.",
+                "This is,\nunfortunately, as far\nas I can take you.",
+                "Good luck, Square."
+              ],
+              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+            },
+            "id": "37b477c2-3157-4db8-9c90-186d05bd3de1"
+          }
+        ]
+      },
+      "id": "d8f551ee-2d38-46b6-8fa8-c5d5a3542421"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "282e80f3-3101-44ee-9c43-3b14212b65d9",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "cc09ac5e-c50b-4d73-97de-9d31b12c86dc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001cb+0f18+002+0f6+0011+0f!0020+0f!0010+0f!002+0f9+0015+0f!0010+0f!002+0f!007+0f!0015+0f!00f+0f!003+0f!007+0f!0026+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f3+002+0f4+0015+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0032+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!002+0f9+0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!0010+0f!002+0f!007+0f!0015+0f!00f+0f!003+0f!007+0f!0016+0f!00f+0f!002+0f3+002+0f4+0015+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0010+0f!0020+0f!00f+0f!0022+0f!00f+0f!0020+0f!0010+0f!0020+0f!0011+0f20+001fd+"
+}

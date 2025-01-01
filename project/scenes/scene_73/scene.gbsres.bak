@@ -1,0 +1,26 @@
+{
+  "_resourceType": "scene",
+  "id": "faa67570-e0c5-4726-8ddb-1597b2b15838",
+  "_index": 71,
+  "type": "TOPDOWN",
+  "name": "Scene 73",
+  "symbol": "scene_73",
+  "x": 9912,
+  "y": 360,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "fb2ff945-3c02-4573-bc7a-d9a8eccd00f4",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "acbf04a7-1d65-49ae-ab55-2b2750cb0fbc"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

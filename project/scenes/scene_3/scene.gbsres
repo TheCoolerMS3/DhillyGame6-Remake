@@ -1,0 +1,592 @@
+{
+  "_resourceType": "scene",
+  "id": "b4341fce-4069-4d3f-8f3d-dc7ebf4af9ea",
+  "_index": 2,
+  "type": "TOPDOWN",
+  "name": "Scene 3",
+  "symbol": "scene_3",
+  "x": 495.8237319228599,
+  "y": 290.1806510009208,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "5feeff4d-6f09-492d-8b18-bdfce2d29be2",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "There should maybe be an option for the \"throwback room\", or whatever I end up calling the place where you play games 1 throw 5, here."
+      },
+      "id": "46e05d9d-ab4a-4e53-993d-64f40ccbf06b"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9f2deb81-2104-4fa5-9b8f-cbd779877119"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "8540f10f-090c-45ed-b024-2f2f5a519ff0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 4
+      },
+      "id": "2b0579bc-b076-45d4-816d-dd54ee5a85f9"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "down"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_EXPRESSION",
+            "args": {
+              "expression": "$L0$ < 3",
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "L0"
+                  },
+                  "id": "5b6e42f9-5b01-4b39-b91a-67f26f45a676"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "ce2cd854-0131-4fc2-a168-dd6fbd95fcfe",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false
+                  },
+                  "id": "c9a1137d-3595-4c38-9b9d-12f1dd597b23"
+                }
+              ],
+              "false": []
+            },
+            "id": "c00cd98d-873f-4976-bc80-039224da53e3"
+          }
+        ]
+      },
+      "id": "fd0fba91-0f36-481b-9c5c-9be6804f1d8b"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "up"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_EXPRESSION",
+            "args": {
+              "expression": "$L0$ > 0",
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "L0"
+                  },
+                  "id": "a4f46b84-893e-4d77-81a8-a21fb9c5c077"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "ce2cd854-0131-4fc2-a168-dd6fbd95fcfe",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": -1
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false
+                  },
+                  "id": "79f15f8c-6420-411c-bc8e-819734ea18dd"
+                }
+              ],
+              "false": []
+            },
+            "id": "ad324b78-922a-4e47-bc52-9c6991405057"
+          }
+        ]
+      },
+      "id": "1637301d-7d81-4015-97e9-ee0061a1b7c5"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "operator": "==",
+              "comparator": "0",
+              "__collapseElse": true,
+              "__collapse": true,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "L1",
+                    "items": 4,
+                    "option1": "Do nothing",
+                    "option2": "Do nothing",
+                    "option3": "Do nothing",
+                    "option4": "Clear all SAVE slots",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue"
+                  },
+                  "id": "1c4ae581-5d68-402e-ba1c-100b050a2e3c"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "L1",
+                    "operator": "==",
+                    "comparator": 4,
+                    "__collapseElse": true,
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L1"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 4
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CLEAR_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        },
+                        "id": "5e634b95-ab9e-4b11-be2c-a5b8c6f63c9e"
+                      },
+                      {
+                        "command": "EVENT_CLEAR_DATA",
+                        "args": {
+                          "saveSlot": 1
+                        },
+                        "id": "2cd0efdf-3252-4e38-94a2-466ade8df914"
+                      },
+                      {
+                        "command": "EVENT_CLEAR_DATA",
+                        "args": {
+                          "saveSlot": 2
+                        },
+                        "id": "24d14534-8b9f-4de2-996b-a16a2e7e507d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "It is done."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "6fa2f185-ae50-4063-ba3c-dda686775188"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "5c51c236-02d4-458f-ae9a-40ea51c39b48"
+                }
+              ],
+              "false": []
+            },
+            "id": "26e09350-1470-44e1-bfd8-f79dd262135d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "operator": "==",
+              "comparator": 1,
+              "__collapseElse": true,
+              "__collapse": true,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [],
+              "false": []
+            },
+            "id": "deff1e8e-7986-4651-a5a8-3f56ec8f1f50"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "operator": "==",
+              "comparator": 2,
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "0",
+                    "flag": 0,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "This is a web build of\nthe game."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "33e8ca53-477c-44fb-94c2-4a6ba053d77e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_FLAGS_COMPARE",
+                        "args": {
+                          "variable": "0",
+                          "flag": 1,
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "This is a 3DS build of\nthe game."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "49803dfa-9397-4150-85f4-b2727d5053af"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_DEVICE_GBA",
+                              "args": {
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Game Boy Advance"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "7b9e6fd9-309d-4100-9eda-217accbbdefc"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_COLOR_SUPPORTED",
+                                    "args": {
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Game Boy Color"
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "92cae9c7-a2d3-4509-b17f-dac9a628efa8"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF_DEVICE_SGB",
+                                          "args": {
+                                            "__collapseElse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Super Game Boy"
+                                                  ],
+                                                  "avatarId": ""
+                                                },
+                                                "id": "225ca5d4-7918-44f6-923f-22b34034745c"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Game Boy"
+                                                  ],
+                                                  "avatarId": ""
+                                                },
+                                                "id": "3d22e4bb-0e19-4301-9172-565f64c7abcf"
+                                              }
+                                            ]
+                                          },
+                                          "id": "9b14389c-71c7-42fb-a0e6-9d139d1e3d2e"
+                                        }
+                                      ]
+                                    },
+                                    "id": "47654bd1-8af3-476c-b579-5b9c8dff4991"
+                                  }
+                                ]
+                              },
+                              "id": "69ae116a-2255-43c2-ae41-2ef19829d532"
+                            }
+                          ]
+                        },
+                        "id": "23510e5b-f7f6-43ae-be30-269681f7e8e5"
+                      },
+                      {
+                        "command": "EVENT_IF_DEVICE_GBA",
+                        "args": {
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Game Boy Advance"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "60e30f04-ad26-4767-92f9-b9639deda216"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_COLOR_SUPPORTED",
+                              "args": {
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Game Boy Color"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "9ebfaa13-9286-457e-b367-f6c6e475a67a"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF_DEVICE_SGB",
+                                    "args": {
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Super Game Boy"
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "75e89b32-8e4e-48bf-9fa0-b0b426922c20"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Game Boy"
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "33127132-7ba1-488e-a697-307cf826eae9"
+                                        }
+                                      ]
+                                    },
+                                    "id": "cf380b9b-1e47-4eff-b7ed-7d77def5f569"
+                                  }
+                                ]
+                              },
+                              "id": "9f301dd1-0c09-496f-b6a9-4c9faf1ab331"
+                            }
+                          ]
+                        },
+                        "id": "4893b62d-5b17-420e-8538-96587af511fd"
+                      }
+                    ]
+                  },
+                  "id": "ae63155b-3bb9-4e65-8771-bd25a2eb387f"
+                }
+              ],
+              "false": []
+            },
+            "id": "472871e0-ca65-4740-9a03-4047483f91c5"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "operator": "==",
+              "comparator": 3,
+              "__collapseElse": true,
+              "__collapse": true,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "bbb2e5c0-c1df-454e-8888-954f3e50f74b",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "0bfdc793-4543-4c4a-bfd2-0fb1b3e255c0"
+                }
+              ],
+              "false": []
+            },
+            "id": "bf610301-8aac-41ca-bc60-caefcb08ebdb"
+          }
+        ]
+      },
+      "id": "71340fd5-92f2-48af-9ac8-b8fb18ae154c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

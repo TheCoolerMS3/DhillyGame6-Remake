@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "51c96221-bb7a-42ff-81ae-e14f1b214d6d",
+  "_index": 67,
+  "type": "TOPDOWN",
+  "name": "Scene 69",
+  "symbol": "scene_69",
+  "x": 11056,
+  "y": 128,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f9975459-7d00-42fa-b821-3ecc96dcf7d2",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "dcbbac9e-1560-410b-88e4-646052ce59fe"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You got the Official\nDhilly Weapons Locker\nKey Card."
+        ],
+        "avatarId": ""
+      },
+      "id": "c408e6d6-c717-4086-b983-e5a6c719d3bb"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4d8403a6-275a-4c56-afe4-a58e76d8fa70",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "3a186f9a-040d-4aec-826e-2b28d1adc0f2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

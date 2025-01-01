@@ -18,7 +18,4 @@ So far, the project has been exclusively made by me, Eve, mainly due to the moti
 While I still intend to add more to the game, it is playable from start to finish, and you may enjoy it at the [online demo](https://bottom.monster/rand/dhilly6demo).
 
 # Build instructions
-You can build the game using [GB Studio 4.1](https://chrismaltby.itch.io/gb-studio).
-
-# todo
-Make Sara yap less when Square falls
+You can build the game using [GB Studio 4.0](https://chrismaltby.itch.io/gb-studio).

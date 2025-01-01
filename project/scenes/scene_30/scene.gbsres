@@ -1,0 +1,42 @@
+{
+  "_resourceType": "scene",
+  "id": "44fe3471-e4eb-401c-bed9-9247fbb0042e",
+  "_index": 28,
+  "type": "PLATFORM",
+  "name": "Scene 29",
+  "symbol": "scene_29",
+  "x": 3360,
+  "y": 1144,
+  "width": 45,
+  "height": 18,
+  "backgroundId": "327fada9-c774-4e90-96a6-f74dfed4cbe1",
+  "tilesetId": "",
+  "paletteIds": [
+    "7b57efeb-cba0-4392-8c5a-4aba6ef0a5d3",
+    "e9831193-713b-4c8d-85bd-f8334660940a",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "",
+    "",
+    "default-ui"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "parallax": [
+    {
+      "height": 16,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "002d0+0f2d+002d+"
+}

@@ -1,0 +1,65 @@
+{
+  "_resourceType": "scene",
+  "id": "c114046b-5288-4d41-98ea-40b5dc545d4d",
+  "_index": 72,
+  "type": "TOPDOWN",
+  "name": "Scene 74",
+  "symbol": "scene_74",
+  "x": 9912,
+  "y": 536,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8cbfb3e4-a61e-4b71-b0ea-5d4d6d313723",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "4cdc8b03-3c8e-4cc9-af44-cee1c957f8cc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ah what a wonderful\ngun to steal."
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "529236ff-8701-472b-a32d-c161dd6d7c25"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "35c55f96-9345-4c78-9831-47f3d5f52a55"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "96847425-7af2-41cf-bc2f-a81d991e2432",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "c5fe1ab8-6251-417a-bb98-e745437ea006"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

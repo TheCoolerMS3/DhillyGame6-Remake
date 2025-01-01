@@ -1,0 +1,311 @@
+{
+  "_resourceType": "trigger",
+  "id": "04d616de-91a9-490e-b455-ee32cae7a044",
+  "_index": 0,
+  "symbol": "trigger_95",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 12,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0.5
+      },
+      "id": "ed1195f9-35fc-45b9-84ab-17fd44f25e0f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "ab08f0de-d1e9-4ecf-8c25-40956d342c71"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "3d848cd5-c630-4bb3-8f25-f4cc9adf1abe"
+      },
+      "id": "8520651a-f200-4eda-b7a7-380b6f244347"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "a3f74155-c45f-4262-8e0a-ab3181bf604c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Square.",
+          "You're still just the\ndirt underneath my\nfingernail.",
+          "So, you managed to\nget to my lair.",
+          "Unfortunately for\nyou, that's as far as\nthis story goes.",
+          "You die here."
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "ae2eb50c-3c03-4f4f-91a2-ccbc3d3692aa"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "484c5221-c493-4ac4-889b-4efb09bcba61"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 18
+      },
+      "id": "1cbcf344-9abb-46a4-9efc-d1ebfd35edc1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "226d49a9-22d2-498e-ad02-97575e382caf"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 17
+      },
+      "id": "b243a9b2-d2b7-4e62-ba0b-5c816470e054"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "64d7bc2b-caa0-47ff-923a-11f6420fd124"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 16
+      },
+      "id": "4fe9e81b-abcb-4de4-a4e9-633e1335cd61"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "7a3013b7-50b7-49cb-a0dd-788f5c268835"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 15
+      },
+      "id": "5db92806-acd3-44ee-8ab5-bd03d0fe49e9"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "ff1ec571-e243-4b9b-b87d-a15cded7d13f"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 14
+      },
+      "id": "3db92a29-1305-49a5-9fca-b6619ea65619"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "1948217a-75a4-4742-8586-e81e0d636f6b"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 13
+      },
+      "id": "816440bb-c35a-471a-b356-079a2ba4f400"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "fefd17e2-1c1e-424b-a359-2f6071dcd548"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 12
+      },
+      "id": "4f997218-9aa5-4782-82cf-d3f43ed6db6b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "c8e8ac9d-725c-4bc5-af88-983dd7ff855a"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 11
+      },
+      "id": "7d7c4dd0-858b-43eb-beed-3ca66f5d7052"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "68bf7c75-0f4e-4d07-9dc7-245f0f717b6d"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 10,
+        "__collapse": false
+      },
+      "id": "d8253ebb-0705-4629-b880-2e08c8d804ec"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "e4be23c2-8b3a-456a-b798-7919959982f0"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 9,
+        "__collapse": false
+      },
+      "id": "04cae2bd-6aac-4805-b8c3-d5e199d86501"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "4e3aba33-2fca-4a02-a33f-a53d551ccad1"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 9,
+        "__collapse": false
+      },
+      "id": "79ad4864-4509-4a44-b2ec-7539f8e4928a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "c2da34eb-2cee-4c2e-a6b0-74c1cc2cbb34"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 8,
+        "__collapse": false
+      },
+      "id": "f8bd9a59-669f-4997-a6b3-340e8f4d7fc4"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "2053af64-50b0-4e76-9e7b-d438fc9e703d"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "black",
+        "x": 0,
+        "y": 7,
+        "__collapse": false
+      },
+      "id": "f96f83e6-3e51-443d-bc9e-90ac27e4219a"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "5984bbeb-3ee4-4e1c-93a8-f9555f9acccf",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "1cfa489b-41cb-4332-8671-ca84f50551a6"
+    }
+  ],
+  "leaveScript": []
+}

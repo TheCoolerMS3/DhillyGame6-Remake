@@ -1,0 +1,93 @@
+{
+  "_resourceType": "scene",
+  "id": "bb79fc88-9723-4566-975a-92e5bb8f36cf",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Scene 14",
+  "symbol": "scene_14",
+  "x": 685.0909090909087,
+  "y": 121.45454545454545,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "b421900c-2d48-4744-93fd-ecb785dc395f",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "",
+    "",
+    "",
+    "f9684fc2-e062-47cf-84cc-086f54cf1e4e"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9c352026-c96a-45f8-9c13-8b91a6f827f8"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "AND NOW FOR THE\nDAILY WEATHER\nREPORT\n",
+                "IT IS AWFULLY RAINY\nACROSS THE GLOBE\n\n",
+                "IT HAS NOT RAINED\nTHIS BAD IN OVER 100\nYEARS\n",
+                "MANY BELIEVE THAT\nTHIS MIGHT BE\nFORESHADOWING\nSOMETHING BAD"
+              ],
+              "avatarId": ""
+            },
+            "id": "74f815b4-edc1-4457-a527-b5641036344f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "AND NOW FOR THE\nDAILY WEATHER\nREPORT",
+                "IT IS AWFULLY RAINY\nACROSS THE GLOBE",
+                "IT HAS NOT RAINED\nTHIS BAD IN OVER 100\nYEARS",
+                "MANY BELIEVE THAT\nTHIS MIGHT BE\nFORESHADOWING",
+                "SOMETHING BAD"
+              ],
+              "avatarId": ""
+            },
+            "id": "9fa14a7c-13ed-47fc-be1d-87c7b02cbc56"
+          }
+        ]
+      },
+      "id": "a9202b4d-c1e5-4bed-aa18-1dc0c95a200b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e7f3754d-0226-434e-bf8a-f7ad5fe4bc13",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "",
+        "fadeSpeed": 1
+      },
+      "id": "e2e7282e-93b4-4e92-9380-295514e096bb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,119 @@
+{
+  "_resourceType": "trigger",
+  "id": "627a5721-b01e-43bd-99da-6140b188796f",
+  "_index": 1,
+  "symbol": "trigger_114",
+  "prefabId": "",
+  "name": "",
+  "x": 46,
+  "y": 1,
+  "width": 4,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "ne",
+            "valueA": {
+              "type": "variable",
+              "value": "L0"
+            },
+            "valueB": {
+              "type": "true"
+            }
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "11"
+            },
+            "id": "d5e34dbd-6c38-4cac-86fd-4d996431f07d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "11"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You found all the\nDhilly pieces!"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "66f4c74e-36dd-4158-9604-8a351e10b821"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e7bff6ef-d663-4774-a0a2-4201fb4d479e",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "ba498b0c-0e1c-410c-8a3c-4d368c9f629a"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "L0",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "f0a6c8fe-30bd-431c-8f1d-47e8f158ed06"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You found a Dhilly\npiece!"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "aa4add4d-c337-41d6-b8e2-aa8ab4696673"
+                }
+              ]
+            },
+            "id": "02b0e643-394a-43dc-8a56-2bbaac8c1332"
+          }
+        ],
+        "false": []
+      },
+      "id": "1b8e2a6d-844d-4ec1-aee4-6f0dc56924d6"
+    }
+  ],
+  "leaveScript": []
+}

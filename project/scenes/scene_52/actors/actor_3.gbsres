@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "f48a0e8f-4da1-4b58-9720-6854d50b14c0",
+  "_index": 2,
+  "symbol": "actor_32",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 30,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6f49b2b9-78f8-4c69-9085-4aacd3aa88e1",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The door is locked."
+        ],
+        "avatarId": ""
+      },
+      "id": "61c485fd-3028-4993-8229-02ce4fedef88"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

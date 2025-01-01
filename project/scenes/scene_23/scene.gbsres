@@ -1,0 +1,64 @@
+{
+  "_resourceType": "scene",
+  "id": "b07ff92d-762d-46fe-8b6d-7202f77a6cee",
+  "_index": 21,
+  "type": "PLATFORM",
+  "name": "Scene 22",
+  "symbol": "scene_0",
+  "x": 1739,
+  "y": 962.75,
+  "width": 20,
+  "height": 46,
+  "backgroundId": "324b41ab-09b5-478d-950d-fba2ebddecaa",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918"
+  ],
+  "spritePaletteIds": [
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "a",
+          "right",
+          "down",
+          "up",
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "We don't want the player to move here basically"
+            },
+            "id": "be5ab726-cceb-4724-9c97-89782a0cd90e"
+          }
+        ]
+      },
+      "id": "405297da-84b0-44ce-99d8-9d671593db82"
+    },
+    {
+      "command": "EVENT_OVERLAY_HIDE",
+      "args": {},
+      "id": "9bbe38e7-e671-4076-8853-fdcf8e3f0580"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00379+0f2+001d+"
+}

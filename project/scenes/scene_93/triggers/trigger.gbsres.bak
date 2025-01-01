@@ -1,0 +1,212 @@
+{
+  "_resourceType": "trigger",
+  "id": "ebe298cd-40b0-4910-a963-e17aae7fe4aa",
+  "_index": 0,
+  "symbol": "trigger_121",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 16,
+  "width": 20,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 1
+      },
+      "id": "9b886c22-057a-4e1a-beb2-9276070d732d"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "moveType": "diagonal",
+        "useCollisions": false
+      },
+      "id": "74d8aa53-b7c7-4c16-ba4a-f8f3608a7378"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "dcfdc942-35a6-4691-a9c2-831250e329ff"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "So, you got survived\nthe fall.",
+          "Impressive, Square,\nimpressive.",
+          "I, too, am armed with\npieces.",
+          "Now you've obtained\nmy power, it's time we\nhandled this once\nfor all."
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "30085df8-a0ba-4bc0-bbf8-1537aaaec4a2"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "duration": 0.5,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "timer": 1
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "L0",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": 17,
+              "clamp": false
+            },
+            "id": "3f0f6a6d-162a-4dae-acbd-d76487c5f0d2"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "4edf0a2c-e5d9-42cd-81cc-7772a663665b",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "units": "tiles"
+            },
+            "id": "f0f10dd3-982a-48d8-91fe-c99b43fde42d"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "07efcbad-8ecf-45d8-a568-4306e3d767c4",
+              "spriteStateId": "",
+              "actorId": "4edf0a2c-e5d9-42cd-81cc-7772a663665b",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "left",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1.5,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "0737bfb4-0c69-41db-ba0e-c6651598bde7"
+          }
+        ]
+      },
+      "id": "8a53d6c2-f9c2-4aa0-ac94-391488bec2b1"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "693f8e4b-24a5-46a5-a9bc-af0aca7966e3",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1.5,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "2",
+              "collisionMask": [
+                "2"
+              ]
+            },
+            "id": "033f28e7-d58b-4d28-b171-8f5404dc0cda"
+          }
+        ]
+      },
+      "id": "597ee9f8-5706-474d-9bb5-200112d1133b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "4eb19036-0120-44ff-8337-5693817238ee"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "2885f25c-5733-4848-a211-57b8392a0077"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press A to attack\nDhilly."
+        ],
+        "avatarId": ""
+      },
+      "id": "995d42ae-0a59-4958-a778-e9e8774daa03"
+    }
+  ],
+  "leaveScript": []
+}

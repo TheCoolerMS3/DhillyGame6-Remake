@@ -1,0 +1,127 @@
+{
+  "_resourceType": "scene",
+  "id": "e5788e8a-8673-4291-8b35-d2008b0a9c6a",
+  "_index": 33,
+  "type": "TOPDOWN",
+  "name": "Scene 18",
+  "symbol": "scene_34",
+  "x": 4672,
+  "y": 80,
+  "width": 100,
+  "height": 100,
+  "backgroundId": "97dc157b-8d17-4524-9113-e6151cea8d19",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "3ea70cfe-ab94-4ee8-ad00-65d7dcc6ff59",
+    "default-bg-5",
+    "",
+    "1fb5c806-9b12-46ee-bc15-7d06bb8f32ca",
+    "4312cba3-f3f0-4723-a478-9cc8e58768e4",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "7c6c4d91-d25b-429b-b1b3-5bb61b447720"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 0.3,
+        "frames": 16,
+        "__scriptTabs": "end",
+        "units": "time",
+        "__comment": false
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_REPLACE_TILE_XY 51, 0, ___bank_bg_intro_weather_copy__tileset, _bg_intro_weather_copy__tileset, VAR_LOOP_OFFSET",
+              "references": [
+                {
+                  "type": "background",
+                  "id": "c53d29f3-adf0-4a6d-b582-35b7180c2783"
+                }
+              ]
+            },
+            "id": "060584de-e348-41e3-8636-bcbb6302c9e6"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "1",
+              "operator": "==",
+              "comparator": 2,
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "da9d2df6-6f3e-423b-96a5-a3d25c0505bf"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "02155324-9a25-4bd8-ad15-def2dd9387b6"
+                }
+              ]
+            },
+            "id": "c9383860-af45-411b-8fbe-ae65861c1810"
+          }
+        ]
+      },
+      "id": "7bebe5f7-65ef-4832-9dc6-b58a94a07a4e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "008+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0041+0f!005+0f16+007+0f!0041+0f!003+0f!0016+0f2+004+0f!0042+0f!003+0f!0018+0f!003+0f!0042+0f!002+0f!001a+0f!002+0f!0042+0f!00!0f!001c+0f!00!0f!0042+0f!00!0f!001c+0f!00!0f!0041+0f!002+0f!0017+0f4+00!0f!002+0f!0041+0f!00!0f3+003+0f18+00!0f!0042+0f!0020+0f!0042+0f!00f+0ff+002+0f!0041+0f!0010+0f!00d+0f!003+0f!0041+0f!00f+0f!00d+0f!002+0f!0042+0f!00f+0f!006+0f8+002+0f!0042+0f!00f+0f!006+0f!009+0f!0042+0f!00f+0f!006+0f!009+0f!0042+0f!00f+0f3+002+0f3+009+0f!0041+0f!0022+0f!0041+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0041+0f!0022+0f!0041+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0041+0f!0022+0f!0041+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0041+0f!0022+0f!0041+0f!0020+0f!0042+0f!0020+0f!0042+0f!004+0f9+0013+0f!0042+0f!004+0f!007+0f!0013+0f!0042+0f!004+0f!007+0f!0013+0f!0041+0f!005+0f!007+0f!0014+0f!0041+0f!004+0f!007+0f!0013+0f!0042+0f!004+0f3+003+0f3+0013+0f!0042+0f!0020+0f!0041+0f!0022+0f!0041+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0042+0f!0020+0f!0041+0f!0022+0f!0041+0f11+003+0f17+0039+0f!0029+0f!0039+0f!0029+0f!0039+0f!0029+0f!0038+0f!002a+0f!0039+0f!0029+0f!0039+0f!0029+0f!0039+0f!0029+0f!0039+0f!0029+0f!0039+0f!0029+0f!0038+0f!002a+0f!0039+0f!0029+0f!0039+0f!0029+0f!0039+0f!0029+0f!0038+0f!002a+0f!0039+0fd+003+0f1b+0045+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!005f+0f!003+0f!0056+0fa+003+0f6+0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f!0051+0f!0011+0f6+002+0f7+0043+0f!001f+0f!0043+0f!001f+0f!0043+0f!001f+0f!0043+0f21+00290+"
+}

@@ -1,0 +1,43 @@
+{
+  "_resourceType": "trigger",
+  "id": "a6ef8b59-15c1-49b4-8256-a91e6e706c0f",
+  "_index": 1,
+  "symbol": "trigger_109",
+  "prefabId": "",
+  "name": "",
+  "x": 7,
+  "y": 15,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You found a Dhilly\npiece! 3 left."
+        ],
+        "avatarId": ""
+      },
+      "id": "3e6e2de4-bd99-4117-b496-47b97c876fc9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f208758a-d627-4edd-ab51-b11f219839a8",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "b45d894a-61c2-4302-9797-95c86f3cf86a"
+    }
+  ],
+  "leaveScript": []
+}

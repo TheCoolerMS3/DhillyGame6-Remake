@@ -1,0 +1,124 @@
+{
+  "_resourceType": "actor",
+  "id": "17cfe41b-7fc0-4d52-b388-f0778b0c4b53",
+  "_index": 0,
+  "symbol": "actor_19",
+  "prefabId": "",
+  "name": "",
+  "x": 29,
+  "y": 92,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1320a9fe-95a8-4652-a9ec-7b769f262344",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "L0"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Hey Square.",
+                "You finally woke up!",
+                "I assume you want to\nmake your way\noutside of Len City.",
+                "Everyone left, ever\nsince that DARNED\nDhilly came aroun",
+                "It's quite lonely......",
+                "But that's okay!",
+                "This cinema place is\nthe only way out.",
+                "You just need to\nwatch their little\nshow and exit to the\nright.",
+                "But...",
+                "Just a fair warning,\nI saw someone up to\nno good in there.",
+                "He mentioned\nsomething about a\n\"Square\"...",
+                "Well, I'll get out of\nyour way."
+              ],
+              "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+            },
+            "id": "ce919703-27e5-4a21-9a2c-c187fc21ab26"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 24
+              },
+              "y": {
+                "type": "property",
+                "target": "player",
+                "property": "ypos"
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "83741991-0bbb-4ff4-b65f-7eb64faaf4d9"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "17cfe41b-7fc0-4d52-b388-f0778b0c4b53",
+              "x": {
+                "type": "number",
+                "value": 26
+              },
+              "y": {
+                "type": "number",
+                "value": 89
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "8b126717-987b-47f5-8c2c-e60455f21067"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L1",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "b9d5a0e7-2194-40cd-a65c-90b40b4b6780"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Move along now, you\ndo want to get out of\nhere, right?"
+              ],
+              "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+            },
+            "id": "e54995c6-0e83-4b67-9aea-ba654dc70e5f"
+          }
+        ]
+      },
+      "id": "dd7c1f19-77af-46ed-b4c4-3e84143be4fd"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

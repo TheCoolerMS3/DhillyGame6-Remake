@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "6b0d5c20-d4f5-482d-b3bb-8c65f98cad99",
+  "_index": 66,
+  "type": "PLATFORM",
+  "name": "Scene 68",
+  "symbol": "scene_68",
+  "x": 10872,
+  "y": 128,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "047cbe4a-4c09-4b7e-a211-7e933cbfb5cb",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00104+0f64+"
+}

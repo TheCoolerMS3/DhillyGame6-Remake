@@ -1,0 +1,43 @@
+{
+  "_resourceType": "scene",
+  "id": "22f6d384-1353-46c5-a616-2ef3f6f6aa63",
+  "_index": 34,
+  "type": "TOPDOWN",
+  "name": "Scene 19",
+  "symbol": "scene_35",
+  "x": 4272,
+  "y": 104,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "0160fb20-adad-48ac-b64b-556c803c271e",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-sprite",
+    "",
+    "",
+    "",
+    "f25a2cdb-160f-41a5-af43-2a94311caa77"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Figured the best way of preventing the cutscene from showing if the player reenters is making a clone of the room without it :P"
+      },
+      "id": "aecaed7a-c476-4715-a4fa-d2763bbac193"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

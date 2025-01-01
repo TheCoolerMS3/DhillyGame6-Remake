@@ -1,0 +1,200 @@
+{
+  "_resourceType": "trigger",
+  "id": "b48e9f41-e839-4db4-bb2e-d044936ea2fe",
+  "_index": 0,
+  "symbol": "trigger_61",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 54,
+  "width": 20,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "f00d71c0-a753-4128-a618-1c37e6ee79a9"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "number",
+          "value": 54
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "88f4b742-6986-413c-b316-564d99c51942"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "eae08806-9e5c-4174-a1f8-a8740c2c2a54"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "d2780545-33c7-4f33-8c61-49b04b3f9563"
+      },
+      "id": "01f0b36f-08b3-4369-b79a-957a2cd1c94e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "d2780545-33c7-4f33-8c61-49b04b3f9563",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 54
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "bd23a18e-f1f5-40ac-a68a-f9a9190324cb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Get the hell out of\nthe\nCAMP OF SHILLY!",
+          "This place is for\nDhilly haters ONLY!"
+        ],
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
+      },
+      "id": "ebf43820-374e-48bb-af11-238cc9a22590"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Uh he literally froze\nme for 100 years.",
+          "I hate him too."
+        ],
+        "__section": "text",
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "61f0c732-39c0-4b07-8d65-2871e0d7e26f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Oh shit, it's the\nSquare Wide Guy told\nme about.",
+          "Follow me, I'll show ya\naround."
+        ],
+        "__section": "text",
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bd71447a-7152-4674-848e-5ea4416b6ba4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "d2780545-33c7-4f33-8c61-49b04b3f9563",
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 54
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "bfa29471-a548-4128-81ab-dd838e422df6"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "d2780545-33c7-4f33-8c61-49b04b3f9563"
+      },
+      "id": "1f3323c3-2eed-4fb7-aad4-06f11fc89c3d"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 54
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "f92b93ee-5aae-43af-85ed-77276c9b61de"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0bdfac7e-2bda-452b-9684-b19ea0827c49",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 42
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "271884d0-7bc3-47a4-bd3e-2b845e3e0bc2"
+    }
+  ],
+  "leaveScript": []
+}

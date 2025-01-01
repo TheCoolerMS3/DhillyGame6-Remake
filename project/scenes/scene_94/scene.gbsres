@@ -1,0 +1,299 @@
+{
+  "_resourceType": "scene",
+  "id": "4fdef477-b95e-43ad-8903-80bbdf0847bc",
+  "_index": 92,
+  "type": "TOPDOWN",
+  "name": "Scene 91",
+  "symbol": "scene_94",
+  "x": 14880,
+  "y": 272,
+  "width": 20,
+  "height": 57,
+  "backgroundId": "264c253e-1fbf-4d25-9c96-3cc5b65c5497",
+  "tilesetId": "",
+  "paletteIds": [
+    "52c76f8b-3c83-4b60-93b2-30543a886365",
+    "",
+    "",
+    "",
+    "e1b60852-5f2b-4af2-a284-a0b46b6c18e5"
+  ],
+  "spritePaletteIds": [
+    "",
+    "1ab34aa7-4ada-45f2-8c3c-627a8c3ea786",
+    "049688c6-e4ac-4f76-beb8-90fbc95ab9d0"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "19e8573f-ccb7-4418-9a08-43d4ab5d4336",
+  "script": [
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0
+      },
+      "id": "dd0c04e4-23b7-4bb0-88ae-1aa5d6fe3313"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "moveType": "diagonal",
+        "useCollisions": false
+      },
+      "id": "a13c3c65-8a51-4fa9-a800-88b45a8a61dc"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "9665cdc7-e79d-4dff-8c81-f7f09ffac562"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "So, you got survived\nthe fall.",
+          "Impressive, Square,\nimpressive.",
+          "I, too, am armed with\npieces.",
+          "Now you've obtained\nmy power, it's time we\nhandled this once\nfor all."
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "3a746393-cacc-43c6-8eff-6e40c4e0884d"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "duration": 0.5,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "timer": 1
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "L0",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": 17,
+              "clamp": false
+            },
+            "id": "99299a70-0882-43ce-b495-6b3b5da93b5d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "c36fcf7f-45d3-4886-9616-98178070224b",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "units": "tiles"
+            },
+            "id": "58b89161-f1f2-4111-acdc-23344e44d8fc"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "07efcbad-8ecf-45d8-a568-4306e3d767c4",
+              "spriteStateId": "",
+              "actorId": "c36fcf7f-45d3-4886-9616-98178070224b",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "left",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1.5,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "bec85140-440a-4965-82fd-bc16b3a738b5"
+          }
+        ]
+      },
+      "id": "63ac437a-978e-4c00-bf0a-b9b033e55cae"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "693f8e4b-24a5-46a5-a9bc-af0aca7966e3",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1.5,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "2",
+              "collisionMask": [
+                "2"
+              ]
+            },
+            "id": "5c139784-a9db-4b98-ade8-dc7adf022b31"
+          }
+        ]
+      },
+      "id": "f0ffbd1e-46ce-4ace-92fd-8348090ca35b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "22",
+        "value": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "e2b70224-370e-478a-9621-c6cdbc327276"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "21",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "29e649b3-84a9-48f5-96cc-d94e9510383d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press A to attack\nDhilly."
+        ],
+        "avatarId": ""
+      },
+      "id": "52f2c40a-fee8-48fc-8d5f-8d3935849927"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "21"
+      },
+      "id": "e11165bf-a9cd-4866-8b18-43da10ef5ca8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Square died."
+              ],
+              "avatarId": ""
+            },
+            "id": "4b947e5b-257d-47dc-a121-5dc224b51acf"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "4fdef477-b95e-43ad-8903-80bbdf0847bc",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "dd1dab78-c321-4933-ae67-3f57c6dd696e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Square has $21$ health."
+              ],
+              "avatarId": ""
+            },
+            "id": "175c4453-c841-4cdb-a533-75501058f9f3"
+          }
+        ]
+      },
+      "id": "d221c700-f557-4ed7-a43c-6760dfada86e"
+    }
+  ],
+  "collisions": "00168+0114+002d0+0f28+"
+}

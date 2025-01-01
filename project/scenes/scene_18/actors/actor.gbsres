@@ -1,0 +1,490 @@
+{
+  "_resourceType": "actor",
+  "id": "a1c37b73-dc59-4c30-9922-4b74cee24442",
+  "_index": 0,
+  "symbol": "actor_6",
+  "prefabId": "",
+  "name": "",
+  "x": 25,
+  "y": 50,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9fec19f6-a645-4edb-8370-d93bfea99937",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "3",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You found something?",
+                "It's a bug.",
+                "You shouldn't be\nreading this text but\nbut you damn might",
+                "If so, DM @eveisinsane\non Discord or report\nan issue on GitHub."
+              ],
+              "avatarId": ""
+            },
+            "id": "c64389d8-8204-4766-a70f-acd25853025d"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Whoops"
+            },
+            "id": "c4cc7c6e-20f5-42fc-9a46-aa496e6b1df9"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Get in the cart?"
+              ],
+              "avatarId": ""
+            },
+            "id": "59654b28-c857-4510-b5e4-9f271d869b7f"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No"
+            },
+            "id": "d59e252c-2dab-430d-96bb-36a9468c51ba"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "player",
+                    "spriteSheetId": "63d08f01-9b76-4167-8ed5-9bd92a319e9c"
+                  },
+                  "id": "3ae4184f-597b-4643-889d-e30688a77d33"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "$self$",
+                    "__collapse": false
+                  },
+                  "id": "c245c75a-a93f-4f2d-8c34-50139eb53527"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 50
+                    }
+                  },
+                  "id": "5644c2d7-4285-4bec-a7d7-df903c90f5c1"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 25
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 43
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "9e2f8347-eff1-4883-8541-cc9a7247dbcb"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 33
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 43
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "cebea94a-ffb4-4334-ba9f-64e344061bee"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 33
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "7c4c2944-b09f-4736-b8e9-0e2fb020618e"
+                },
+                {
+                  "command": "EVENT_SET_FLAGS",
+                  "args": {
+                    "variable": "3",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "c67ce9d0-a03e-43f3-9d87-25f593f69a68"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "This flag signifies to hide this cart, as square has already used it!!"
+                  },
+                  "id": "1d5b5926-f094-49ee-a77b-498cf14eda79"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "5fb52738-2fcb-4df0-a0d3-f21492bfea18",
+                    "x": {
+                      "type": "number",
+                      "value": 14
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "0b1dad75-e801-4563-8d3e-2393a32cfa53"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "expression",
+                      "value": "$L4$ < 69"
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "L4"
+                        },
+                        "id": "bed24b14-ae9a-43ed-970d-b7c457a2c6fd"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Just get in the damn\ncart you BAFFOON."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "77653c6d-53ca-41b4-9597-f74fa8b297f7"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "L0",
+                          "value": {
+                            "type": "true"
+                          }
+                        },
+                        "id": "e9887081-fdb2-4d75-9c67-2b5c382036f7"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "variable": "L0",
+                          "__collapseElse": false,
+                          "condition": {
+                            "type": "variable",
+                            "value": "L0"
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_SET_SPRITE",
+                              "args": {
+                                "actorId": "player",
+                                "spriteSheetId": "63d08f01-9b76-4167-8ed5-9bd92a319e9c"
+                              },
+                              "id": "e46515e3-843f-4300-a1bc-41cd4fdfb944"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "$self$",
+                                "__collapse": false
+                              },
+                              "id": "49c230c6-f8c8-41cc-b96f-f75dc939360c"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_POSITION",
+                              "args": {
+                                "actorId": "player",
+                                "x": {
+                                  "type": "number",
+                                  "value": 25
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 50
+                                }
+                              },
+                              "id": "511b2bfa-a52a-4010-a3cf-ff5b634a9ac8"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "player",
+                                "x": {
+                                  "type": "number",
+                                  "value": 25
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 43
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "c38458c6-bd0f-44c7-9162-f98ebaf9c6ba"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "player",
+                                "x": {
+                                  "type": "number",
+                                  "value": 33
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 43
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "b68c0ca2-4451-4990-88f6-47b6a169395d"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "player",
+                                "x": {
+                                  "type": "number",
+                                  "value": 33
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 17
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "1fbe127e-fc40-4206-85e2-0a0f867c83fe"
+                            },
+                            {
+                              "command": "EVENT_SET_FLAGS",
+                              "args": {
+                                "variable": "3",
+                                "flag1": true,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                              },
+                              "id": "406a4f03-2004-42cf-93a4-886760819ab6"
+                            },
+                            {
+                              "command": "EVENT_COMMENT",
+                              "args": {
+                                "text": "This flag signifies to hide this cart, as square has already used it!!"
+                              },
+                              "id": "b1c00b78-dca3-4479-8ac4-31cd4f32b6fb"
+                            },
+                            {
+                              "command": "EVENT_SWITCH_SCENE",
+                              "args": {
+                                "sceneId": "5fb52738-2fcb-4df0-a0d3-f21492bfea18",
+                                "x": {
+                                  "type": "number",
+                                  "value": 14
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 8
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
+                              },
+                              "id": "0936d447-93e2-445e-b93b-66cb573ac94f"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "expression",
+                                  "value": "$L4$ < 3"
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_INC_VALUE",
+                                    "args": {
+                                      "variable": "L4"
+                                    },
+                                    "id": "b8cfbe49-5cea-4f82-9ac0-02a23fbf3692"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Just get in the damn\ncart you BAFFOON."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "dc1baad9-c998-4d5a-8532-f8aea07409a4"
+                                  }
+                                ]
+                              },
+                              "id": "406da35e-4638-4a22-9c6e-9ffd38374fef"
+                            }
+                          ]
+                        },
+                        "id": "3f375ce8-7ea1-4fa3-a0f5-bab8ffa15108"
+                      }
+                    ]
+                  },
+                  "id": "b2bede53-7237-4c8c-a83f-8c95a933c5fd"
+                }
+              ]
+            },
+            "id": "2c32c49a-060c-4b59-a7a1-7b70aca67319"
+          }
+        ]
+      },
+      "id": "56cf4c83-76a7-42be-b0ba-401b222144de"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "3",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1e879541-be5a-4735-aa83-6e514e155c27"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "16eafe3c-93ce-4214-ad1a-23ab5aea2b75"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Self hides, because the flag signifies that the cart is now in the train station"
+            },
+            "id": "06ffe308-f7bf-4266-baf4-7cdc11fc984d"
+          }
+        ],
+        "false": []
+      },
+      "id": "fd2ab878-1d85-4a4f-9b1a-10b43a28fb23"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
