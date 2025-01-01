@@ -25,7 +25,224 @@
   ],
   "autoFadeSpeed": 1,
   "playerSpriteSheetId": "19e8573f-ccb7-4418-9a08-43d4ab5d4336",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "L0"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "d3d85e61-fb57-4db8-a284-7f4931e81926"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "4"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": true,
+              "__label": "SAVE"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 0,
+                    "__scriptTabs": "save"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Autosaved to Slot 1!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "fd520668-7031-40bd-b5be-61f083dbf3e6"
+                      }
+                    ],
+                    "load": []
+                  },
+                  "id": "6e3c7fdc-2084-4639-8c01-e95cc1574474"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "4"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 1,
+                          "__scriptTabs": "save"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Autosaved to Slot 2!"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "00104dd9-03a1-49c7-82fc-691ffdc791e3"
+                            }
+                          ],
+                          "load": []
+                        },
+                        "id": "c732447e-029e-4821-9d4e-466353bde348"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "4"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 3
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SAVE_DATA",
+                              "args": {
+                                "saveSlot": 2,
+                                "__scriptTabs": "save"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Autosaved to Slot 3!"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "2fb6b4b9-2178-4151-9154-aaafe1f1bece"
+                                  }
+                                ],
+                                "load": []
+                              },
+                              "id": "b90a2de8-1bbd-411d-8411-3e7c920f1ac9"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "42771d84-9f89-4015-87dd-f1967ddc0e5d"
+                      }
+                    ]
+                  },
+                  "id": "f9ff769d-b0e3-4581-a7d9-8ed16a5749d5"
+                }
+              ]
+            },
+            "id": "5a981c82-538b-4702-838e-38a604da84bc"
+          }
+        ],
+        "false": []
+      },
+      "id": "087fd5e8-462d-4370-b88a-2e31f5049854"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [
