@@ -9,13 +9,13 @@ Dhilly Game 6 is a homebrew Game Boy Color game made with GB Studio 3.1. The sou
 - Super Game Boy (SNES) enhancements (Border and preset palettes)
 - **Difficulty balancing**
 
-Please edit the .gbsproj file with GB Studio 4.0. Check your GB Studio version before editing.
+Please edit the .gbsproj file with GB Studio 4.1.x. Check your GB Studio version before editing.
 
 # Credit
-So far, the project has been exclusively made by me, Eve, mainly due to the motivation of hack club's Arcade. However. others are free to help, and this remake does retain the story and a few of the levels of the original game, which were made by StanDX.
+So far, the project has been exclusively made by me, Eve, mainly due to the motivation of hack club's Arcade and High Seas (Hense the long break where I didn't do anything to it..). However. others are free to help, and this remake does retain the story and a few of the levels of the original game, which were made by StanDX.
 
 # Testing
 While I still intend to add more to the game, it is playable from start to finish, and you may enjoy it at the [online demo](https://bottom.monster/rand/dhilly6demo).
 
 # Build instructions
-You can build the game using [GB Studio 4.0](https://chrismaltby.itch.io/gb-studio).
+You can build the game using [GB Studio 4.1.x](https://chrismaltby.itch.io/gb-studio).
