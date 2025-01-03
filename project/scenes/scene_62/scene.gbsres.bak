@@ -144,7 +144,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "[As you get in the car,\nyou realise you're\nbreaking the second law.)"
+                            "[As you get in the car,\nyou realise you're\nbreaking the second \nlaw.)"
                           ],
                           "__section": "text",
                           "avatarId": "",

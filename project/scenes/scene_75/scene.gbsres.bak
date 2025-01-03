@@ -9,7 +9,7 @@
   "y": 544,
   "width": 20,
   "height": 18,
-  "backgroundId": "69c0cf58-b18b-4216-8ed8-277ba7ec2098",
+  "backgroundId": "e63e889d-4f27-4108-805b-c8b6ad3e7c02",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
@@ -20,6 +20,73 @@
       "command": "EVENT_SHOW_SPRITES",
       "args": {},
       "id": "42582032-0008-4e29-892b-4d6891d9259a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "17"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "not",
+                "value": {
+                  "type": "variable",
+                  "value": "26"
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You stole Dhilly's gun,\nhence breaking law 15!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "35f0e6cf-1458-402a-b664-7d65d2df1774"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "L0"
+                  },
+                  "id": "ff1331df-1e1d-45ca-8ffd-4790970c2d4e"
+                }
+              ],
+              "false": []
+            },
+            "id": "547c208c-fba7-4569-a185-3b60338545c4"
+          }
+        ],
+        "false": []
+      },
+      "id": "99938c16-75d3-4da4-b238-d47a938e08be"
     }
   ],
   "playerHit1Script": [],

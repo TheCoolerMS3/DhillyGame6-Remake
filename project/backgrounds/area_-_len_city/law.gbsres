@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "Area - Len City/law.png",
-  "tileColors": "046b+032+0412+032+04e7+"
+  "tileColors": "046b+032+0412+032+04e7+",
+  "autoColor": false
 }

@@ -249,7 +249,7 @@
     {
       "command": "EVENT_DEC_VALUE",
       "args": {
-        "variable": "21"
+        "variable": "23"
       },
       "id": "b91b26b7-69ab-4d93-b761-a35718584d1b"
     },
@@ -260,7 +260,7 @@
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "21"
+            "value": "23"
           },
           "valueB": {
             "type": "number",
@@ -304,7 +304,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Square has $21$ health."
+                "Square has $23$ health."
               ],
               "avatarId": ""
             },

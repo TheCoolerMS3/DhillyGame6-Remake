@@ -24,6 +24,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f52+0010+0f4+0010+0f4+0010+0f9+002+0fd+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+004+0f8+",
-  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79"
+  "collisions": "0f52+0010+0f4+0010+0f4+0010+0f9+002+0fd+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+004+0f8+"
 }

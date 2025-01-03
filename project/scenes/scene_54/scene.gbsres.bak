@@ -175,7 +175,7 @@
                         "args": {
                           "text": [
                             "By listening to Sara\ntalk about the old\nuniverse,",
-                            "you broke laws 1 and 4."
+                            "you broke law 1."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -202,13 +202,6 @@
                           "variable": "19"
                         },
                         "id": "15cebf23-c22b-405d-822f-eede127b7522"
-                      },
-                      {
-                        "command": "EVENT_INC_VALUE",
-                        "args": {
-                          "variable": "19"
-                        },
-                        "id": "cc1b76ee-0c1b-45c0-af71-2a86ebd5e728"
                       },
                       {
                         "command": "EVENT_TEXT",
