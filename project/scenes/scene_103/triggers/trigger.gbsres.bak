@@ -3,7 +3,7 @@
   "id": "50f50a6d-2315-4328-83c9-57b4f80426cd",
   "name": "",
   "prefabId": "",
-  "x": 8,
+  "x": 7,
   "y": 7,
   "symbol": "trigger_129",
   "prefabScriptOverrides": {},
@@ -62,7 +62,9 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Deface the law?"
+          "Deface the law?",
+          "(If you choose yes, a\nspecial mode will\nactivate --",
+          "NOT RECOMMENDED\nFOR FIRST\nPLAYTHROUGHS)"
         ],
         "__section": "text",
         "avatarId": "",

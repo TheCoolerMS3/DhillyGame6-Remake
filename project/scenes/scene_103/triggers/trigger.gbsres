@@ -35,9 +35,7 @@
           "17. No transgenders!!",
           "18. No damaging Dhilly's\nproperties.",
           "19. The people from the\nold universe do not\ndeserve equality.",
-          "20. Breathing is rate\nlimited. Be grateful for\nDhilly's air.",
-          "21. Eco friendly\nproducts are not real.",
-          "22. The market is\ncontrolled by Dhilly."
+          "20. Breathing is rate\nlimited. Be grateful for\nDhilly's air."
         ],
         "__section": "text",
         "avatarId": "",
@@ -177,7 +175,7 @@
                   "args": {
                     "text": [
                       "[New sidequest\nunlocked: break every\nlaw.]",
-                      "Currently broken:\n$18$/22."
+                      "Currently broken:\n$18$/20."
                     ],
                     "__section": "text",
                     "avatarId": "",

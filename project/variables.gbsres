@@ -107,14 +107,14 @@
       "symbol": "var_law_9"
     },
     {
-      "id": "22",
-      "name": "Dhilly Health",
-      "symbol": "var_dhilly_health"
-    },
-    {
       "id": "21",
       "name": "law 2",
       "symbol": "var_law_2"
+    },
+    {
+      "id": "22",
+      "name": "Dhilly Health",
+      "symbol": "var_dhilly_health"
     },
     {
       "id": "23",
@@ -127,11 +127,6 @@
       "symbol": "var_law_7"
     },
     {
-      "id": "8127fceb-e646-4852-a4df-48ee324d09de__L0",
-      "name": "Local 0",
-      "symbol": "var_local_0"
-    },
-    {
       "id": "25",
       "name": "law 14",
       "symbol": "var_law_14"
@@ -140,6 +135,11 @@
       "id": "26",
       "name": "law 15",
       "symbol": "var_law_15"
+    },
+    {
+      "id": "8127fceb-e646-4852-a4df-48ee324d09de__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
     }
   ]
 }

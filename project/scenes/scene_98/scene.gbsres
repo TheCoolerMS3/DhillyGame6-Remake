@@ -63,6 +63,7 @@
             "args": {
               "text": [
                 "This damage to Dhilly's\nproperty is a blatant\nviolation of Law 18.",
+                "",
                 "Laws broken:\n$18$"
               ],
               "__section": "text",

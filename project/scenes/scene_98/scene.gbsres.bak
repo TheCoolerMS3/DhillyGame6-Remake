@@ -38,6 +38,58 @@
       "id": "ff244a0f-7df9-4cd3-8de9-6c561bc81bbb"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "17"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "8c5be76d-c157-4e5c-8d7c-1baf9059b5e9"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "This damage to Dhilly's\nproperty is a blatant\nviolation of Law 18.",
+                "Laws broken:\n$18$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "d516f9e8-aa1e-41c2-ab90-aa48610c80f0"
+          }
+        ],
+        "false": []
+      },
+      "id": "dbeaff57-7fce-4d0f-92aa-630a58505a63"
+    },
+    {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
         "sceneId": "14b182e0-2ac4-4d9a-9671-6fb91d6e5575",
