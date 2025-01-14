@@ -1,0 +1,41 @@
+{
+  "_resourceType": "trigger",
+  "id": "de69c976-2c41-4fe0-8a7b-21639fd81e67",
+  "name": "",
+  "prefabId": "",
+  "x": 7,
+  "y": 7,
+  "symbol": "trigger_126",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The supposed \"Law\", on\ncloser inspection, just\nreads \"gay,\"."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "189d3523-2751-4abd-a878-cae4b8ae29e3"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

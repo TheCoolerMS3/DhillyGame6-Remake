@@ -106,54 +106,18 @@
       "id": "24e00350-a0de-4ff9-bfaf-6fb63f3f3a2f"
     },
     {
-      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "command": "EVENT_TEXT",
       "args": {
-        "__collapseElse": false
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "This dark path takes\nyou straight to Dhilly\ncity! Where the\nmainstream lives.",
-                "Even us Shilly\nfollowers have family\nand friends to keep\nconnected with, you\nknow?",
-                "You probably want\nrevenge on Dhilly,\nright?",
-                "Well it's simple!",
-                "You go through here,\nand get yourself to\nDhilly's city,",
-                "get a car, and drive\nforth to Dhilly's lair.",
-                "This is, sadly, as far\nas I can take you.",
-                "Goodbye, Square."
-              ],
-              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
-            },
-            "id": "54f4a1c1-9982-4eeb-bb5e-e6b9a3e969a6"
-          }
+        "text": [
+          "This dark path takes\nyou straight to Dhilly\ncity!",
+          "I take it you want\nrevenge on Dhilly,\nright?",
+          "Down here is his city.",
+          "Drive forth and\nyou'll find his lair.",
+          "That's all from my\ntour!"
         ],
-        "false": [
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "This dark path takes\nyou straight to Dhilly\ncity! Where the",
-                "mainstream lives.",
-                "Even us Shilly\nfollowers have family\nand friends to keep",
-                "connected with, you\nknow?",
-                "You probably want\nrevenge on Dhilly,\nright?",
-                "Wide Guy told us...\nhe trapped you...",
-                "Well it's simple!",
-                "You go through here,\nand get yourself to\nDhilly's city, get a car",
-                "and drive forth to\nDhilly's lair.",
-                "This is,\nunfortunately, as far\nas I can take you.",
-                "Good luck, Square."
-              ],
-              "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
-            },
-            "id": "37b477c2-3157-4db8-9c90-186d05bd3de1"
-          }
-        ]
+        "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
       },
-      "id": "d8f551ee-2d38-46b6-8fa8-c5d5a3542421"
+      "id": "54f4a1c1-9982-4eeb-bb5e-e6b9a3e969a6"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

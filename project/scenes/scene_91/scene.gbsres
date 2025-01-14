@@ -40,9 +40,11 @@
           "I'm Shilly.",
           "I hope you had a nice\ndream, but this is the\nreal deal.",
           "I'm going to give you\nthe means to have a\nfair fight with Dhilly.",
-          "First of all, here's a\njetpack."
+          "First of all, you'll\nneed this jetpack!"
         ],
-        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a"
+        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a",
+        "__section": "layout",
+        "position": "top"
       },
       "id": "e02d5b37-e6d2-4c6b-9a75-cb206cb36a46"
     },
@@ -71,15 +73,17 @@
       "args": {
         "text": [
           "But that's not\nenough.",
-          "The only weapon that\ncan take down Dhilly..",
-          "Is the \"Shilly\nPieces\" that I am\nmade of.",
+          "The only weapon that\ncan take down Dhilly-",
+          "...is the \"Shilly\nPieces\" that I am\nmade of.",
           "I have decided to\nsacrifice myself for\nyour cause.",
           "...",
           "....",
           ".......",
           "..................."
         ],
-        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a"
+        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a",
+        "__section": "layout",
+        "position": "top"
       },
       "id": "1a30f6ca-3b26-4b2b-be47-3e48b2787210"
     },

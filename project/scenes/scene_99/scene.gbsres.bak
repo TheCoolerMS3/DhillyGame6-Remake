@@ -22,6 +22,18 @@
   "autoFadeSpeed": null,
   "script": [
     {
+      "command": "EVENT_SHOW_SPRITES",
+      "args": {},
+      "id": "f0e7601a-31b6-45d6-b90b-977fac3f094d"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "658aaedb-e4f5-4826-966c-e80b87b7e852"
+    },
+    {
       "command": "EVENT_CAMERA_MOVE_TO",
       "args": {
         "x": {

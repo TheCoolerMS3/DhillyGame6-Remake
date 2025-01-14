@@ -1,0 +1,224 @@
+{
+  "_resourceType": "actor",
+  "id": "b17b12b9-4465-481c-9ad9-86fc3ca2030f",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6f49b2b9-78f8-4c69-9085-4aacd3aa88e1",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_64",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The \"Law\" reads as\nfollows:",
+          "==THE DHILLY LAW==",
+          "1. The story about\nDhilly and his old\nuniverse is a myth.",
+          "2. You must listen to no\nmusic other than\nColorful Shit.",
+          "3. No cheating Dhilly's\nsystem.",
+          "4. People from the old\nuniverse deserve their\nsuffering.",
+          "5. All names must be\napproved by Dhilly.",
+          "6. The law is not to be\nquestioned.",
+          "7. You mustn't insult\nDhilly.",
+          "8. Computer software\nmust be approved by\nDhilly.",
+          "9. Computers must run\nthe Ice Operating\nSystem (Ice OS).",
+          "10. The law must not be\ndefaced.",
+          "11. If you use\nDhillyHub, you must be\nsupervised.",
+          "12. You cannot\noverthrow Dhilly. Do not\ntry.",
+          "13. Being Square is a\nserious crime.",
+          "14. Democracy is a myth\nmade to hurt Dhilly. Do\nNOT talk about it.",
+          "15. No stealing Dhilly's\nproperties.",
+          "16. Dhilly must always\nbe able to watch you.",
+          "17. No transgenders!!",
+          "18. No damaging Dhilly's\nproperties.",
+          "19. The people from the\nold universe do not\ndeserve equality.",
+          "20. Breathing is rate\nlimited. Be grateful for\nDhilly's air."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "037d30c3-a99d-4f12-b77d-2db23590f233"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Deface the law?",
+          "(If you choose yes, a\nspecial mode will\nactivate --",
+          "NOT RECOMMENDED\nFOR FIRST\nPLAYTHROUGHS)"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5beb9f4d-0237-4391-bef9-d90fdee11ff2"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Yes",
+        "falseText": "No"
+      },
+      "id": "d69282d3-6b22-4997-9863-715c4edf9913"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You made a deliberate\nattempt to damage the\nlaw.",
+                "Thus, you broke laws\n6 and 10.",
+                "Wait a minute.. \"Square\"\nisn't a Dhilly approved\nname.",
+                "Turns out you break\nlaws 5, 13 and 17 by\nexisting! Oh well!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a6c968a9-edc3-4fbf-82ec-cdd7d8071c99"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "not",
+                "value": {
+                  "type": "variable",
+                  "value": "17"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "17",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": false
+                  },
+                  "id": "a0bd4c2a-0b70-418e-bd6c-1160c63f386d"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "18",
+                    "operation": "add",
+                    "other": "val",
+                    "vectorY": "L0",
+                    "value": 4,
+                    "minValue": "0",
+                    "maxValue": "32767",
+                    "clamp": false
+                  },
+                  "id": "6e9b018f-3a10-47af-8403-a0151a85658f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "[New sidequest\nunlocked: break every\nlaw.]",
+                      "Currently broken:\n$18$/20."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "8c0d4b45-181d-4bea-afbc-7eaff14188c1"
+                }
+              ],
+              "false": []
+            },
+            "id": "6fc87f1f-f984-4196-b560-026ccc32ed8f"
+          }
+        ],
+        "false": []
+      },
+      "id": "1cefdf7a-6c38-432e-8431-e8fdf9b5f8c9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 7,
+  "_index": 0
+}

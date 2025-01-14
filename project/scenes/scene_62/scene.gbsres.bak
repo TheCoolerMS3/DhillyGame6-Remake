@@ -24,13 +24,6 @@
   "playerSpriteSheetId": "54082af1-8197-4c04-95c2-e318d6e6817b",
   "script": [
     {
-      "command": "EVENT_MUSIC_PLAY",
-      "args": {
-        "musicId": "604e0cbd-f94e-462f-bdee-3082cee724a8"
-      },
-      "id": "69558264-ebc7-4502-8fb7-9ed2fdf06899"
-    },
-    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "1",
@@ -141,10 +134,17 @@
                   "children": {
                     "true": [
                       {
+                        "command": "EVENT_MUSIC_PLAY",
+                        "args": {
+                          "musicId": "604e0cbd-f94e-462f-bdee-3082cee724a8"
+                        },
+                        "id": "69558264-ebc7-4502-8fb7-9ed2fdf06899"
+                      },
+                      {
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "[As you get in the car,\nyou realise you're\nbreaking the second \nlaw.)"
+                            "[As you get in the car,\nyou realise you're\nbreaking the second law.)"
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -186,7 +186,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "Currently broken:\n$18$/22."
+                            "Currently broken:\n$18$/20."
                           ],
                           "__section": "text",
                           "avatarId": "",

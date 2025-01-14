@@ -52,17 +52,46 @@
       "id": "dcfdc942-35a6-4691-a9c2-831250e329ff"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_IF",
       "args": {
-        "text": [
-          "So, you got survived\nthe fall.",
-          "Impressive, Square,\nimpressive.",
-          "I, too, am armed with\npieces.",
-          "Now you've obtained\nmy power, it's time we\nhandled this once\nfor all."
-        ],
-        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "L0"
+          }
+        },
+        "__collapseElse": true
       },
-      "id": "30085df8-a0ba-4bc0-bbf8-1537aaaec4a2"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "So, you got survived\nthe fall?",
+                "Impressive, Square,\nimpressive.",
+                "I, too, am armed with\npieces.",
+                "Now you've obtained\nmy power, it's time we\nhandled this once\nfor all."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "30085df8-a0ba-4bc0-bbf8-1537aaaec4a2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "471b82a0-dcc6-4d15-84a2-1e44c88a85ef"
+          }
+        ],
+        "false": []
+      },
+      "id": "d97bdc99-6393-46eb-8abf-d3649172db68"
     },
     {
       "command": "EVENT_SET_TIMER_SCRIPT",
@@ -82,7 +111,7 @@
               "other": "rnd",
               "vectorY": "L0",
               "value": "0",
-              "minValue": "0",
+              "minValue": 1,
               "maxValue": 17,
               "clamp": false
             },

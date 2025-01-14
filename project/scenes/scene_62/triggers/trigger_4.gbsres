@@ -1,0 +1,120 @@
+{
+  "_resourceType": "trigger",
+  "id": "d54c73ac-88e7-4652-a743-6b7a2dd496fb",
+  "name": "",
+  "prefabId": "",
+  "x": 70,
+  "y": 40,
+  "symbol": "trigger_122",
+  "prefabScriptOverrides": {},
+  "width": 8,
+  "height": 6,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "17"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "not",
+                "value": {
+                  "type": "variable",
+                  "value": "27"
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You're doing that too\nmuch! Please try again\nlater!",
+                      "(You broke the\nbreathing rate limit, a\nviolation of Law 20!)"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "68d84e1a-1960-4a0d-b74c-903e7075cb7d"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "27",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": false
+                  },
+                  "id": "0617e4fe-18c7-44ed-910b-1a61e67faf2d"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "18"
+                  },
+                  "id": "192b317f-4a15-48aa-8f7d-9bdcd8d0d4e1"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Currently broken:\n$18$/20."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "93a651c2-a86b-401c-a093-bee2e4ff8cf0"
+                }
+              ],
+              "false": []
+            },
+            "id": "638a0228-f637-4099-a1b6-1a272df17daa"
+          }
+        ],
+        "false": []
+      },
+      "id": "9ded70bd-f4e6-490c-b291-2adcda2c3a59"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

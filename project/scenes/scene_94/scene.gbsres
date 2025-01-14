@@ -67,19 +67,6 @@
       "id": "9665cdc7-e79d-4dff-8c81-f7f09ffac562"
     },
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "So, you got survived\nthe fall.",
-          "Impressive, Square,\nimpressive.",
-          "I, too, am armed with\npieces.",
-          "Now you've obtained\nmy power, it's time we\nhandled this once\nfor all."
-        ],
-        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
-      },
-      "id": "3a746393-cacc-43c6-8eff-6e40c4e0884d"
-    },
-    {
       "command": "EVENT_SET_TIMER_SCRIPT",
       "args": {
         "duration": 0.5,
@@ -97,7 +84,7 @@
               "other": "rnd",
               "vectorY": "L0",
               "value": "0",
-              "minValue": "0",
+              "minValue": 1,
               "maxValue": 17,
               "clamp": false
             },
@@ -204,7 +191,7 @@
     {
       "command": "EVENT_SET_VALUE",
       "args": {
-        "variable": "21",
+        "variable": "23",
         "value": {
           "type": "number",
           "value": 3

@@ -24,13 +24,6 @@
   "playerSpriteSheetId": "54082af1-8197-4c04-95c2-e318d6e6817b",
   "script": [
     {
-      "command": "EVENT_MUSIC_PLAY",
-      "args": {
-        "musicId": "604e0cbd-f94e-462f-bdee-3082cee724a8"
-      },
-      "id": "69558264-ebc7-4502-8fb7-9ed2fdf06899"
-    },
-    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "1",
@@ -114,108 +107,6 @@
               ]
             },
             "id": "ff3631b0-1a4b-4357-b205-32b52136a043"
-          },
-          {
-            "command": "EVENT_IF",
-            "args": {
-              "condition": {
-                "type": "variable",
-                "value": "17"
-              },
-              "__collapseElse": true
-            },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_IF",
-                  "args": {
-                    "condition": {
-                      "type": "not",
-                      "value": {
-                        "type": "variable",
-                        "value": "21"
-                      }
-                    },
-                    "__collapseElse": true
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "command": "EVENT_TEXT",
-                        "args": {
-                          "text": [
-                            "[As you get in the car,\nyou realise you're\nbreaking the second law.)"
-                          ],
-                          "__section": "text",
-                          "avatarId": "",
-                          "minHeight": 4,
-                          "maxHeight": 7,
-                          "textX": 1,
-                          "textY": 1,
-                          "textHeight": 5,
-                          "position": "bottom",
-                          "clearPrevious": true,
-                          "showFrame": "true",
-                          "speedIn": -1,
-                          "speedOut": -1,
-                          "closeWhen": "key",
-                          "closeButton": "a",
-                          "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30
-                        },
-                        "id": "7767be8c-005c-40fd-8b0b-df5bf94bd6b9"
-                      },
-                      {
-                        "command": "EVENT_SET_VALUE",
-                        "args": {
-                          "variable": "21",
-                          "value": {
-                            "type": "true"
-                          }
-                        },
-                        "id": "b52bf8c0-df9c-45b7-8aa6-de88462b39ed"
-                      },
-                      {
-                        "command": "EVENT_INC_VALUE",
-                        "args": {
-                          "variable": "18"
-                        },
-                        "id": "63087300-9ed6-47b7-9182-d5369683e893"
-                      },
-                      {
-                        "command": "EVENT_TEXT",
-                        "args": {
-                          "text": [
-                            "Currently broken:\n$18$/22."
-                          ],
-                          "__section": "text",
-                          "avatarId": "",
-                          "minHeight": 4,
-                          "maxHeight": 7,
-                          "textX": 1,
-                          "textY": 1,
-                          "textHeight": 5,
-                          "position": "bottom",
-                          "clearPrevious": true,
-                          "showFrame": "true",
-                          "speedIn": -1,
-                          "speedOut": -1,
-                          "closeWhen": "key",
-                          "closeButton": "a",
-                          "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30
-                        },
-                        "id": "1f863b9f-fc3b-41c2-b029-ff259e334c90"
-                      }
-                    ],
-                    "false": []
-                  },
-                  "id": "fd42cba2-ed23-449b-b4b7-05da8171e424"
-                }
-              ],
-              "false": []
-            },
-            "id": "9b374350-0a4c-438c-820d-0afb1aa8f8af"
           }
         ]
       },
@@ -228,8 +119,7 @@
           "type": "variable",
           "value": "17"
         },
-        "__collapseElse": true,
-        "__collapse": true
+        "__collapseElse": true
       },
       "children": {
         "true": [
@@ -240,7 +130,7 @@
                 "type": "not",
                 "value": {
                   "type": "variable",
-                  "value": "20"
+                  "value": "21"
                 }
               },
               "__collapseElse": true
@@ -248,10 +138,17 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "604e0cbd-f94e-462f-bdee-3082cee724a8"
+                  },
+                  "id": "69558264-ebc7-4502-8fb7-9ed2fdf06899"
+                },
+                {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "By using the MacOS\ncomputer, you broke law\n9."
+                      "[As you get in the car,\nyou realise you're\nbreaking the second law.)"
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -270,30 +167,30 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "8ca7a761-83f0-4395-bad9-8db04b16daaf"
+                  "id": "7767be8c-005c-40fd-8b0b-df5bf94bd6b9"
                 },
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "20",
+                    "variable": "21",
                     "value": {
                       "type": "true"
                     }
                   },
-                  "id": "66228a29-8d0c-4a95-8805-396e4dd929c4"
+                  "id": "b52bf8c0-df9c-45b7-8aa6-de88462b39ed"
                 },
                 {
                   "command": "EVENT_INC_VALUE",
                   "args": {
                     "variable": "18"
                   },
-                  "id": "1585b9b4-320c-49e8-b171-655946fecc7f"
+                  "id": "63087300-9ed6-47b7-9182-d5369683e893"
                 },
                 {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "Currently broken:\n$18$/22."
+                      "Currently broken:\n$18$/20."
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -312,17 +209,17 @@
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30
                   },
-                  "id": "696795bb-d79c-4cdd-8238-7231057024a6"
+                  "id": "1f863b9f-fc3b-41c2-b029-ff259e334c90"
                 }
               ],
               "false": []
             },
-            "id": "2f8aa91c-df9c-4afc-a01d-624c0de6cea5"
+            "id": "fd42cba2-ed23-449b-b4b7-05da8171e424"
           }
         ],
         "false": []
       },
-      "id": "9ee14beb-ff79-4007-91d0-29429ebcb290"
+      "id": "9b374350-0a4c-438c-820d-0afb1aa8f8af"
     }
   ],
   "playerHit1Script": [],

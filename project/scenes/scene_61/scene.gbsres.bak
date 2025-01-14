@@ -198,77 +198,77 @@
                                 "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
                               },
                               "id": "95896111-57cf-41a9-8e5a-0ace800c4b05"
-                            },
+                            }
+                          ]
+                        },
+                        "id": "3604b350-305c-4f79-814d-a4c774fb51fb"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "variable",
+                            "value": "17"
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
                             {
                               "command": "EVENT_IF",
                               "args": {
                                 "condition": {
-                                  "type": "variable",
-                                  "value": "17"
+                                  "type": "not",
+                                  "value": {
+                                    "type": "variable",
+                                    "value": "25"
+                                  }
                                 },
                                 "__collapseElse": true
                               },
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_IF",
+                                    "command": "EVENT_TEXT",
                                     "args": {
-                                      "condition": {
-                                        "type": "not",
-                                        "value": {
-                                          "type": "variable",
-                                          "value": "25"
-                                        }
-                                      },
-                                      "__collapseElse": true
-                                    },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_TEXT",
-                                          "args": {
-                                            "text": [
-                                              "You talked about\ndemocracy, hence\nbreaking law 14!"
-                                            ],
-                                            "__section": "text",
-                                            "avatarId": "",
-                                            "minHeight": 4,
-                                            "maxHeight": 7,
-                                            "textX": 1,
-                                            "textY": 1,
-                                            "textHeight": 5,
-                                            "position": "bottom",
-                                            "clearPrevious": true,
-                                            "showFrame": "true",
-                                            "speedIn": -1,
-                                            "speedOut": -1,
-                                            "closeWhen": "key",
-                                            "closeButton": "a",
-                                            "closeDelayTime": 0.5,
-                                            "closeDelayFrames": 30
-                                          },
-                                          "id": "1d02f938-132e-4b98-9b4f-b29e91a0c79d"
-                                        },
-                                        {
-                                          "command": "EVENT_INC_VALUE",
-                                          "args": {
-                                            "variable": "18"
-                                          },
-                                          "id": "286e74db-358b-4d6a-9bc8-a3575dae2a62"
-                                        }
+                                      "text": [
+                                        "You talked about\ndemocracy, hence\nbreaking law 14!"
                                       ],
-                                      "false": []
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
                                     },
-                                    "id": "cabc86d3-58c4-48df-b8c9-5e7eca5de1b4"
+                                    "id": "1d02f938-132e-4b98-9b4f-b29e91a0c79d"
+                                  },
+                                  {
+                                    "command": "EVENT_INC_VALUE",
+                                    "args": {
+                                      "variable": "18"
+                                    },
+                                    "id": "286e74db-358b-4d6a-9bc8-a3575dae2a62"
                                   }
                                 ],
                                 "false": []
                               },
-                              "id": "2dd18a17-bed1-456c-8db6-0425e5af6da4"
+                              "id": "cabc86d3-58c4-48df-b8c9-5e7eca5de1b4"
                             }
-                          ]
+                          ],
+                          "false": []
                         },
-                        "id": "3604b350-305c-4f79-814d-a4c774fb51fb"
+                        "id": "2dd18a17-bed1-456c-8db6-0425e5af6da4"
                       }
                     ],
                     "false": [

@@ -39,6 +39,16 @@
             "id": "d5e34dbd-6c38-4cac-86fd-4d996431f07d"
           },
           {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "f0a6c8fe-30bd-431c-8f1d-47e8f158ed06"
+          },
+          {
             "command": "EVENT_IF",
             "args": {
               "condition": {
@@ -82,16 +92,6 @@
                     "fadeSpeed": "2"
                   },
                   "id": "ba498b0c-0e1c-410c-8a3c-4d368c9f629a"
-                },
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "L0",
-                    "value": {
-                      "type": "true"
-                    }
-                  },
-                  "id": "f0a6c8fe-30bd-431c-8f1d-47e8f158ed06"
                 }
               ],
               "false": [

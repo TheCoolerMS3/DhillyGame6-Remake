@@ -51,7 +51,9 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false,
+        "__collapse": true,
+        "__label": "SAVE"
       },
       "children": {
         "true": [
@@ -94,7 +96,131 @@
             "id": "951fd5d5-55e0-42c6-9ee0-0d44fe0b6c52"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "4"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SAVE_DATA",
+                  "args": {
+                    "saveSlot": 1,
+                    "__scriptTabs": "save"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Autosaved to Slot 2!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "496cf316-8687-40ee-8773-99dfd15ba6e5"
+                      }
+                    ],
+                    "load": []
+                  },
+                  "id": "85ce138e-0794-4646-b470-f1dbcd55a8c7"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "4"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SAVE_DATA",
+                        "args": {
+                          "saveSlot": 2,
+                          "__scriptTabs": "save"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Autosaved to Slot 3!"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "02509a09-ddbf-4670-bbe5-06ae030a9d60"
+                            }
+                          ],
+                          "load": []
+                        },
+                        "id": "34c6bdf7-b570-488a-9aaf-0c2a61be058e"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "60bf49dd-93d1-43db-99e1-3b83b29db124"
+                }
+              ]
+            },
+            "id": "06252130-57f3-4369-9436-369260fd427a"
+          }
+        ]
       },
       "id": "6a9110c1-b048-4545-bcdc-77c63d7a410d"
     },

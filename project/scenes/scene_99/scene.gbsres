@@ -51,7 +51,8 @@
     {
       "command": "EVENT_FADE_IN",
       "args": {
-        "speed": "2"
+        "speed": "2",
+        "__collapse": false
       },
       "id": "49bd3f66-2a0f-4c47-96d8-a78d78f43db9"
     },
@@ -66,7 +67,7 @@
           "type": "number",
           "value": 18
         },
-        "speed": 1
+        "speed": 0.25
       },
       "id": "7eedae8b-899e-46c2-9472-896d06667341"
     },
@@ -117,7 +118,7 @@
           "type": "number",
           "value": 52
         },
-        "speed": 1
+        "speed": 0.25
       },
       "id": "f09b0747-5271-40b6-bdea-e5649edfae3a"
     },
@@ -130,7 +131,9 @@
           "In just one night,\nSquare, Dhilly, Shilly\nand Joe all died.",
           "It seems the story has\ncame to an end."
         ],
-        "avatarId": ""
+        "avatarId": "",
+        "__section": "layout",
+        "position": "top"
       },
       "id": "c805c7ea-5b74-4548-9dce-4456fcdbf6d3"
     },

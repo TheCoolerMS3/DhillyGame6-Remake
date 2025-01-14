@@ -47,10 +47,18 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "18"
+                  },
+                  "id": "ff1331df-1e1d-45ca-8ffd-4790970c2d4e"
+                },
+                {
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "You stole Dhilly's gun,\nhence breaking law 15!"
+                      "You stole Dhilly's gun,\nhence breaking law 15!",
+                      "Broken laws: $18$/20"
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -70,13 +78,6 @@
                     "closeDelayFrames": 30
                   },
                   "id": "35f0e6cf-1458-402a-b664-7d65d2df1774"
-                },
-                {
-                  "command": "EVENT_INC_VALUE",
-                  "args": {
-                    "variable": "18"
-                  },
-                  "id": "ff1331df-1e1d-45ca-8ffd-4790970c2d4e"
                 }
               ],
               "false": []

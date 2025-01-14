@@ -41,11 +41,8 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "not",
-          "value": {
-            "type": "variable",
-            "value": "17"
-          }
+          "type": "variable",
+          "value": "17"
         },
         "__collapseElse": false
       },
@@ -63,7 +60,7 @@
             "args": {
               "text": [
                 "This damage to Dhilly's\nproperty is a blatant\nviolation of Law 18.",
-                "Laws broken:\n$18$"
+                "Laws broken: $18$"
               ],
               "__section": "text",
               "avatarId": "",

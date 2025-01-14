@@ -74,7 +74,7 @@
                 {
                   "command": "EVENT_INC_VALUE",
                   "args": {
-                    "variable": "L0"
+                    "variable": "18"
                   },
                   "id": "ff1331df-1e1d-45ca-8ffd-4790970c2d4e"
                 }

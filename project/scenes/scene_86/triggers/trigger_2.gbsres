@@ -15,29 +15,19 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "not",
-          "value": {
-            "type": "ne",
-            "valueA": {
-              "type": "variable",
-              "value": "L0"
-            },
-            "valueB": {
-              "type": "true"
-            }
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "true"
           }
         },
         "__collapseElse": true
       },
       "children": {
         "true": [
-          {
-            "command": "EVENT_INC_VALUE",
-            "args": {
-              "variable": "11"
-            },
-            "id": "d5e34dbd-6c38-4cac-86fd-4d996431f07d"
-          },
           {
             "command": "EVENT_SET_VALUE",
             "args": {
@@ -46,7 +36,14 @@
                 "type": "true"
               }
             },
-            "id": "f0a6c8fe-30bd-431c-8f1d-47e8f158ed06"
+            "id": "3878d42a-dfa3-4f1f-9f4b-8cc2db7d2291"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "11"
+            },
+            "id": "9dd3cef5-b43e-441a-9a92-789201b67388"
           },
           {
             "command": "EVENT_IF",
@@ -74,7 +71,7 @@
                     ],
                     "avatarId": ""
                   },
-                  "id": "66f4c74e-36dd-4158-9604-8a351e10b821"
+                  "id": "61db24a4-7014-49ca-82ec-78c848aa7480"
                 },
                 {
                   "command": "EVENT_SWITCH_SCENE",
@@ -91,7 +88,7 @@
                     "direction": "",
                     "fadeSpeed": "2"
                   },
-                  "id": "ba498b0c-0e1c-410c-8a3c-4d368c9f629a"
+                  "id": "2b595a4e-a2ce-4454-8574-704fef19491e"
                 }
               ],
               "false": [
@@ -103,16 +100,16 @@
                     ],
                     "avatarId": ""
                   },
-                  "id": "aa4add4d-c337-41d6-b8e2-aa8ab4696673"
+                  "id": "5a863080-409a-4314-acba-a010302fd2d0"
                 }
               ]
             },
-            "id": "02b0e643-394a-43dc-8a56-2bbaac8c1332"
+            "id": "9700d050-4ce3-4960-9ea8-481ee0413441"
           }
         ],
         "false": []
       },
-      "id": "1b8e2a6d-844d-4ec1-aee4-6f0dc56924d6"
+      "id": "6f50aef2-1876-4e33-9b60-bdaba55c440c"
     }
   ],
   "leaveScript": []

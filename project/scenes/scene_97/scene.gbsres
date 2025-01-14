@@ -27,6 +27,69 @@
       "id": "fd8d848f-6597-4a04-ae29-0f62e2ade506"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "17"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "246a8094-1f82-4a90-b046-53da2be05297"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "74d48c08-1507-4adc-a45c-889fa3459fb6"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "5256e2c4-f79b-4c01-babc-e886be8326b0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "WOAH.. killing dhilly\nis against laws 3, 12\nand 16.",
+                "Laws broken: $18$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "38341c68-01f9-439b-a364-aa1eb0d1341a"
+          }
+        ],
+        "false": []
+      },
+      "id": "943e5521-f6fb-420d-aa84-f2f0d979ffbe"
+    },
+    {
       "command": "EVENT_WAIT",
       "args": {
         "time": 0.1,

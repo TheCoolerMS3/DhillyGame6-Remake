@@ -1,0 +1,72 @@
+{
+  "_resourceType": "trigger",
+  "id": "162a1181-ce79-4ca5-a203-0cb02b2e7e8c",
+  "_index": 0,
+  "symbol": "trigger_105",
+  "prefabId": "",
+  "name": "",
+  "x": 10,
+  "y": 51,
+  "width": 8,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "8150eb38-06b4-4f65-92cc-97aca37604f8"
+      },
+      "id": "f42f4942-fa0a-4b90-a380-ee4c969681df"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "c720e3ff-26b1-4270-b4b5-62911ff87025"
+      },
+      "id": "1e04bab9-b5b0-4df4-baac-bfe950646710"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "75a15b86-7e06-474d-8a2b-0919bac9baa9"
+      },
+      "id": "550cea5c-2937-49c9-9ced-67da6159be25"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "7fdac4ac-42d6-4863-84c6-e371e5c303ff"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You got Shilly's pieces."
+        ],
+        "avatarId": ""
+      },
+      "id": "21b717bf-a0de-487a-97c2-5f32fbca8055"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "af3d7069-6f5e-4735-91c2-f1f7db694a8e",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "df920201-b2aa-425d-b72c-d92ec4b7b472"
+    }
+  ],
+  "leaveScript": []
+}

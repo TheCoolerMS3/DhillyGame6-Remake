@@ -110,12 +110,9 @@
       "args": {
         "text": [
           "This dark path takes\nyou straight to Dhilly\ncity!",
-          "You probably want\nrevenge on Dhilly,\nright?",
-          "Well it's simple!",
-          "You go through here,\nand get yourself to\nDhilly's city,",
-          "get a car, and drive\nforth to Dhilly's lair.",
-          "This is, sadly, as far\nas I can take you.",
-          "Goodbye, Square."
+          "I take it you want\nrevenge on Dhilly,\nright?",
+          "Down here is his city,\ndrive forth and\nyou'll find his lair.",
+          "That's all for my\ntour!"
         ],
         "avatarId": "9089507f-2f32-4d6d-bde8-bfb2adf89d34"
       },

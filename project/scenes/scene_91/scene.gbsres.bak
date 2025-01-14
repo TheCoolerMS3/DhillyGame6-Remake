@@ -1,0 +1,153 @@
+{
+  "_resourceType": "scene",
+  "id": "7936335f-264a-4dcf-9361-bdc699781162",
+  "_index": 89,
+  "type": "PLATFORM",
+  "name": "Scene 91",
+  "symbol": "scene_91",
+  "x": 14320,
+  "y": 232,
+  "width": 20,
+  "height": 57,
+  "backgroundId": "264c253e-1fbf-4d25-9c96-3cc5b65c5497",
+  "tilesetId": "",
+  "paletteIds": [
+    "e1b60852-5f2b-4af2-a284-a0b46b6c18e5",
+    "",
+    "",
+    "",
+    "e1b60852-5f2b-4af2-a284-a0b46b6c18e5"
+  ],
+  "spritePaletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "f0af8fa9-5954-4442-a6ab-c2449c25b8e8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Long time no see,\nSquare.",
+          "I'm Shilly.",
+          "I hope you had a nice\ndream, but this is the\nreal deal.",
+          "I'm going to give you\nthe means to have a\nfair fight with Dhilly.",
+          "First of all, you'll\nneed this jetpack!"
+        ],
+        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a",
+        "__section": "layout",
+        "position": "top"
+      },
+      "id": "e02d5b37-e6d2-4c6b-9a75-cb206cb36a46"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "19e8573f-ccb7-4418-9a08-43d4ab5d4336"
+      },
+      "id": "468966f6-1b1e-46ab-84f7-e05b28270926"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "6666d375-ee09-4aa2-ad1a-b4be921f795e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "But that's not\nenough.",
+          "The only weapon that\ncan take down Dhilly-",
+          "...is the \"Shilly\nPieces\" that I am\nmade of.",
+          "I have decided to\nsacrifice myself for\nyour cause.",
+          "...",
+          "....",
+          ".......",
+          "..................."
+        ],
+        "avatarId": "980fc658-5ca1-421b-a528-22ec81e0677a",
+        "__section": "text",
+        "position": "top"
+      },
+      "id": "1a30f6ca-3b26-4b2b-be47-3e48b2787210"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 5,
+        "frames": 30
+      },
+      "id": "db1b0bec-431b-49cb-9110-05c024a6e5b6"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "b609a770-4a56-4674-bfbd-5731f18a44dd"
+      },
+      "id": "4fbf6707-3a78-42b0-a3c9-0150eacfa107"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "472270da-5ec5-4669-871a-3b7dbb59b9d3"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30,
+        "__collapse": false
+      },
+      "id": "6d348af8-1efd-4731-aa5b-38b822a15cfe"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "8150eb38-06b4-4f65-92cc-97aca37604f8"
+      },
+      "id": "77038ecd-9c69-4cf2-ab5d-2dde2b12e75a"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "c720e3ff-26b1-4270-b4b5-62911ff87025"
+      },
+      "id": "fe8b3be6-6be5-433e-b866-b3b5537a140b"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "75a15b86-7e06-474d-8a2b-0919bac9baa9"
+      },
+      "id": "4655ecd7-8eda-4390-b79b-22b873a46438"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0044c+0f28+"
+}

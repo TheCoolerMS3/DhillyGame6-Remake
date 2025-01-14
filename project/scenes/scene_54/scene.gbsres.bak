@@ -111,7 +111,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "Why yes, me and Dhilly\nused to be friends in\nit!"
+                            "Why yes, me and\nDhilly used to be \nfriends in it!"
                           ],
                           "__section": "text",
                           "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3",
@@ -138,7 +138,7 @@
                           "text": [
                             "This is\ngroundbreaking\ninformation!",
                             "Dhilly spreads so\nmuch hate towards\nthe old universe..",
-                            "But... he came from it?",
+                            "But... he came from\nit?",
                             "Wow.. what is wrong\nwith that guy..."
                           ],
                           "__section": "text",
@@ -175,7 +175,7 @@
                         "args": {
                           "text": [
                             "By listening to Sara\ntalk about the old\nuniverse,",
-                            "you broke law 1."
+                            "you broke laws 1 and 4."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -202,6 +202,13 @@
                           "variable": "19"
                         },
                         "id": "15cebf23-c22b-405d-822f-eede127b7522"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "19"
+                        },
+                        "id": "cc1b76ee-0c1b-45c0-af71-2a86ebd5e728"
                       },
                       {
                         "command": "EVENT_TEXT",

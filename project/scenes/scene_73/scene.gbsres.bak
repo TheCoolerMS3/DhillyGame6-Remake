@@ -5,11 +5,11 @@
   "type": "TOPDOWN",
   "name": "Scene 73",
   "symbol": "scene_73",
-  "x": 9912,
+  "x": 9904,
   "y": 360,
-  "width": 32,
-  "height": 32,
-  "backgroundId": "fb2ff945-3c02-4573-bc7a-d9a8eccd00f4",
+  "width": 20,
+  "height": 18,
+  "backgroundId": "69c0cf58-b18b-4216-8ed8-277ba7ec2098",
   "tilesetId": "",
   "paletteIds": [
     "",
@@ -22,5 +22,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": ""
+  "collisions": "0f7f+005+0ff+005+0f10+003+0fb+00f+0f5+00f+0f5+00f+0f5+0012+0f2+0012+0f2+0012+0f2+0012+0f28+"
 }
