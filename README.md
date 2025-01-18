@@ -3,8 +3,6 @@ A remake of Dhilly Game 6 made by me with elements made by StanDX.
 
 You can play it at https://dhillygame.uk/6
 
-Made for Hack Club's events "Arcade" and "High Seas".
-
 Supported platforms:
 * Nintendo Game Boy
 * Super Game Boy for SNES
@@ -19,3 +17,5 @@ Supported platforms:
 Languages:
 * GB Studio Visual
 * GBVM
+
+Made for Hack Club's events "Arcade" and "High Seas".
