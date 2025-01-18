@@ -15,3 +15,7 @@ Supported platforms:
 * Nintendo Switch*
 
 *Runs in emulator, supported meaning there is a build flag to show controls for this device instead of the detected one.
+
+Languages:
+* GB Studio Visual
+* GBVM
