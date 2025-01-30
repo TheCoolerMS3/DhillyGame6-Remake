@@ -1,7 +1,7 @@
 # Dhilly Game 6 Remake
 A remake of Dhilly Game 6 made by me with elements made by StanDX.
 
-You can play it at https://dhillygame.uk/6
+You can play it at https://dhillygame.co.uk/6
 
 Supported platforms:
 * Nintendo Game Boy
