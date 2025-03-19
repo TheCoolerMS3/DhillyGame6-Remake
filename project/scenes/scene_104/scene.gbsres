@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "f7b641cb-cb88-4aa2-bff9-47f250a1ca7e",
+  "_index": 102,
+  "name": "Scene 103",
+  "backgroundId": "23aa3550-f53a-4f29-9ec8-a68f09450649",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_103",
+  "x": 16144,
+  "y": 1008,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
