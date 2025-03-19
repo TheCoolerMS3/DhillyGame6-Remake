@@ -199,14 +199,14 @@
                       {
                         "command": "EVENT_INC_VALUE",
                         "args": {
-                          "variable": "19"
+                          "variable": "18"
                         },
                         "id": "15cebf23-c22b-405d-822f-eede127b7522"
                       },
                       {
                         "command": "EVENT_INC_VALUE",
                         "args": {
-                          "variable": "19"
+                          "variable": "18"
                         },
                         "id": "cc1b76ee-0c1b-45c0-af71-2a86ebd5e728"
                       },
@@ -214,7 +214,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "Currently broken:\n$18$/22."
+                            "Currently broken:\n$18$/20."
                           ],
                           "__section": "text",
                           "avatarId": "",

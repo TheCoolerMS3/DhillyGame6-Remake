@@ -70,7 +70,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "By using the MacOS\ncomputer, you broke law\n9."
+                      "By using the MacOS\ncomputer, you broke\nlaws 8 and 9."
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -107,6 +107,13 @@
                     "variable": "18"
                   },
                   "id": "0c508880-cdb2-4bcb-abda-b8840351de31"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "18"
+                  },
+                  "id": "2ee1bf3e-d029-4bd6-a619-e9cc70b8b9d4"
                 },
                 {
                   "command": "EVENT_TEXT",

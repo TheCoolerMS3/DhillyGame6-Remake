@@ -175,5 +175,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": ""
+  "collisions": "",
+  "playerSpriteSheetId": "6f49b2b9-78f8-4c69-9085-4aacd3aa88e1"
 }

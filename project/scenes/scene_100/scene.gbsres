@@ -25,11 +25,8 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "not",
-          "value": {
-            "type": "variable",
-            "value": "17"
-          }
+          "type": "variable",
+          "value": "17"
         },
         "__collapseElse": false
       },
