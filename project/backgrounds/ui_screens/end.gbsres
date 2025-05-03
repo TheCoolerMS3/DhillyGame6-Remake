@@ -4,10 +4,10 @@
   "name": "UI Screens/end",
   "symbol": "bg_ui_screens_title_copy_",
   "width": 20,
-  "height": 18,
+  "height": 44,
   "imageWidth": 160,
-  "imageHeight": 144,
+  "imageHeight": 352,
   "filename": "UI Screens/end.png",
-  "tileColors": "",
+  "tileColors": "0481+032+0412+032+041c1+03c8+0464+",
   "autoColor": false
 }

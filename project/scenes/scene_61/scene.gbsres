@@ -141,7 +141,7 @@
                   "command": "EVENT_CHOICE",
                   "args": {
                     "variable": "L1",
-                    "trueText": "I'll vote Trump",
+                    "trueText": "I'll vote Kanye West",
                     "falseText": "I'll hug you"
                   },
                   "id": "dd4d5267-efe9-49e7-96fd-e017997cccf7"
@@ -401,7 +401,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Ben Shapiro gave\nSquare his car keys!"
+                "Nick Fuentes gave\nSquare his car keys!"
               ],
               "avatarId": ""
             },
