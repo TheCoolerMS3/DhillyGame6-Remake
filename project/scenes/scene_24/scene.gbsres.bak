@@ -1,0 +1,78 @@
+{
+  "_resourceType": "scene",
+  "id": "a8396481-49cd-4e3b-8216-66a9a23db554",
+  "_index": 22,
+  "type": "TOPDOWN",
+  "name": "Scene 23",
+  "symbol": "scene_23",
+  "x": 1938.75,
+  "y": 1112.75,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a9cc33ef-b391-4157-9547-67d74d9092f9",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "d62194c8-ca4b-4d9e-b86b-ba2b8bda5793"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {},
+      "id": "ef6694f4-11af-4f4a-b94d-a4d1f153e5b7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "42a485ec-fd03-4971-bffe-b0c2992bd04c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It was too cold.",
+          "Square froze."
+        ],
+        "avatarId": ""
+      },
+      "id": "c33a5604-37ca-4e91-9f9e-f8c733c824f2"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "78d1d478-e3a7-4e9b-837f-52e374728e5e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "fc3d14fe-cf6f-4c11-a23b-090757f4ed8d",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "8adb6a1f-6bb9-47de-8806-5b75ab06032f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,285 @@
+{
+  "_resourceType": "scene",
+  "id": "d8fbb3f2-2e71-4513-9eb7-79e74cef31d0",
+  "_index": 20,
+  "type": "TOPDOWN",
+  "name": "Scene 22",
+  "symbol": "scene_22",
+  "x": 1376,
+  "y": 944,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "49392571-fa3c-413c-bbff-360f8e5b6f05",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "f25a2cdb-160f-41a5-af43-2a94311caa77"
+  ],
+  "spritePaletteIds": [
+    "9aeaee5c-abbe-4da0-8289-f5293a3e72ca"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "f0c2ef42-64f2-4cbe-89c5-64489f10bfc0"
+      },
+      "id": "42c09fb7-b9c7-42c8-be72-c7c384d725f5"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "up"
+        ]
+      },
+      "id": "c8fe7447-aa50-4b5b-9f9b-f023ac483fb4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "f19583a4-2613-4e24-819e-c438ff5562e5"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "0e89ea1d-7c8f-4ac6-9b7f-3d3b25f8fbd7",
+        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+      },
+      "id": "665ad255-374b-47ef-bc1b-16df1380c978"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Oh! Square!",
+          "I was waiting for you\nto arrive! Do you like\nmy new house?"
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "db36edc5-6d2a-41f9-bcb1-d81c141b1594"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Yes",
+        "falseText": "No it's ugly"
+      },
+      "id": "50e00df0-e484-434a-b3b1-c65c6396c61e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "...\n*blushes cutely*",
+                "Awwww, thanks!"
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "e6137795-9622-43fc-8a9e-2af9a5725d49"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Haha, I love you\nSquare.",
+                "Even your attempts\nat lying are futile.",
+                "I'm glad you like my\nnew house as much\nas I do."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "406c7c51-ddac-45be-b076-60ce030dbdf5"
+          }
+        ]
+      },
+      "id": "d0b43725-21b9-43ee-a21c-d3e17ad64996"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "0e89ea1d-7c8f-4ac6-9b7f-3d3b25f8fbd7",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "174caa07-2162-4701-af1c-44d48a2b5ae4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Care to join me for\nlunch?"
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "289b98c3-fcae-49d0-84c4-c350da48380a"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "up"
+        ]
+      },
+      "id": "9a77ec11-5111-45b0-b255-3fb9ec9873b6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "eb5d1f69-0780-459c-b353-60329440bc43"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "a9f54ed7-6950-4b1c-a8b4-94fe83c13411"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "f0c2ef42-64f2-4cbe-89c5-64489f10bfc0"
+      },
+      "id": "3f549fd3-bbf4-41ae-9215-0924f496cd1f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "aad20d28-30a8-463d-979b-b942628972c2"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Sike.",
+                "You're nothing but\nan inconvenience to\nme.",
+                "I'm going to take\nover this world, and\nyou're just the dirt\nunder my fingernail.",
+                "So, to prevent you\nmeddling with my plans\nanymore, I'm keeping\nyou somewhere safe,\nand you are not\nleaving it for a long,\nlong time."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "3f952b79-b9ef-4c13-8e75-4aacdb9b0a47"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Sike.",
+                "You're nothing but\nan inconvenience to\nme.",
+                "I'm going to take\nover this world, and\nyou're just the dirt",
+                "under my fingernail.",
+                "So, to prevent you\nmeddling with my plans\nanymore, I'm keeping",
+                "you somewhere safe,\nand you are not\nleaving it for a long,",
+                "long time."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "d0689da5-eb4a-450f-ad9a-f54e97739b2c"
+          }
+        ]
+      },
+      "id": "d0c87ab4-7def-4465-b4c5-95ac5b0c796a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 2,
+        "frames": 30
+      },
+      "id": "83fe7251-7a0d-4055-870a-054ee22fdc5b"
+    },
+    {
+      "command": "EVENT_OVERLAY_SHOW",
+      "args": {
+        "color": "white",
+        "x": 0,
+        "y": 0
+      },
+      "id": "ff5840b5-19b5-45df-af32-d6eddf4c66ad"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "b07ff92d-762d-46fe-8b6d-7202f77a6cee",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "1bd4a06f-5fb0-4c2d-8055-f6c01137b55c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

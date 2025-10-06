@@ -1,0 +1,127 @@
+{
+  "_resourceType": "trigger",
+  "id": "ec738390-e50e-4331-9a63-63dfe6d0c61e",
+  "_index": 0,
+  "symbol": "trigger_52",
+  "prefabId": "",
+  "name": "",
+  "x": 25,
+  "y": 0,
+  "width": 1,
+  "height": 16,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I don't think I'm\ngoing to be able to\nmake it."
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "a39a14df-dc29-45f3-b6e8-b3af180a17aa"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "ab76e171-e0e0-4bd6-bd4d-950dd1ed0397"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "speed": 0.5
+      },
+      "id": "87e5b62f-5b8c-4a72-a151-aee184034be6"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "82dca26f-43f0-4816-9b68-43edac8c6a5c"
+      },
+      "id": "8a77ac94-348c-40d2-9871-19074a19ebf5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "58869997-d3ba-4798-a301-d46a7c761921"
+    },
+    {
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 0.5,
+        "axis": [
+          "x",
+          "y"
+        ]
+      },
+      "id": "2d253717-df24-4b8a-8519-2d5f4acb6da8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Crap, I'm going to\nhave to jump."
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "f9cdcca6-3c7c-4b71-bcff-7fff2310590a"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 1,
+        "frames": 60,
+        "__scriptTabs": "end",
+        "units": "frames"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "0fb4e4a8-6650-4962-abf8-48c5c82d36e1",
+              "spriteStateId": "",
+              "actorId": "82dca26f-43f0-4816-9b68-43edac8c6a5c",
+              "x": 0,
+              "y": 0,
+              "directionType": "direction",
+              "otherActorId": "$self$",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "$self$",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 3,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "659c9e10-e8f2-45f9-ac03-dbf1cfd4a3f9"
+          }
+        ]
+      },
+      "id": "a91b94f4-8254-4a25-812e-8fd95ad2b09a"
+    }
+  ],
+  "leaveScript": []
+}

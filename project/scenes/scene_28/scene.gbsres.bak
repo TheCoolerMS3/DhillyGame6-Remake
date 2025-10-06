@@ -1,0 +1,248 @@
+{
+  "_resourceType": "scene",
+  "id": "4d8cab67-3598-41e0-b68f-f63d68620e0a",
+  "_index": 26,
+  "type": "PLATFORM",
+  "name": "Scene 27",
+  "symbol": "scene_27",
+  "x": 2648,
+  "y": 1120,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "21c62c5c-1d57-4eca-90f7-10fd46a7856e",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "d62194c8-ca4b-4d9e-b86b-ba2b8bda5793"
+  ],
+  "spritePaletteIds": [
+    "d62194c8-ca4b-4d9e-b86b-ba2b8bda5793"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4e693548-e083-4803-b1a5-6ab14f5b15c7",
+  "script": [
+    {
+      "command": "EVENT_SHOW_SPRITES",
+      "args": {},
+      "id": "f6db9430-269d-40c6-9521-58ebb3d90b67"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 3,
+        "frames": 30
+      },
+      "id": "f045196f-3bd2-4659-98f8-69e3355786a1"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "how..................................\n..long...............................\nhave i.....................been\n..............here........"
+              ],
+              "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+            },
+            "id": "097f8f6e-6022-4515-b118-f3dfd001f7c7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "how.......................long...\nhave i.....................been\n..............here........"
+              ],
+              "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+            },
+            "id": "31d8ae29-d956-439e-9699-0bb804eb7043"
+          }
+        ]
+      },
+      "id": "62385220-ef2b-41a6-910d-7decd0e00123"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "left",
+          "up",
+          "down",
+          "right"
+        ]
+      },
+      "id": "60ab27dc-903a-409c-a922-32b1bb2fa252"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "92ea26af-3cb6-4df7-90a7-27b54514c79c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "d5e1dca6-3b3c-4a57-8be4-f174225d7b8d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "need...to...get...myself\n..together.."
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "365f7133-b168-4102-aede-a873b8b95555"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "left",
+          "up",
+          "down",
+          "right"
+        ]
+      },
+      "id": "d50ccc8a-61e1-4b5d-9bf6-c2d6ffe30bd5"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "40c79bb1-1dfa-44bd-8fe0-d15f419e2339"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "cf7b8698-a9c3-4c0d-a941-73b0d63d190e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Need to GET OUT!!"
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "91028f6c-8b49-4929-83d8-279423de062d"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "left",
+          "up",
+          "down",
+          "right"
+        ],
+        "__collapse": true
+      },
+      "id": "ab5eabbd-fa91-4db1-9cd7-3f8af44b3914"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": false
+      },
+      "id": "b03fb982-44a9-4495-851f-a036df46ddd8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.3,
+        "frames": 30
+      },
+      "id": "86d0fdad-6ad9-481b-95bd-783c88c53720"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "MUST GET OUT!!!!"
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3",
+        "__collapse": false
+      },
+      "id": "a15aa6e4-ee48-4940-96b0-8c99e4781d83"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "left",
+          "up",
+          "down",
+          "right"
+        ]
+      },
+      "id": "5e2ff3cd-9468-4d45-b4eb-939cbb1d07a9"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": false
+      },
+      "id": "0db791bc-ca55-472e-887d-7fc1f2c0d93e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.9,
+        "frames": 30
+      },
+      "id": "38c554e3-2410-4365-8c3a-7bc787d899c0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00176+0f16+"
+}

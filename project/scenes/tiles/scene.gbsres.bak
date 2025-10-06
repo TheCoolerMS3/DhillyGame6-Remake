@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "36422578-1deb-4ad0-81e8-7426ab92e5ef",
+  "_index": 15,
+  "type": "TOPDOWN",
+  "name": "Tiles",
+  "symbol": "scene_16",
+  "x": 917.1612903225807,
+  "y": 313.6829586184425,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "c53d29f3-adf0-4a6d-b582-35b7180c2783",
+  "tilesetId": "",
+  "paletteIds": [
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "This is not a playable part of the game. Scenes with animated tiles pull their tiles from here."
+      },
+      "id": "c01c134d-b431-40f1-8936-48fb4884424c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

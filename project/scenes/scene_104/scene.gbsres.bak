@@ -2,25 +2,25 @@
   "_resourceType": "scene",
   "id": "f7b641cb-cb88-4aa2-bff9-47f250a1ca7e",
   "_index": 102,
+  "type": "TOPDOWN",
   "name": "Scene 103",
-  "backgroundId": "23aa3550-f53a-4f29-9ec8-a68f09450649",
-  "tilesetId": "",
+  "symbol": "scene_103",
+  "x": 16144,
+  "y": 1008,
   "width": 20,
   "height": 44,
-  "type": "TOPDOWN",
+  "backgroundId": "23aa3550-f53a-4f29-9ec8-a68f09450649",
+  "tilesetId": "",
   "paletteIds": [
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "5b041191-6294-4abf-bcbf-5e86287b7e82",
     "acbf04a7-1d65-49ae-ab55-2b2750cb0fbc"
   ],
   "spritePaletteIds": [],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_103",
-  "x": 16144,
-  "y": 1008,
+  "autoFadeEventCollapse": true,
   "script": [
     {
       "command": "EVENT_HIDE_SPRITES",
@@ -46,5 +46,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "autoFadeEventCollapse": true
+  "collisions": ""
 }

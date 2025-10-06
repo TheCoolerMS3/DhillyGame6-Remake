@@ -9,5 +9,5 @@
   "imageHeight": 144,
   "filename": "Area - Dhilly City/Lair/lair_left.png",
   "tileColors": "0478+007+042+0047+04a0+",
-  "autoColor": false
+  "autoColor": true
 }

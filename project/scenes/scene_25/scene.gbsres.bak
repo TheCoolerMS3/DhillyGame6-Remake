@@ -52,7 +52,7 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": true,
+        "__collapse": false,
         "__label": "SAVE"
       },
       "children": {
@@ -61,7 +61,7 @@
             "command": "EVENT_SAVE_DATA",
             "args": {
               "saveSlot": 0,
-              "__scriptTabs": "save"
+              "__scriptTabs": "load"
             },
             "children": {
               "true": [
@@ -91,7 +91,25 @@
                   "id": "2dc60b51-49bf-45ea-8705-a2bea38cdbde"
                 }
               ],
-              "load": []
+              "load": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "4d8cab67-3598-41e0-b68f-f63d68620e0a",
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 14
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "8c161540-b8da-4a93-85c6-de75b80c1226"
+                }
+              ]
             },
             "id": "951fd5d5-55e0-42c6-9ee0-0d44fe0b6c52"
           }

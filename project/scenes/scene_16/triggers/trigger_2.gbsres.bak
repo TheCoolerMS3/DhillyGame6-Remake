@@ -1,0 +1,156 @@
+{
+  "_resourceType": "trigger",
+  "id": "00cc912d-029a-42c7-a585-40fa500f126d",
+  "_index": 1,
+  "symbol": "trigger_1",
+  "prefabId": "",
+  "name": "",
+  "x": 13,
+  "y": 16,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "e21a431d-6ea2-435f-bfc8-965c1f715dcf"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "Haha, look who came.",
+          "Well if it isn't\nSquare.",
+          "I knew you were\ngoing to try and stop\nme from leaving.",
+          "I am not your ally,\nunfortunately.",
+          "And I do not play by\nyour rules anymore.",
+          "But I mean no harm.",
+          "So, I have a\ncompremise in place.",
+          "I leave the universe,\nbut you may come\nwith me.",
+          "...",
+          "How does it sound?"
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "d9f8fbc3-c89e-406a-b86f-9130329e63b1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Absolutely not. What\nabout everyone else?"
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "1f1286d8-faee-4c5b-bb55-a4c64f969fc1"
+    },
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Huh, this is the first\ntime you've spoken\nwith words.",
+                "Maybe you could have\ndone that instead of\nstomping on my\nmother.",
+                "...",
+                "It seems like there\nis a misunderstanding\nhere, Square.",
+                "Either you die where\nyou stand, or you\ncome with me to the\nnew universe."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "e5b96354-110b-4d29-9c06-f26f39453966"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Huh, this is the first\ntime you've spoken\nwith words.",
+                "Maybe you could have\ndone that instead of\nstomping on my mum.",
+                "...",
+                "It seems like there\nis a misunderstanding\nhere, Square.",
+                "Either you die where\nyou stand, or you\ncome with me to the",
+                "new universe."
+              ],
+              "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+            },
+            "id": "510c6f77-ee77-444c-b07f-49e786a42015"
+          }
+        ]
+      },
+      "id": "0f504e86-0589-4b73-af88-18b850c4edb6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "...."
+        ],
+        "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+      },
+      "id": "d57e49d7-c05f-4d11-8375-d43b1a5cf6fc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I take your silence\nas agreement. Let's\ngo already."
+        ],
+        "avatarId": "d1c6c447-c0cd-4065-8f5b-e687d358943f"
+      },
+      "id": "644d12f5-ce9b-4149-adec-f848d3970d22"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 1,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "631d8410-18dc-4950-a657-4ad5701fefe8"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6a949c10-0cd8-4275-82c6-1682b2471fa4",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 63
+        },
+        "direction": "",
+        "fadeSpeed": 4
+      },
+      "id": "3423e295-eff2-46b6-b4d5-66a80c8d7aeb"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "40f2a3bf-9b93-418c-bbfc-366e0a949305",
+  "_index": 63,
+  "type": "TOPDOWN",
+  "name": "Scene 65",
+  "symbol": "scene_65",
+  "x": 10248,
+  "y": 128,
+  "width": 34,
+  "height": 18,
+  "backgroundId": "bce46486-fd41-475d-908d-04757ab9e49c",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!00!0f6+002+0f19+009+0f19+009+0f19+00!0f2+003+0f!002+0f19+00!0f2+003+0f2+00!0f3a+00a6+0f4+001e+0f4+001e+0f4+001e+0f4+001e+0f6a+"
+}

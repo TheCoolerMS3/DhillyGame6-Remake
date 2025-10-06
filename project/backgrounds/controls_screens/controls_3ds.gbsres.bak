@@ -8,6 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "Controls Screens/controls_3ds.png",
-  "tileColors": "016a+004+01f+005+01f+005+01d2+",
+  "tileColors": "016a+004+01f+07!004+01f+07!004+01d2+",
   "autoColor": false
 }

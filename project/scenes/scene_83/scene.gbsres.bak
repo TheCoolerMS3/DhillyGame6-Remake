@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "c58b033a-b89b-402e-a5ec-36e0492167cc",
+  "_index": 81,
+  "type": "PLATFORM",
+  "name": "Scene 79",
+  "symbol": "scene_83",
+  "x": 11808,
+  "y": 440,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a6459fb8-effe-40ec-960e-07762d5023d3",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "dmg",
+    "",
+    "",
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00be+0fa+00f+0f3+008+0f!0010+0f3+00e+0f5+005f+"
+}

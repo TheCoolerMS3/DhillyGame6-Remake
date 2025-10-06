@@ -12,16 +12,6 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "You found a Dhilly\npiece! 3 left."
-        ],
-        "avatarId": ""
-      },
-      "id": "11414694-cf76-4e7c-b6c1-074b0e80377f"
-    },
-    {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
         "sceneId": "9fdae2c1-e312-47e9-8aac-3023822ef754",

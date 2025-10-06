@@ -40,15 +40,30 @@
           {
             "command": "EVENT_INC_VALUE",
             "args": {
-              "variable": "L0"
+              "variable": "18"
             },
             "id": "246a8094-1f82-4a90-b046-53da2be05297"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "74d48c08-1507-4adc-a45c-889fa3459fb6"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "18"
+            },
+            "id": "5256e2c4-f79b-4c01-babc-e886be8326b0"
           },
           {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "WOAH"
+                "WOAH.. killing dhilly\nis against laws 3, 12\nand 16.",
+                "Laws broken: $18$"
               ],
               "__section": "text",
               "avatarId": "",

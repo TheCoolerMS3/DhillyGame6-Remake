@@ -1,39 +1,31 @@
 {
   "_resourceType": "trigger",
-  "id": "de69c976-2c41-4fe0-8a7b-21639fd81e67",
+  "id": "bf2f3094-e2ea-4283-ab79-3d06e32e592f",
   "name": "",
   "prefabId": "",
-  "x": 7,
-  "y": 7,
-  "symbol": "trigger_126",
+  "x": 8,
+  "y": 17,
+  "symbol": "trigger_128",
   "prefabScriptOverrides": {},
-  "width": 2,
+  "width": 4,
   "height": 1,
   "script": [
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "text": [
-          "The supposed \"Law\", on\ncloser inspection, just\nreads \"gay,\"."
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "sceneId": "6a949c10-0cd8-4275-82c6-1682b2471fa4",
+        "x": {
+          "type": "number",
+          "value": 36
+        },
+        "y": {
+          "type": "number",
+          "value": 62
+        },
+        "direction": "",
+        "fadeSpeed": "2"
       },
-      "id": "189d3523-2751-4abd-a878-cae4b8ae29e3"
+      "id": "122aec60-67fb-4c27-a14a-8a1b3e6f07ec"
     }
   ],
   "leaveScript": [],

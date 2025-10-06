@@ -1,0 +1,52 @@
+{
+  "_resourceType": "scene",
+  "id": "5627dada-96ab-4a86-8c9c-2a739c665621",
+  "_index": 8,
+  "type": "LOGO",
+  "name": "Scene 9",
+  "symbol": "scene_9",
+  "x": 493.2478920741991,
+  "y": 629.8414839797641,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7957167e-ac0f-4729-b88e-67ab23efb0d0",
+  "tilesetId": "",
+  "paletteIds": [
+    "0cd072af-4dfe-4533-9724-0b1e57797d7d",
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "2f89926b-d846-4768-8e22-74a0c0debe8e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "acbf89f4-f070-4377-bb56-b995e51cadb0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "4d4fe2a0-e360-4b08-9796-bbaccfee1904"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

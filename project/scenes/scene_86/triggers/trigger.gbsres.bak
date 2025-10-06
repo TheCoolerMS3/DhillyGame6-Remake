@@ -29,6 +29,16 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "f7df9c5d-f469-4dea-839a-7ace5c482e20"
+          },
+          {
             "command": "EVENT_INC_VALUE",
             "args": {
               "variable": "11"
@@ -79,16 +89,6 @@
                     "fadeSpeed": "2"
                   },
                   "id": "3ce6db94-bc90-46ea-b901-2c49c3e505a6"
-                },
-                {
-                  "command": "EVENT_SET_VALUE",
-                  "args": {
-                    "variable": "L0",
-                    "value": {
-                      "type": "true"
-                    }
-                  },
-                  "id": "f7df9c5d-f469-4dea-839a-7ace5c482e20"
                 }
               ],
               "false": [

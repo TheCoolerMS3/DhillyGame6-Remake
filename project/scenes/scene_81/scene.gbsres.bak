@@ -21,7 +21,9 @@
     "",
     "dmg"
   ],
-  "spritePaletteIds": [],
+  "spritePaletteIds": [
+    "dmg"
+  ],
   "autoFadeSpeed": 1,
   "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
   "script": [],

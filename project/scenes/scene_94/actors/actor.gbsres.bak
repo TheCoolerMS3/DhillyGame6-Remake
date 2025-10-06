@@ -1,0 +1,113 @@
+{
+  "_resourceType": "actor",
+  "id": "c36fcf7f-45d3-4886-9616-98178070224b",
+  "_index": 0,
+  "symbol": "actor_61",
+  "prefabId": "",
+  "name": "",
+  "x": 17,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6acc65f6-5878-446b-afe5-2cb4e8a9d7ae",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "2",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "22"
+      },
+      "id": "3c02ddcb-c2e8-471d-8964-15fcbd42f80a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "22"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 1
+            },
+            "id": "695ad03f-756c-4b80-b5b6-ed90cdbfa97c"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d57f0ec0-02a3-44fb-8c03-b5bda312a142"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 3,
+              "frames": 30,
+              "shakeDirection": "vertical",
+              "magnitude": {
+                "type": "number",
+                "value": 10
+              }
+            },
+            "id": "d71152b7-f345-4300-8465-1ac593f88e2d"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "399dbae5-5991-4103-a988-a12e6d6d332e",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "f4c553b7-6f64-4b67-9437-3de47f612d70"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dhilly has $22$ health."
+              ],
+              "avatarId": ""
+            },
+            "id": "45e7e69a-d2bd-4188-93e4-7c883093a68f"
+          }
+        ]
+      },
+      "id": "87012482-6e6d-4a5e-88ca-7c05d959d744"
+    }
+  ],
+  "hit3Script": []
+}

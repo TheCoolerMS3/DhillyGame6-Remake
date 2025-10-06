@@ -1,0 +1,85 @@
+{
+  "_resourceType": "scene",
+  "id": "a81f7b09-f164-425e-80f6-5523e733ea84",
+  "_index": 3,
+  "type": "LOGO",
+  "name": "Web Init",
+  "symbol": "scene_4",
+  "x": 127.6363636363638,
+  "y": 122.42275240256474,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ac4048e3-1031-4282-9ef0-b3d4c2a03f54",
+  "tilesetId": "",
+  "paletteIds": [
+    "8ff25c15-fa1d-4f58-b9f5-8a2a1a8bd918",
+    "",
+    "",
+    "",
+    "acbf04a7-1d65-49ae-ab55-2b2750cb0fbc"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Build Flags:\nThese can alter the game experience per build. I might have more uses for this later, but currently Flag 1 means \"Web Build\", which is the build I will host on my website, Itch and Gamejolt. It will have mobile, PC and browser specific features enabled."
+      },
+      "id": "0371bad1-8dab-47f6-b6b1-28eecd01357a"
+    },
+    {
+      "command": "EVENT_SET_FLAGS",
+      "args": {
+        "variable": "0",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "0513d5e4-da11-4709-bea1-5616547656fe"
+    },
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "c9427941-78fd-4cca-9d36-9334cfc720df"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "dd30a817-5f76-45cf-9d9d-960bf361d0fa",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "803cbdb0-5452-4864-b7e2-a9daf9203b58"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

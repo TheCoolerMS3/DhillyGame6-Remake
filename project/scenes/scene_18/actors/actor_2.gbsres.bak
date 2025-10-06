@@ -1,0 +1,126 @@
+{
+  "_resourceType": "actor",
+  "id": "a4dd3d2d-c78b-4d23-9c26-a6e71ecf8b31",
+  "_index": 1,
+  "symbol": "actor_11",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 67,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1320a9fe-95a8-4652-a9ec-7b769f262344",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_COLOR_SUPPORTED",
+      "args": {
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Sup wise guy",
+                "I'm Wide Guy.",
+                "You might notice,\nI'm too wide for you\nto go walking by to\nthat cinema.",
+                "So uh, I hope you\nweren't planning on\ngoing to it."
+              ],
+              "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+            },
+            "id": "6db135a1-d617-4877-8273-6d184d2f7317"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Sup wise guy",
+                "I'm Wide Guy.",
+                "You might notice,\nI'm too wide for you\nto go walking by to",
+                "that cinema.",
+                "So uh, I hope you\nweren't planning on\ngoing to it."
+              ],
+              "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+            },
+            "id": "faac8125-f6e9-4068-8399-16c159c0cc53"
+          }
+        ]
+      },
+      "id": "2f57631d-fbf1-4b0c-b226-2bb1643e230a"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Nice to meet you.",
+        "falseText": "I was, actually!"
+      },
+      "id": "03ee4182-926f-46a2-8b05-c056007d2667"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Nice to meet you,\nWide Guy!"
+              ],
+              "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+            },
+            "id": "0c81dd0f-10d5-47ec-bec0-b6885bfc4954"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I was planning to,\nactually!",
+                "Is there any chance\nyou could move out\nof the way?"
+              ],
+              "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
+            },
+            "id": "8c3f6520-433b-49fc-9dcc-8c67d1d8d55f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Move out of the way?",
+                "Nah, maybe later."
+              ],
+              "avatarId": "581e919e-5a13-4705-bb63-8dc169f12021"
+            },
+            "id": "1031c574-86d8-4110-ab6d-dfb00aae0e71"
+          }
+        ]
+      },
+      "id": "4ec2a023-37fb-4ec3-824a-1c1c63db604d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

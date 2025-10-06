@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "1a3b4c63-6ea4-447c-bd93-acfff6d79be5",
+  "_index": 12,
+  "type": "TOPDOWN",
+  "name": "Init Pocket",
+  "symbol": "scene_13",
+  "x": 124.36363636363635,
+  "y": 1163.6363636363635,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "01fd7b81-71a8-4d7b-b658-1194264cc55c",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,80 @@
+{
+  "_resourceType": "actor",
+  "id": "7e5efbe9-47bd-4c20-a06c-b259307cb090",
+  "_index": 1,
+  "symbol": "actor_25",
+  "prefabId": "",
+  "name": "",
+  "x": 2,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6f49b2b9-78f8-4c69-9085-4aacd3aa88e1",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "6"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "YOU ALREADY HAVE\nA TICKET!",
+                "HERE'S ANOTHER!",
+                "NYEH HEH HEH"
+              ],
+              "avatarId": "98bec1f3-1e3c-416b-9de5-7edf13b1c23e"
+            },
+            "id": "4b1ca0be-1926-409f-bd92-9d379fa2d0dc"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "607693b5-ac66-4c91-a8e7-33c860ded1b7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NYEH HEH HEH",
+                "WELCOME TO THE\nCINEMA",
+                "HERE, YOU CAN GET\nA TICKET FOR THE\nLOW PRICE OF FREE!",
+                "HERE YOU GO!!\nGO WATCH THE SHOW!"
+              ],
+              "avatarId": "98bec1f3-1e3c-416b-9de5-7edf13b1c23e"
+            },
+            "id": "565adb43-f91a-431d-96f8-a29b44baacdc"
+          }
+        ]
+      },
+      "id": "a49e3cfa-c8e0-414d-b219-e1a4f3fb3392"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

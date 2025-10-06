@@ -48,8 +48,8 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Hello. I am the famous\nalt-right conspiracy\ntheorist Nick\nFuentes.",
-                "You!!!!!! You're that\nWOKE Square,\naren't you?"
+                "Hello. I am the famous\nconspiracy theorist\nBob.",
+                "You!!!!!! You're that\nEVIL Square, aren't\nyou?"
               ],
               "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
             },
@@ -131,7 +131,7 @@
                   "args": {
                     "text": [
                       "NEVER!!!",
-                      "Only WOKE people\nborrow cars!!!"
+                      "Only EVIL people\nborrow cars!!!"
                     ],
                     "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
                   },
@@ -141,7 +141,7 @@
                   "command": "EVENT_CHOICE",
                   "args": {
                     "variable": "L1",
-                    "trueText": "I'll vote Kanye West",
+                    "trueText": "I'll vote for Dhilly",
                     "falseText": "I'll hug you"
                   },
                   "id": "dd4d5267-efe9-49e7-96fd-e017997cccf7"
@@ -161,7 +161,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "If you lend me your\ncar, I'll vote Kanye\nWest!"
+                            "If you lend me your\ncar, I'll vote Dhilly!"
                           ],
                           "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3"
                         },
@@ -179,7 +179,7 @@
                               "args": {
                                 "text": [
                                   "Oh my!!",
-                                  "Very well, as long as\nyou promise to vote\nfor Ye I will lend\nyou my car!"
+                                  "Very well, as long as\nyou promise to vote\nfor Dhilly I will lend\nyou my car!"
                                 ],
                                 "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
                               },
@@ -192,7 +192,7 @@
                               "args": {
                                 "text": [
                                   "Oh my!!",
-                                  "Very well, as long as\nyou promise to vote\nfor Ye I will lend",
+                                  "Very well, as long as\nyou promise to vote\nfor Dhilly I will lend",
                                   "you my car!"
                                 ],
                                 "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
@@ -357,7 +357,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "WHAT. I'm not \nSquare, I'd never be\nso WOKE!!!!"
+                      "WHAT. I'm not \nSquare, I'd never be\nso EVIL!!!!"
                     ],
                     "avatarId": "358ddbc9-71a4-443e-90b1-a6535daf49f1"
                   },
@@ -401,7 +401,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Nick Fuentes gave\nSquare his car keys!"
+                "Bob gave\nSquare his car keys!"
               ],
               "avatarId": ""
             },

@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "ff847704-bcb5-41d2-b0be-db1c1a512e81",
+  "_index": 0,
+  "symbol": "trigger_77",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 0,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Shouldn't fight Dhilly\nwithout a weapon, look\nfor one first."
+        ],
+        "avatarId": ""
+      },
+      "id": "4947ab60-c483-46e5-8291-c42975c0a85f"
+    }
+  ],
+  "leaveScript": []
+}

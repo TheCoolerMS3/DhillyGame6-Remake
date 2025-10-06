@@ -1,0 +1,31 @@
+{
+  "_resourceType": "scene",
+  "id": "37b5981d-55d6-4c79-8a3d-a390fb1402da",
+  "_index": 35,
+  "type": "POINTNCLICK",
+  "name": "Scene 37",
+  "symbol": "scene_37",
+  "x": 4128,
+  "y": 296,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "f95e4896-e930-4e6b-9782-fd668010bf2e",
+  "tilesetId": "",
+  "paletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb",
+    "",
+    "",
+    "",
+    "9db3ff46-eed0-4633-81f2-67b4dde551e8"
+  ],
+  "spritePaletteIds": [
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "461d1453-ee92-461d-93c8-db89f71b412d",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

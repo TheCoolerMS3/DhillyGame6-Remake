@@ -89,8 +89,8 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Uh he literally froze\nme for 100 years",
-          "I hate him too"
+          "Uh he literally froze\nme for 100 years.",
+          "I hate him too."
         ],
         "__section": "text",
         "avatarId": "f7cd2ba3-f409-4ef9-9fdb-8c8abfd0a1f3",
@@ -115,7 +115,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Oh shit, it's the\nSquare Wide Guy told\nme about",
+          "Oh shit, it's the\nSquare Wide Guy told\nme about.",
           "Follow me, I'll show ya\naround."
         ],
         "__section": "text",

@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "fec9b215-c67f-4d22-8e2c-825db255942a",
+  "_index": 57,
+  "type": "TOPDOWN",
+  "name": "Scene 59",
+  "symbol": "scene_59",
+  "x": 8888,
+  "y": 160,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "443f3a3e-a56d-4477-9110-31d62b84ed7f",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7a42bd96-4680-4592-89a4-421d5fae2ddb"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "4c9d0c5e-0de4-4fa4-adbd-67d0a7b33f79",
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0050+0f15+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f3+002+0f10+"
+}
